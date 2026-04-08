@@ -107,7 +107,7 @@ function useHeroStyles() {
       .beam-pill::before {
         content: '';
         position: absolute;
-        inset: 2px -7px -5px -7px;
+        inset: -1px -10px -1px -10px;
         border-radius: 9999px;
         padding: 2px;
         background: conic-gradient(

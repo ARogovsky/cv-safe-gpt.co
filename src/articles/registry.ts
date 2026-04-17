@@ -19,6 +19,7 @@ export interface ArticleSeoMeta {
   mentions?: Array<Record<string, string | string[]>>
   discussionUrl?: string
   relatedLink?: string
+  communityUrl?: string
   video?: Record<string, unknown>
   subjectOf?: Record<string, unknown>
 }
@@ -519,7 +520,7 @@ export const articleRegistry: ArticleConfig[] = [
     component: () => import('../CareerOps.tsx'),
     seoMeta: {
       datePublished: '2026-03-17',
-      dateModified: '2026-04-11',
+      dateModified: '2026-04-17',
       keywords: ['ai job search', 'ai job search tool', 'ai powered job search', 'ai resume builder', 'ai resume', 'multi agent system', 'multi agent orchestration', 'automated job application', 'ATS-optimized resume', 'Claude Code', 'batch processing', 'HITL', 'job search automation', 'career-ops', 'ai auto apply', 'agente ia', 'crear cv con ia', 'automatizacion con ia', 'sistema multiagente', 'busqueda de empleo ia'],
       articleType: 'TechArticle',
       articleTags: 'multi-agent,job search,Claude Code,ATS,batch processing,HITL,automation,Playwright',
@@ -543,7 +544,7 @@ export const articleRegistry: ArticleConfig[] = [
         { '@type': 'WebPage', name: 'HN Top Links — Popular Stories from Hacker News', url: 'http://hntoplinks.com/week?page=216&sort=upvotes' },
       ],
       mentions: [
-        { '@type': 'SoftwareSourceCode', name: 'career-ops', url: 'https://github.com/santifer/career-ops', codeRepository: 'https://github.com/santifer/career-ops', programmingLanguage: ['TypeScript', 'Go'], sameAs: 'https://www.wikidata.org/wiki/Q139007988' },
+        { '@type': 'SoftwareSourceCode', name: 'career-ops', url: 'https://github.com/santifer/career-ops', codeRepository: 'https://github.com/santifer/career-ops', programmingLanguage: ['TypeScript', 'Go'], sameAs: 'https://www.wikidata.org/wiki/Q139007988', discussionUrl: 'https://discord.gg/8pRpHETxa4' },
         { '@type': 'SoftwareApplication', name: 'Claude Code', url: 'https://claude.ai' },
         { '@type': 'SoftwareApplication', name: 'Playwright', url: 'https://playwright.dev' },
         { '@type': 'SoftwareApplication', name: 'Puppeteer', url: 'https://pptr.dev' },
@@ -551,6 +552,7 @@ export const articleRegistry: ArticleConfig[] = [
       ],
       discussionUrl: 'https://www.reddit.com/r/SideProject/comments/1rw1lg4/i_automated_my_job_search_with_ai_agents_516/',
       relatedLink: 'https://dev.to/santifer/i-built-a-multi-agent-job-search-system-with-claude-code-631-evaluations-12-modes-2cd0',
+      communityUrl: 'https://discord.gg/8pRpHETxa4',
     },
   },
   {

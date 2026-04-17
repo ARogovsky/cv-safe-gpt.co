@@ -9,6 +9,22 @@
 
 ---
 
+<div align="center">
+
+<img src="https://santifer.io/foto-avatar.webp" width="140" alt="santifer" />
+
+### Hi, I'm @santifer,
+
+## Open Source | who builds AI systems<br/>with HITL + MCP + RAG
+
+[![Builder](https://img.shields.io/badge/Builder-0EA5E9?style=for-the-badge)](#)
+[![Applied AI](https://img.shields.io/badge/Applied_AI-1F2937?style=for-the-badge)](#)
+[![career-ops](https://img.shields.io/badge/career--ops-⭐_35.3K_·_🍴_7.0K-1F2937?style=for-the-badge&logo=github&logoColor=white)](https://github.com/santifer/career-ops)
+
+</div>
+
+---
+
 ## The Problem
 
 Static CVs don't show what you can actually build. A PDF lists skills — it doesn't prove them.
@@ -299,6 +315,22 @@ MIT
 > Portfolio interactivo con chatbot IA (texto + voz), RAG agéntico, 71 evals automatizados, dashboard LLMOps y defensa anti-inyección en 6 capas
 
 [![Demo en vivo](https://img.shields.io/badge/demo-santifer.io-blue?style=flat-square)](https://santifer.io)
+
+---
+
+<div align="center">
+
+<img src="https://santifer.io/foto-avatar.webp" width="140" alt="santifer" />
+
+### Hola, soy @santifer,
+
+## Open Source | construyo sistemas IA<br/>con HITL + MCP + RAG
+
+[![Builder](https://img.shields.io/badge/Builder-0EA5E9?style=for-the-badge)](#)
+[![Applied AI](https://img.shields.io/badge/Applied_AI-1F2937?style=for-the-badge)](#)
+[![career-ops](https://img.shields.io/badge/career--ops-⭐_35.3K_·_🍴_7.0K-1F2937?style=for-the-badge&logo=github&logoColor=white)](https://github.com/santifer/career-ops)
+
+</div>
 
 ---
 

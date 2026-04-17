@@ -27,7 +27,7 @@ export const careerOpsContent = {
       { value: '10', label: 'Dimensiones' },
       { value: '680', label: 'URLs dedup' },
     ],
-    tldr: 'Un sistema multi-agente construido con Claude Code que automatiza la búsqueda de empleo: evalúa ofertas con scoring de 10 dimensiones (A-F), genera PDFs ATS-optimized personalizados, rellena formularios vía Playwright y procesa en batch con workers paralelos. HITL: la IA analiza, yo decido.',
+    tldr: 'Un sistema multi-agente construido con Claude Code que automatiza la búsqueda de empleo: evalúa ofertas con scoring de 10 dimensiones (A-F), genera PDFs ATS-optimized personalizados, rellena formularios vía Playwright y procesa en batch con workers paralelos. HITL: la IA analiza, yo decido. Open source bajo MIT — 35.5K+ estrellas, 1.000+ en Discord.',
     metaCallout: 'La ironía: construí un sistema multi-agente para buscar trabajo en multi-agente. El sistema demostró las competencias que los puestos pedían — mejor que cualquier entrevista. Y no, no es hacer trampa: Career-Ops automatiza el análisis, no la decisión.',
     internalLinks: {
       chatbot: {
@@ -242,13 +242,23 @@ export const careerOpsContent = {
             title: 'Abre el código cuando ya no lo necesites',
             detail: 'Career-Ops fue privado mientras lo usaba. Cuando conseguí el trabajo, lo publiqué. En una semana tenía 35.5K estrellas. La lección: el mejor momento para abrir un proyecto es cuando ya demostró su valor en producción real.',
           },
+          {
+            title: 'Por qué lo mantengo MIT',
+            detail: 'MIT license. Sin dark patterns, sin upsell dentro del CLI, sin feature gating. Si funciona para ti, funciona. Si quieres apoyar el mantenimiento o entrar en la comunidad, puedes. Pero el tool no depende de eso.',
+          },
         ],
       },
       cta: {
         heading: 'Explora el Código',
-        body: 'Career-Ops es open source. Revisa la arquitectura, los skill files, y el scoring framework en GitHub. O abre el chat y pregúntame cómo lo construí.',
+        body: 'Career-Ops es open source bajo MIT. Revisa la arquitectura, los skill files, y el scoring framework en GitHub. Clónalo, adáptalo, haz lo que necesites — es tuyo.',
         ctaLabel: 'Ver en GitHub',
         ctaHref: 'https://github.com/santifer/career-ops',
+        supportHeading: 'Si te ahorró horas',
+        supportRuleFree: 'Si estás en búsqueda activa, céntrate en eso — el tool es tuyo, sin peros.',
+        supportRulePaid: 'Si ya no estás buscando y el sistema te ahorró horas, un café ayuda a mantenerlo vivo.',
+        supportFootnote: '100% de los fondos va a API costs e infraestructura.',
+        supportBmcLabel: 'Buy me a coffee',
+        supportBmcHref: 'https://buymeacoffee.com/santifer',
       },
     },
     faq: {
@@ -323,7 +333,7 @@ export const careerOpsContent = {
       { value: '10', label: 'Dimensions' },
       { value: '680', label: 'URLs deduped' },
     ],
-    tldr: 'A multi-agent system built with Claude Code that automates the job search: scores offers across 10 dimensions (A-F), generates ATS-optimized PDFs per offer, fills forms via Playwright, and batch-processes with parallel workers. HITL design: AI analyzes, I decide.',
+    tldr: 'A multi-agent system built with Claude Code that automates the job search: scores offers across 10 dimensions (A-F), generates ATS-optimized PDFs per offer, fills forms via Playwright, and batch-processes with parallel workers. HITL design: AI analyzes, I decide. Open source under MIT — 35.5K+ stars, 1,000+ on Discord.',
     metaCallout: 'The irony: I built a multi-agent system to search for multi-agent roles. The system demonstrated the competencies better than any interview could. And no, it is not gaming the system: Career-Ops automates analysis, not decisions.',
     internalLinks: {
       chatbot: {
@@ -538,13 +548,23 @@ export const careerOpsContent = {
             title: 'Open-source it when you no longer need it',
             detail: 'Career-Ops was private while I was using it. When I got the job, I published it. One week later it had 35.5K stars. The lesson: the best time to open-source a project is when it has already proven its value in real production.',
           },
+          {
+            title: 'Why I keep it MIT',
+            detail: 'MIT license. No dark patterns, no upsell inside the CLI, no feature gating. If it works for you, it works. If you want to support the maintenance or join the community, you can. But the tool does not depend on it.',
+          },
         ],
       },
       cta: {
         heading: 'Explore the Code',
-        body: 'Career-Ops is open source. Check the architecture, skill files, and scoring framework on GitHub. Or open the chat and ask me how I built it.',
+        body: 'Career-Ops is open source under MIT. Check the architecture, skill files, and scoring framework on GitHub. Clone it, fork it, adapt it — it is yours.',
         ctaLabel: 'View on GitHub',
         ctaHref: 'https://github.com/santifer/career-ops',
+        supportHeading: 'If it saved you hours',
+        supportRuleFree: 'If you are actively job searching, focus on that — the tool is yours, no strings attached.',
+        supportRulePaid: 'If you are no longer job searching and the system saved you hours, a coffee helps keep it alive.',
+        supportFootnote: '100% of funds go to API costs and infrastructure.',
+        supportBmcLabel: 'Buy me a coffee',
+        supportBmcHref: 'https://buymeacoffee.com/santifer',
       },
     },
     faq: {

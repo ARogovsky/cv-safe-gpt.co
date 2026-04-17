@@ -11,7 +11,6 @@ import {
   LessonsSection,
   MetricsGrid,
   StatusBadge,
-  CaseStudyCta,
   GitHubRepoBadge,
 } from './articles/components'
 import {
@@ -374,14 +373,63 @@ export default function CareerOps({ lang = 'en' }: { lang?: Lang }) {
         </div>
 
         {/* ================================================================ */}
-        {/*  CTA                                                             */}
+        {/*  CTA + Support                                                   */}
         {/* ================================================================ */}
-        <CaseStudyCta
-          heading={s.cta.heading}
-          body={s.cta.body}
-          ctaLabel={s.cta.ctaLabel}
-          ctaHref={s.cta.ctaHref}
-        />
+        <div className="mt-12 rounded-2xl border border-border/50 bg-gradient-to-br from-card/60 to-card/20 p-8 md:p-12 overflow-hidden relative">
+          {/* Glow sutil decorativo */}
+          <div className="absolute -top-24 -right-24 w-64 h-64 bg-primary/5 rounded-full blur-3xl pointer-events-none" />
+
+          <div className="relative text-center">
+            <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-primary/10 border border-primary/20 mb-5">
+              <svg viewBox="0 0 24 24" className="w-7 h-7 text-primary" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            </div>
+            <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-3">{s.cta.heading}</h2>
+            <p className="text-base text-muted-foreground max-w-2xl mx-auto mb-7 leading-relaxed">{s.cta.body}</p>
+            <a
+              href={s.cta.ctaHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary text-primary-foreground font-semibold shadow-lg shadow-primary/20 hover:bg-primary/90 hover:shadow-primary/30 transition-all"
+            >
+              <svg viewBox="0 0 24 24" className="w-5 h-5" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              {s.cta.ctaLabel}
+            </a>
+          </div>
+
+          {/* Divider con texto opcional */}
+          <div className="relative my-10 md:my-12 flex items-center">
+            <div className="flex-1 border-t border-border/40" />
+            <div className="px-4 text-xs uppercase tracking-[0.2em] text-muted-foreground/60">{lang === 'es' ? 'o' : 'or'}</div>
+            <div className="flex-1 border-t border-border/40" />
+          </div>
+
+          {/* Support (secondary — official BMC colors) */}
+          <div className="relative max-w-2xl mx-auto text-center">
+            <h3 className="font-display text-lg md:text-xl font-semibold text-foreground mb-4">{s.cta.supportHeading}</h3>
+            <div className="text-sm md:text-base text-muted-foreground leading-relaxed mb-6 space-y-2">
+              <p>{s.cta.supportRuleFree}</p>
+              <p>{s.cta.supportRulePaid}</p>
+            </div>
+            <div className="flex flex-wrap items-center justify-center gap-3">
+              <a
+                href={s.cta.supportBmcHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#FFDD00] text-black font-semibold shadow-md hover:bg-[#FFE433] hover:shadow-lg transition-all"
+              >
+                <img src="/bmc-logo.svg" alt="" className="w-5 h-auto" width="27" height="39" />
+                {s.cta.supportBmcLabel}
+              </a>
+              {/* TODO Fase 2: añadir botón Operator Circle cuando GitHub Sponsors esté activo */}
+              {/* <a href="https://github.com/sponsors/santifer" target="_blank" rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl border border-border/60 text-sm font-medium text-foreground hover:border-border hover:bg-card/60 transition-all">
+                <svg viewBox="0 0 16 16" className="w-4 h-4 text-pink-500" fill="currentColor"><path d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/></svg>
+                Operator Circle · $14/mo
+              </a> */}
+            </div>
+            <p className="mt-5 text-xs italic text-muted-foreground/70">{s.cta.supportFootnote}</p>
+          </div>
+        </div>
       </article>
 
       <ArticleFooter lang={lang} utmCampaign="career-ops" />

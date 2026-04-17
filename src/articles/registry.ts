@@ -16,7 +16,7 @@ export interface ArticleSeoMeta {
   extra?: Record<string, string>
   citation?: Array<{ '@type': string; name: string; url: string }>
   isBasedOn?: Record<string, unknown>
-  mentions?: Array<Record<string, string | string[]>>
+  mentions?: Array<Record<string, string | string[] | Record<string, string>>>
   discussionUrl?: string
   relatedLink?: string
   communityUrl?: string
@@ -544,7 +544,7 @@ export const articleRegistry: ArticleConfig[] = [
         { '@type': 'WebPage', name: 'HN Top Links — Popular Stories from Hacker News', url: 'http://hntoplinks.com/week?page=216&sort=upvotes' },
       ],
       mentions: [
-        { '@type': 'SoftwareSourceCode', name: 'career-ops', url: 'https://github.com/santifer/career-ops', codeRepository: 'https://github.com/santifer/career-ops', programmingLanguage: ['TypeScript', 'Go'], sameAs: 'https://www.wikidata.org/wiki/Q139007988', discussionUrl: 'https://discord.gg/8pRpHETxa4' },
+        { '@type': 'SoftwareSourceCode', name: 'career-ops', url: 'https://github.com/santifer/career-ops', codeRepository: 'https://github.com/santifer/career-ops', programmingLanguage: ['TypeScript', 'Go'], license: 'https://opensource.org/licenses/MIT', sameAs: 'https://www.wikidata.org/wiki/Q139007988', discussionUrl: 'https://discord.gg/8pRpHETxa4', offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD', availability: 'https://schema.org/InStock' } },
         { '@type': 'SoftwareApplication', name: 'Claude Code', url: 'https://claude.ai' },
         { '@type': 'SoftwareApplication', name: 'Playwright', url: 'https://playwright.dev' },
         { '@type': 'SoftwareApplication', name: 'Puppeteer', url: 'https://pptr.dev' },

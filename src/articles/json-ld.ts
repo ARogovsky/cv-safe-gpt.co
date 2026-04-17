@@ -30,7 +30,7 @@ interface JsonLdOptions {
   /** isBasedOn — source material (course, workshop, research) */
   isBasedOn?: Record<string, unknown>
   /** mentions — tools and platforms referenced */
-  mentions?: Array<Record<string, string | string[]>>
+  mentions?: Array<Record<string, string | string[] | Record<string, string>>>
   /** discussionUrl — link to Reddit/HN thread */
   discussionUrl?: string
   /** relatedLink — link to cross-posted article (Dev.to, etc.) */

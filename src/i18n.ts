@@ -152,6 +152,19 @@ export const translations = {
       githubLink: 'github.com/santifer',
       viewCode: 'Ver código',
       viewPrototype: 'Ver prototipo',
+      agentInfra: {
+        title: 'AI Agent Infrastructure',
+        subtitle: 'No es un agente. Son 7. Cada uno especializado en una dimensión. life-os los orquesta.',
+        agents: [
+          { icon: 'brain', name: 'life-os', desc: 'Orquestador personal + knowledge management', tag: 'privado' },
+          { icon: 'inbox', name: 'brand-ops', desc: 'Triage social media cross-platform', tag: 'privado' },
+          { icon: 'compass', name: 'venture-ops', desc: 'Gobernanza estratégica', tag: 'privado' },
+          { icon: 'gitMerge', name: 'career-ops-maintainer', desc: 'PRs, issues, releases de career-ops', tag: 'privado' },
+          { icon: 'users', name: 'community-ops', desc: 'Gestión de comunidad Discord (1K+ miembros)', tag: 'privado' },
+          { icon: 'layout', name: 'portfolio-ops', desc: 'Portfolio con chatbot LLMOps + auto-update', tag: 'privado' },
+          { icon: 'briefcase', name: 'applied-ai-ops', desc: 'Onboarding, codebase navigation y specs con IA para mi rol', tag: 'privado' },
+        ],
+      },
       items: [
         {
           title: 'Content Digest',
@@ -165,7 +178,7 @@ export const translations = {
           title: 'Life OS',
           badge: 'Privado · Bajo petición',
           badgeBuilding: '',
-          desc: 'Sistema de productividad personal que gestiona mi vida a través de conversación. Orquesta Claude Code con MCPs nativos (Apple Reminders/Calendar, GitHub), 15 skills custom, 5 hooks de automatización, y búsqueda semántica (BM25 + SQLite FTS5). Conectado con **Content Digest** para ciclo completo de conocimiento y con **Career Ops** para búsqueda de empleo automatizada con HITL.',
+          desc: 'Sistema de productividad personal que gestiona mi vida a través de conversación. Orquesta Claude Code con MCPs nativos (Apple Reminders/Calendar, GitHub), 15 skills custom, 5 hooks de automatización, y búsqueda semántica (BM25 + SQLite FTS5). Conectado con **Content Digest** para ciclo completo de conocimiento.',
           tech: ['Claude Code', 'Python', 'MCP', 'SQLite FTS5', 'Apple APIs'],
           link: '',
         },
@@ -177,7 +190,7 @@ export const translations = {
           tech: ['Claude Code', 'Batch Architecture', 'WebSearch', 'HITL Design'],
           link: 'github.com/santifer/career-ops',
           stars: '35.3K',
-          forks: '7.0K',
+          forks: '7.1K',
           caseStudyUrl: '/career-ops',
           caseStudyLabel: 'Leer: AI Job Search multi-agente',
         },
@@ -537,7 +550,7 @@ export const translations = {
     redditPosts: [
       {
         hook: 'Construí un sistema de búsqueda de empleo con Claude Code que puntuó 740+ ofertas y me consiguió trabajo. Acabo de hacerlo open source.',
-        upvotes: '2743',
+        upvotes: '2744',
         comments: '239',
         subreddit: 'r/ClaudeAI',
         cta: 'Leer en Reddit',
@@ -545,7 +558,7 @@ export const translations = {
       },
       {
         hook: 'Automaticé mi búsqueda de empleo con agentes IA — 516 evaluaciones, 66 aplicaciones, zero screening manual.',
-        upvotes: '566',
+        upvotes: '563',
         comments: '356',
         subreddit: 'r/SideProject',
         cta: 'Leer en Reddit',
@@ -960,6 +973,19 @@ export const translations = {
     },
     projects: {
       title: 'Projects',
+      agentInfra: {
+        title: 'AI Agent Infrastructure',
+        subtitle: 'Not one agent. Seven. Each specialized in one dimension. life-os orchestrates them.',
+        agents: [
+          { icon: 'brain', name: 'life-os', desc: 'Personal orchestrator + knowledge management', tag: 'private' },
+          { icon: 'inbox', name: 'brand-ops', desc: 'Cross-platform social media triage', tag: 'private' },
+          { icon: 'compass', name: 'venture-ops', desc: 'Strategic governance', tag: 'private' },
+          { icon: 'gitMerge', name: 'career-ops-maintainer', desc: 'PRs, issues, releases for career-ops', tag: 'private' },
+          { icon: 'users', name: 'community-ops', desc: 'Discord community management (1K+ members)', tag: 'private' },
+          { icon: 'layout', name: 'portfolio-ops', desc: 'Portfolio with LLMOps chatbot + auto-update', tag: 'private' },
+          { icon: 'briefcase', name: 'applied-ai-ops', desc: 'Onboarding, codebase navigation, specs with AI for my role', tag: 'private' },
+        ],
+      },
       githubLink: 'github.com/santifer',
       viewCode: 'View code',
       viewPrototype: 'View prototype',
@@ -976,7 +1002,7 @@ export const translations = {
           title: 'Life OS',
           badge: 'Private · On Request',
           badgeBuilding: '',
-          desc: "Personal productivity system I built to run my life through conversation. Orchestrates Claude Code with native MCPs (Apple Reminders/Calendar, GitHub), 15 custom skills, 5 automation hooks, and semantic search (BM25 + SQLite FTS5). Pipes into **Content Digest** for a full knowledge loop and powers **Career Ops** for HITL automated job search.",
+          desc: "Personal productivity system I built to run my life through conversation. Orchestrates Claude Code with native MCPs (Apple Reminders/Calendar, GitHub), 15 custom skills, 5 automation hooks, and semantic search (BM25 + SQLite FTS5). Pipes into **Content Digest** for a full knowledge loop.",
           tech: ['Claude Code', 'Python', 'MCP', 'SQLite FTS5', 'Apple APIs'],
           link: '',
         },
@@ -988,7 +1014,7 @@ export const translations = {
           tech: ['Claude Code', 'Batch Architecture', 'WebSearch', 'HITL Design'],
           link: 'github.com/santifer/career-ops',
           stars: '35.3K',
-          forks: '7.0K',
+          forks: '7.1K',
           caseStudyUrl: '/career-ops-system',
           caseStudyLabel: 'Case Study: AI Job Search',
         },
@@ -1344,7 +1370,7 @@ export const translations = {
     redditPosts: [
       {
         hook: 'I built an AI job search system with Claude Code that scored 740+ offers and landed me a job. Just open sourced it.',
-        upvotes: '2743',
+        upvotes: '2744',
         comments: '239',
         subreddit: 'r/ClaudeAI',
         cta: 'Read on Reddit',
@@ -1352,7 +1378,7 @@ export const translations = {
       },
       {
         hook: 'I automated my job search with AI agents — 516 evaluations, 66 applications, zero manual screening.',
-        upvotes: '566',
+        upvotes: '563',
         comments: '356',
         subreddit: 'r/SideProject',
         cta: 'Read on Reddit',

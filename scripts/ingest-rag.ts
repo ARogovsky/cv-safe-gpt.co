@@ -363,6 +363,16 @@ async function main() {
 }
 
 main().catch(err => {
-  console.error('❌ Ingestion failed:', err.message)
-  process.exit(1)
+  // Runtime errors from third-party services (OpenAI quota, Supabase outage,
+  // network hiccups) must NOT block the web deploy. Config errors throw early
+  // (before main() runs) so by this point we're past validation and any error
+  // is operational — log it loudly and exit 0 so the rest of the build
+  // pipeline continues. The RAG index will catch up on the next build.
+  const status = (err as { status?: number } | null)?.status
+  const code = (err as { code?: string } | null)?.code
+  console.error('❌ RAG ingestion failed (non-blocking):', err.message)
+  if (status) console.error(`   HTTP status: ${status}`)
+  if (code) console.error(`   Error code: ${code}`)
+  console.error('   Build will continue; RAG index may be stale until next successful ingest.')
+  process.exit(0)
 })

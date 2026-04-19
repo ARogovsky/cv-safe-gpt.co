@@ -1,15 +1,15 @@
 export const seo = {
   es: {
     title:
-      'santifer | Builder of Career-Ops · Agentes IA · Open Source',
+      'santifer | Applied AI Operator · Builder of Career-Ops',
     description:
-      'Creador de Career-Ops (36.2K+ estrellas en GitHub). Construye sistemas IA en producción. Head of Applied AI. De automatizar un negocio de 16 años a herramientas open source usadas por miles.',
+      'Applied AI Operator que lleva IA a producción. Creador de Career-Ops (36.2K+ ⭐). De operar un negocio durante 16 años a herramientas open source usadas por miles.',
   },
   en: {
     title:
-      'santifer | Builder of Career-Ops · AI Agents · Open Source',
+      'santifer | Applied AI Operator · Builder of Career-Ops',
     description:
-      'Creator of Career-Ops (36.2K+ GitHub stars). Building AI systems that run in production. Head of Applied AI. From automating a 16-year business to open source tools used by thousands.',
+      'Applied AI Operator shipping AI at scale. Creator of Career-Ops (36.2K+ ⭐). From 16 years operating a business to open source tools used by thousands.',
   },
 };
 

@@ -202,7 +202,7 @@ export const translations = {
           desc: 'CV interactivo con SDLC aumentado con IA. Construido con **Claudeable**, monitorizado con **Claude Pulse**, animaciones debuggeadas con **Claude Eye**. Prerender SSR, i18n bilingüe y SEO automatizado.',
           tech: ['React 19', 'TypeScript', 'Tailwind', 'Vite', 'Motion', 'Vercel'],
           link: 'github.com/santifer/cv-santiago',
-          stars: '506',
+          stars: '511',
           forks: '190',
         },
         {
@@ -546,7 +546,7 @@ export const translations = {
     redditPosts: [
       {
         hook: 'Construí un sistema de búsqueda de empleo con Claude Code que puntuó 740+ ofertas y me consiguió trabajo. Acabo de hacerlo open source.',
-        upvotes: '2786',
+        upvotes: '2790',
         comments: '246',
         subreddit: 'r/ClaudeAI',
         cta: 'Leer en Reddit',
@@ -554,7 +554,7 @@ export const translations = {
       },
       {
         hook: 'Automaticé mi búsqueda de empleo con agentes IA — 516 evaluaciones, 66 aplicaciones, zero screening manual.',
-        upvotes: '573',
+        upvotes: '570',
         comments: '359',
         subreddit: 'r/SideProject',
         cta: 'Leer en Reddit',
@@ -562,8 +562,8 @@ export const translations = {
       },
       {
         hook: 'Construí un agente IA con WhatsApp + voz en n8n que gestiona el 90% de la atención al cliente. Vendí el negocio y el comprador lo mantuvo sin mí.',
-        upvotes: '318',
-        comments: '56',
+        upvotes: '319',
+        comments: '57',
         subreddit: 'r/n8n',
         cta: 'Leer en Reddit',
         url: 'https://www.reddit.com/r/n8n/comments/1sc3i30/i_built_a_whatsapp_voice_ai_agent_in_n8n_that/',
@@ -1022,7 +1022,7 @@ export const translations = {
           desc: 'Interactive CV with AI-augmented SDLC. Built with **Claudeable**, monitored with **Claude Pulse**, animations debugged with **Claude Eye**. SSR prerender, bilingual i18n, and automated SEO.',
           tech: ['React 19', 'TypeScript', 'Tailwind', 'Vite', 'Motion', 'Vercel'],
           link: 'github.com/santifer/cv-santiago',
-          stars: '506',
+          stars: '511',
           forks: '190',
         },
         {
@@ -1253,6 +1253,35 @@ export const translations = {
         period: '2017 - 2019 · FinTech',
         desc: 'Secure banking infrastructure on AWS. 50K+ monthly transactions, PCI DSS Level 1 compliance.\nBuilt and maintained high-security payment processing systems.',
       },
+      timeline: {
+        title: 'Earlier Experience',
+        items: [
+          {
+            period: '2011 - 2016',
+            role: 'Senior DevOps Engineer',
+            company: 'InetPartners Group (France)',
+            desc: 'Geo-distributed payment infrastructure Asia/Europe/USA. DR: 6 hours → 15 minutes',
+          },
+          {
+            period: '2006 - 2009',
+            role: 'Head of Compute Department',
+            company: 'IntWay World Corporation (USA)',
+            desc: 'Bare Metal Cloud for 60K+ websites. Costs: $67K → $12K/year',
+          },
+          {
+            period: '2004 - 2006',
+            role: 'Senior Linux System Administrator',
+            company: 'Envisionext Inc (USA)',
+            desc: '34 Linux/FreeBSD servers, DDoS protection, cryptographic file integrity',
+          },
+          {
+            period: '2002 - 2004',
+            role: 'Middle System Administrator',
+            company: 'Lawyer Agency Meta-Info (Ukraine)',
+            desc: 'Automated Liga:Zakon software distribution. Brainbench Bash: 4.8/5.0',
+          },
+        ],
+      },
     },
     linkedinPosts: {
       title: 'Writing',
@@ -1307,7 +1336,7 @@ export const translations = {
     redditPosts: [
       {
         hook: 'I built an AI job search system with Claude Code that scored 740+ offers and landed me a job. Just open sourced it.',
-        upvotes: '2786',
+        upvotes: '2790',
         comments: '246',
         subreddit: 'r/ClaudeAI',
         cta: 'Read on Reddit',
@@ -1315,7 +1344,7 @@ export const translations = {
       },
       {
         hook: 'I automated my job search with AI agents — 516 evaluations, 66 applications, zero manual screening.',
-        upvotes: '573',
+        upvotes: '570',
         comments: '359',
         subreddit: 'r/SideProject',
         cta: 'Read on Reddit',
@@ -1323,8 +1352,8 @@ export const translations = {
       },
       {
         hook: 'I built a WhatsApp + voice AI agent in n8n that handles 90% of customer service. Sold the business, the buyer kept it running without me.',
-        upvotes: '318',
-        comments: '56',
+        upvotes: '319',
+        comments: '57',
         subreddit: 'r/n8n',
         cta: 'Read on Reddit',
         url: 'https://www.reddit.com/r/n8n/comments/1sc3i30/i_built_a_whatsapp_voice_ai_agent_in_n8n_that/',

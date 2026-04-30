@@ -1931,6 +1931,29 @@ function App() {
               <p className="text-muted-foreground">{t.experience.fortex.desc}</p>
             </div>
           </AnimatedSection>
+
+          {/* Earlier Experience Timeline */}
+          {t.experience.timeline && (
+            <AnimatedSection delay={0.7} className="mt-16">
+              <h3 className="font-display text-xl font-semibold mb-6 text-muted-foreground">{t.experience.timeline.title}</h3>
+              <div className="space-y-6">
+                {t.experience.timeline.items.map((item, idx) => (
+                  <div key={idx} className="relative pl-8 border-l-2 border-border/50">
+                    <div className="absolute -left-[5px] top-1 w-2 h-2 rounded-full bg-primary/50" />
+                    <div className="pb-2">
+                      <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 mb-1">
+                        <span className="text-sm font-medium text-primary">{item.period}</span>
+                        <span className="text-sm text-muted-foreground">·</span>
+                        <span className="text-sm font-medium text-foreground">{item.role}</span>
+                      </div>
+                      <p className="text-sm text-muted-foreground mb-1">{item.company}</p>
+                      <p className="text-sm text-muted-foreground/80">{item.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </AnimatedSection>
+          )}
         </div>
       </section>
 

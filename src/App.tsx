@@ -1582,12 +1582,17 @@ function App() {
             </div>
           </AnimatedSection>
 
-          {/* Zinkee */}
+          {/* E-lli */}
           <AnimatedSection delay={0.1}>
             <div className="mb-12">
               <div className="flex flex-wrap items-center gap-x-4 gap-y-1 mb-2">
                 <div className="flex items-center gap-3">
-                  <img src="/logo-elli.webp" alt="E-lli.com" className="w-10 h-10 shrink-0" width={40} height={40} loading="lazy" decoding="async" />
+                  <div className="w-10 h-10 rounded-xl overflow-hidden bg-white shrink-0">
+                    <picture>
+                      <source srcSet="/logo-elli.webp" type="image/webp" />
+                      <img src="/logo-elli.png" alt={t.experience.elli.company} className="w-full h-full object-cover" width={40} height={40} loading="lazy" decoding="async" />
+                    </picture>
+                  </div>
                   <h3 className="font-display text-2xl font-bold">{t.experience.elli.company}</h3>
                 </div>
                 <span className="text-sm text-muted-foreground">{t.experience.elli.location}</span>
@@ -1606,7 +1611,7 @@ function App() {
                   <div className="w-10 h-10 rounded-xl overflow-hidden bg-[#888] shrink-0">
                     <picture>
                       <source srcSet="/logo-bablo.webp" type="image/webp" />
-                      <img src="/logo-bablo.jpg" alt={t.experience.bablo.company} className="w-full h-full object-cover" width={40} height={40} loading="lazy" decoding="async" />
+                      <img src="/logo-bablo.png" alt={t.experience.bablo.company} className="w-full h-full object-cover" width={40} height={40} loading="lazy" decoding="async" />
                     </picture>
                   </div>
                   <h3 className="font-display text-2xl font-bold">{t.experience.bablo.company}</h3>
@@ -1805,7 +1810,7 @@ function App() {
               </Link>
             </AnimatedSection>
 
-            {/* GPTs card */}
+            {/* GPTs card - PerfectSquad */}
             <AnimatedSection delay={0.35}>
               <Link to={t.experience.bablo.gpts.caseStudyUrl} className="block h-full p-5 rounded-2xl bg-card border border-border hover:border-primary/30 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-primary/5 transition-all duration-200 flex flex-col group/card">
                 <Bot className="w-5 h-5 text-accent mb-3" />
@@ -1890,10 +1895,10 @@ function App() {
             <div className="mb-6">
               <div className="flex flex-wrap items-center gap-x-4 gap-y-1 mb-2">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-xl overflow-hidden bg-[#F5F3EE] flex items-center justify-center shrink-0">
+                  <div className="w-16 h-16 flex items-center justify-center shrink-0">
                     <picture>
                       <source srcSet="/logo-avid.webp" type="image/webp" />
-                      <img src="/logo-avid.jpg" alt={t.experience.avid.company} className="w-full h-full object-contain p-1" width={40} height={40} loading="lazy" decoding="async" />
+                      <img src="/logo-avid.jpg" alt={t.experience.avid.company} className="max-w-full max-h-full object-contain" loading="lazy" decoding="async" />
                     </picture>
                   </div>
                   <h3 className="font-display text-2xl font-bold">{t.experience.avid.company}</h3>
@@ -1911,10 +1916,10 @@ function App() {
             <div className="mb-6">
               <div className="flex flex-wrap items-center gap-x-4 gap-y-1 mb-2">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-xl overflow-hidden bg-white flex items-center justify-center shrink-0 p-1.5">
+                  <div className="w-16 h-16 flex items-center justify-center shrink-0">
                     <picture>
                       <source srcSet="/logo-fortex.webp" type="image/webp" />
-                      <img src="/logo-fortex.jpg" alt={t.experience.fortex.company} className="w-full h-full object-contain" width={40} height={40} loading="lazy" decoding="async" />
+                      <img src="/logo-fortex.jpg" alt={t.experience.fortex.company} className="max-w-full max-h-full object-contain" loading="lazy" decoding="async" />
                     </picture>
                   </div>
                   <h3 className="font-display text-2xl font-bold">{t.experience.fortex.company}</h3>

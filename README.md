@@ -1,16 +1,16 @@
-# santifer.io
+# esupport.org.ua
 
 **[:gb: English](#the-problem)** | **[:es: Español](#es-versión-en-español)**
 
 > Interactive portfolio with AI chatbot (text + voice), agentic RAG, 71 automated evals, LLMOps dashboard, and 6-layer prompt injection defense
 
-[![Live Demo](https://img.shields.io/badge/demo-santifer.io-blue?style=flat-square)](https://santifer.io)
+[![Live Demo](https://img.shields.io/badge/demo-esupport.org.ua-blue?style=flat-square)](https://esupport.org.ua)
 [![Built with Claude Code](https://img.shields.io/badge/built%20with-Claude%20Code-blueviolet?style=flat-square)](https://claude.ai/code)
 
 ---
 
 <p align="center">
-  <img src="docs/hero.gif" alt="santifer.io in motion" width="100%" />
+  <img src="docs/hero.gif" alt="esupport.org.ua in motion" width="100%" />
 </p>
 
 ---
@@ -30,8 +30,7 @@ A production-grade interactive portfolio that **demonstrates the skills it descr
 - **LLMOps Dashboard** — Private `/ops` with 8 tabs: Overview, Conversations, Costs, RAG, Security, Evals, Voice, System. Real data from Langfuse + Supabase
 - **Closed Loop** — Trace → online scoring → quality < 0.7 → auto-generate test → CI gate blocks deploy
 - **Voice Mode** — OpenAI Realtime API, audio-to-audio, shared RAG pipeline, ~$0.25/session
-- **6 Published Case Studies** — Bilingual (ES/EN) with JSON-LD, prerendered HTML, cross-linked RAG, and interactive architecture diagrams
-- **Interactive Architecture Diagram** — GSAP-animated SVG with narrated audio, pan/zoom, dark mode sync. [Explore it →](https://santifer.io/self-healing-chatbot#architecture)
+- **7 Published Case Studies** — Multilingual (ES/EN/UK) with JSON-LD, prerendered HTML, cross-linked RAG
 - **GEO-ready** — `llms.txt`, structured data (JSON-LD), AI crawler-friendly robots.txt
 
 ---
@@ -51,10 +50,7 @@ A production-grade interactive portfolio that **demonstrates the skills it descr
 
 ---
 
-## Chatbot Architecture
-
-[![Interactive Architecture Diagram](public/chatbot/diagram-thumbnail.webp)](https://santifer.io/self-healing-chatbot#architecture)
-> **[Explore the interactive diagram →](https://santifer.io/self-healing-chatbot#architecture)** 10 phases · narrated audio · zoom + pan
+## Architecture
 
 ```
 User message → FloatingChat.tsx → api/chat.js (Vercel Edge)
@@ -273,13 +269,13 @@ chatbot-prompt.txt           # System prompt (fallback, prod uses Langfuse)
 
 | Article | Slugs | Type |
 |---------|-------|------|
-| Self-Healing Chatbot | `/chatbot-que-se-cura-solo` `/self-healing-chatbot` | case-study |
-| Career-Ops | `/career-ops` `/career-ops-system` | case-study |
-| Jacobo AI Agent | `/agente-ia-jacobo` `/ai-agent-jacobo` | case-study |
-| Business OS | `/business-os-para-airtable` `/business-os-for-airtable` | case-study |
-| Programmatic SEO | `/seo-programatico` `/programmatic-seo` | case-study |
-| n8n for PMs | `/n8n-para-pms` `/n8n-for-pms` | collab |
-| Santifer iRepair | `/santifer-irepair` `/santifer-irepair-founder` | bridge |
+| AI Tool Insights | `/ai-tools-katalog-doslidzhennia` `/ai-tools-catalog-research` | case-study (Ukrainian/English) |
+| PerfectSquad Gaming Traffic | `/perfectsquad-gaming-traffic` `/perfectsquad-gaming-traffic-en` | case-study (Ukrainian/English) |
+| SmartCourses EdTech | `/smartcourses-edtech-platforma` `/smartcourses-edtech-platform` | case-study (Ukrainian/English) |
+| PII Removal RoBERTa | `/pii-removal-roberta-ukrainska` `/pii-removal-roberta-ukrainian` | case-study (Ukrainian/English) |
+| offzmi GTM Research | `/offzmi-gtm-doslidzhennia` `/offzmi-gtm-case-study` | case-study (Ukrainian/English) |
+| GALA B2B Lead Generation | `/gala-b2b-lidogeneratsiya` `/gala-b2b-lead-generation` | case-study (Ukrainian/English) |
+| Advogram GTM | `/advogram-gtm-case-study` `/advogram-gtm-case-study-en` | case-study (Ukrainian/English) |
 
 ---
 
@@ -304,12 +300,12 @@ MIT
 
 > Portfolio interactivo con chatbot IA (texto + voz), RAG agéntico, 71 evals automatizados, dashboard LLMOps y defensa anti-inyección en 6 capas
 
-[![Demo en vivo](https://img.shields.io/badge/demo-santifer.io-blue?style=flat-square)](https://santifer.io)
+[![Demo en vivo](https://img.shields.io/badge/demo-esupport.org.ua-blue?style=flat-square)](https://esupport.org.ua)
 
 ---
 
 <p align="center">
-  <img src="docs/hero.gif" alt="santifer.io en movimiento" width="100%" />
+  <img src="docs/hero.gif" alt="esupport.org.ua en movimiento" width="100%" />
 </p>
 
 ---
@@ -329,8 +325,8 @@ Un portfolio interactivo de nivel producción que **demuestra las habilidades qu
 - **Dashboard LLMOps** — `/ops` privado con 8 pestañas: Overview, Conversations, Costs, RAG, Security, Evals, Voice, System. Datos reales de Langfuse + Supabase
 - **Closed Loop** — Traza → scoring online → quality < 0.7 → auto-genera test → CI gate bloquea deploy
 - **Modo voz** — OpenAI Realtime API, audio-to-audio, mismo pipeline RAG, ~$0.25/sesión
-- **6 Case Studies publicados** — Bilingües (ES/EN) con JSON-LD, HTML prerenderizado, RAG cross-linked y diagramas de arquitectura interactivos
-- **Diagrama de Arquitectura Interactivo** — SVG animado con GSAP, audio narrado, pan/zoom, sync dark mode. [Explorar →](https://santifer.io/chatbot-que-se-cura-solo#architecture)
+- **7 Case Studies publicados** — Bilingües (ES/EN) con JSON-LD, HTML prerenderizado, RAG cross-linked y diagramas de arquitectura interactivos
+- **Diagrama de Arquitectura Interactivo** — SVG animado con GSAP, audio narrado, pan/zoom, sync dark mode. [Explorar →](https://esupport.org.ua/chatbot-que-se-cura-solo#architecture)
 - **GEO-ready** — `llms.txt`, datos estructurados (JSON-LD), robots.txt amigable con crawlers IA
 
 ---
@@ -352,8 +348,8 @@ Un portfolio interactivo de nivel producción que **demuestra las habilidades qu
 
 ## Arquitectura del Chatbot
 
-[![Diagrama Interactivo de Arquitectura](public/chatbot/diagram-thumbnail.webp)](https://santifer.io/chatbot-que-se-cura-solo#architecture)
-> **[Explorar el diagrama interactivo →](https://santifer.io/chatbot-que-se-cura-solo#architecture)** 10 fases · audio narrado · zoom + pan
+[![Diagrama Interactivo de Arquitectura](public/chatbot/diagram-thumbnail.webp)](https://esupport.org.ua/chatbot-que-se-cura-solo#architecture)
+> **[Explorar el diagrama interactivo →](https://esupport.org.ua/chatbot-que-se-cura-solo#architecture)** 10 fases · audio narrado · zoom + pan
 
 ```
 Mensaje → FloatingChat.tsx → api/chat.js (Vercel Edge)
@@ -544,13 +540,13 @@ chatbot-prompt.txt           # System prompt (fallback, producción usa Langfuse
 
 | Artículo | Slugs | Tipo |
 |----------|-------|------|
-| Chatbot que se cura solo | `/chatbot-que-se-cura-solo` `/self-healing-chatbot` | case-study |
-| Career-Ops | `/career-ops` `/career-ops-system` | case-study |
-| Agente IA Jacobo | `/agente-ia-jacobo` `/ai-agent-jacobo` | case-study |
-| Business OS | `/business-os-para-airtable` `/business-os-for-airtable` | case-study |
-| SEO Programático | `/seo-programatico` `/programmatic-seo` | case-study |
-| n8n para PMs | `/n8n-para-pms` `/n8n-for-pms` | collab |
-| Santifer iRepair | `/santifer-irepair` `/santifer-irepair-founder` | bridge |
+| AI Tool Insights | `/ai-tools-katalog-doslidzhennia` `/ai-tools-catalog-research` | case-study (ucraniano/inglés) |
+| PerfectSquad Gaming Traffic | `/perfectsquad-gaming-traffic` `/perfectsquad-gaming-traffic-en` | case-study (ucraniano/inglés) |
+| SmartCourses EdTech | `/smartcourses-edtech-platforma` `/smartcourses-edtech-platform` | case-study (ucraniano/inglés) |
+| PII Removal RoBERTa | `/pii-removal-roberta-ukrainska` `/pii-removal-roberta-ukrainian` | case-study (ucraniano/inglés) |
+| Investigación GTM offzmi | `/offzmi-gtm-doslidzhennia` `/offzmi-gtm-case-study` | case-study (ucraniano/inglés) |
+| GALA Лідогенерація B2B | `/gala-b2b-lidogeneratsiya` `/gala-b2b-lead-generation` | case-study (ucraniano/inglés) |
+| Advogram GTM | `/advogram-gtm-case-study` `/advogram-gtm-case-study-en` | case-study (ucraniano/inglés) |
 
 ---
 
@@ -571,6 +567,6 @@ MIT
 
 ## Let's Connect
 
-[![Website](https://img.shields.io/badge/santifer.io-000?style=for-the-badge&logo=safari&logoColor=white)](https://santifer.io)
+[![Website](https://img.shields.io/badge/esupport.org.ua-000?style=for-the-badge&logo=safari&logoColor=white)](https://esupport.org.ua)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/santifer)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hola@santifer.io)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:esupport@esupport.org.ua)

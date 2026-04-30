@@ -232,7 +232,7 @@ export const ARTICLE_KEYWORDS = {
   'jacobo':               ['jacobo', 'agente ia', 'ai agent', 'whatsapp', 'multi-agent', 'multiagent'],
   'business-os':          ['business os', 'erp', 'airtable bases', 'crm', 'inventory'],
   'programmatic-seo':     ['seo programático', 'programmatic seo', 'web programática', 'programmatic web', 'decision engine', 'indexable', 'dataforseo', 'seo pipeline', 'seo automatizado', 'automated seo'],
-  'self-healing-chatbot': ['chatbot', 'this chat', 'este chat', 'evals', 'self-healing', 'closed-loop', 'langfuse', 'rag'],
+  'offzmi':               ['offzmi', 'офзмі', 'gtm', 'go-to-market', 'market research', 'дослідження ринку', 'customer discovery', 'виявлення клієнтів', 'mvp', 'product-market fit'],
   'santifer-irepair':     ['santifer irepair', 'irepair', 'repair business', 'taller de reparación'],
 }
 
@@ -251,9 +251,9 @@ export function filterSourcesByResponse(sources, responseText) {
 export const ARTICLE_ROUTES = {
   'n8n-for-pms':          { page_path_es: '/n8n-para-pms', page_path_en: '/n8n-for-pms' },
   'jacobo':               { page_path_es: '/agente-ia-jacobo', page_path_en: '/ai-agent-jacobo' },
-  'business-os':          { page_path_es: '/business-os-para-airtable', page_path_en: '/business-os-for-airtable' },
+  'advogram':             { page_path_es: '/advogram-gtm-case-study', page_path_en: '/advogram-gtm-case-study-en' },
   'programmatic-seo':     { page_path_es: '/seo-programatico', page_path_en: '/programmatic-seo' },
-  'self-healing-chatbot': { page_path_es: '/chatbot-que-se-cura-solo', page_path_en: '/self-healing-chatbot' },
+  'offzmi':               { page_path_es: '/offzmi-gtm-doslidzhennia', page_path_en: '/offzmi-gtm-case-study' },
   'santifer-irepair':     { page_path_es: '/santifer-irepair', page_path_en: '/santifer-irepair-founder' },
 }
 
@@ -435,7 +435,7 @@ export async function sendJailbreakAlert(userMessage) {
     body: JSON.stringify({
       from: 'Santi Bot <onboarding@resend.dev>',
       to: process.env.ALERT_EMAIL,
-      subject: '🚨 JAILBREAK ATTEMPT - santifer.io',
+      subject: '🚨 JAILBREAK ATTEMPT - esupport.org.ua',
       html: `
         <h2>🚨 Jailbreak Attempt Detected</h2>
         <p><strong>Time:</strong> ${new Date().toISOString()}</p>

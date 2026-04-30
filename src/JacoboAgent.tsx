@@ -115,7 +115,7 @@ export default function JacoboAgent({ lang = 'en' }: { lang?: Lang }) {
     altSlug: t.altSlug,
     title: t.seo.title,
     description: t.seo.description,
-    image: 'https://santifer.io/jacobo/og-jacobo-agent.webp',
+    image: 'https://esupport.org.ua/jacobo/og-jacobo-agent.webp',
     publishedTime: '2026-02-25',
     modifiedTime: '2026-03-07',
     articleTags: 'AI agent,multi-agent,n8n,ElevenLabs,HITL,tool calling,WhatsApp,voice AI',
@@ -135,7 +135,7 @@ export default function JacoboAgent({ lang = 'en' }: { lang?: Lang }) {
 
       <MetricsGrid editorId="hero-metrics" items={t.heroMetrics} columns={5} compact />
 
-      <GitHubRepoBadge repo="santifer/jacobo-workflows" stars="120" forks="38" lang={lang} />
+      <GitHubRepoBadge repo="santifer/jacobo-workflows" stars="133" forks="39" lang={lang} />
 
       {/* TL;DR */}
       <Callout editorId="tldr-callout" className="-mx-2 sm:mx-0">{t.tldr}</Callout>
@@ -184,12 +184,12 @@ export default function JacoboAgent({ lang = 'en' }: { lang?: Lang }) {
 
         <CaseStudyCta
           editorId="problem-business-os-cta"
-          heading={lang === 'es' ? 'Este POS fue el primer problema que resolví' : 'This POS was the first problem I solved'}
+          heading={lang === 'es' ? 'Validación de mercado antes de construir' : 'Market validation before building'}
           body={lang === 'es'
-            ? 'Antes de construir Jacobo, reemplacé este sistema legacy por un ERP custom sobre Airtable. Esa base de datos es la que Jacobo consulta hoy.'
-            : 'Before building Jacobo, I replaced this legacy system with a custom ERP on Airtable. That database is what Jacobo queries today.'}
-          ctaLabel={t.internalLinks.businessOs.text}
-          ctaHref={lang === 'es' ? '/business-os-para-airtable' : '/business-os-for-airtable'}
+            ? 'Antes de construir un sistema complejo como Jacobo, hay que validar el mercado. Así es como validé una idea de producto con datos reales en 6 semanas.'
+            : 'Before building a complex system like Jacobo, you need to validate the market. Here\'s how I validated a product idea with real data in 6 weeks.'}
+          ctaLabel={lang === 'es' ? 'Ver Advogram GTM →' : 'Read Advogram GTM →'}
+          ctaHref={lang === 'es' ? '/advogram-gtm-case-study' : '/advogram-gtm-case-study-en'}
         />
 
         {/* ================================================================ */}
@@ -688,7 +688,7 @@ export default function JacoboAgent({ lang = 'en' }: { lang?: Lang }) {
           ctaHref="https://linkedin.com/in/santifer"
           external
           secondaryLabel={`${(t.cta as any).labelSecondary} →`}
-          secondaryHref="mailto:hola@santifer.io"
+          secondaryHref="mailto:esupport@esupport.org.ua"
         />
 
         {/* ================================================================ */}
@@ -712,13 +712,15 @@ export default function JacoboAgent({ lang = 'en' }: { lang?: Lang }) {
 
         <StoryBridge editorId="evolution-bridge" lines={t.sections.platformEvolution.bridge as readonly string[]} />
 
-        {/* Cross-link to Business OS */}
+        {/* Cross-link to Advogram */}
         <CaseStudyCta
           editorId="evolution-business-os-cta"
-          heading={lang === 'es' ? 'Business OS — El sistema detrás de Jacobo' : 'Business OS — The System Behind Jacobo'}
-          body={t.sections.platformEvolution.crossLink.text}
+          heading={lang === 'es' ? 'Advogram GTM — Validación de mercado con datos reales' : 'Advogram GTM — Market Validation with Real Data'}
+          body={lang === 'es'
+            ? 'Cómo validé el mercado de herramientas ATS con Google Ads, encontré geografías rentables y construí la economía unitaria en 6 semanas y $3,430.'
+            : 'How I validated the ATS tools market with Google Ads, found profitable geographies, and built unit economics in 6 weeks and $3,430.'}
           ctaLabel={lang === 'es' ? 'Leer case study →' : 'Read case study →'}
-          ctaHref={t.sections.platformEvolution.crossLink.href}
+          ctaHref={lang === 'es' ? '/advogram-gtm-case-study' : '/advogram-gtm-case-study-en'}
         />
 
         {/* Early Jacobo screenshots */}
@@ -780,7 +782,7 @@ export default function JacoboAgent({ lang = 'en' }: { lang?: Lang }) {
           ctaHref="https://linkedin.com/in/santifer"
           external
           secondaryLabel={`${(t.cta as any).labelSecondary} →`}
-          secondaryHref="mailto:hola@santifer.io"
+          secondaryHref="mailto:esupport@esupport.org.ua"
         />
 
         {/* ================================================================ */}
@@ -832,7 +834,7 @@ export default function JacoboAgent({ lang = 'en' }: { lang?: Lang }) {
           ctaHref="https://linkedin.com/in/santifer"
           external
           secondaryLabel={`${(t.cta as any).labelSecondary} →`}
-          secondaryHref="mailto:hola@santifer.io"
+          secondaryHref="mailto:esupport@esupport.org.ua"
         />
 
         {/* ================================================================ */}

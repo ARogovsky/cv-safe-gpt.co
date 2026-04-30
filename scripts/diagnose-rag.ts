@@ -25,7 +25,7 @@ const ARTICLE_KEYWORDS: Record<string, string[]> = {
   'jacobo': ['jacobo', 'agente', 'agent', 'omnicanal', 'whatsapp', 'sub-agent', 'tool calling', 'hitl', 'n8n', 'airtable', 'presupuest'],
   'business-os': ['erp', 'business os', 'airtable', 'operaciones', 'operations', 'crm', 'inventario', 'inventory', 'n8n'],
   'programmatic-seo': ['seo', 'programat', 'paginas', 'pages', 'dataforseo', 'indexa', 'impresiones', 'impressions'],
-  'self-healing-chatbot': ['chatbot', 'rag', 'langfuse', 'evals', 'jailbreak', 'prompt', 'defensa', 'defense', 'scoring'],
+  'offzmi': ['offzmi', 'офзмі', 'gtm', 'go-to-market', 'market research', 'дослідження', 'customer discovery', 'виявлення', 'mvp', 'product-market fit'],
 }
 
 // Reverse map: keyword → articles

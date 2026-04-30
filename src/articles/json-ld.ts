@@ -1,6 +1,6 @@
 import { articleRegistry } from './registry'
 
-type Lang = 'es' | 'en'
+type Lang = 'es' | 'en' | 'uk'
 
 interface JsonLdOptions {
   lang: Lang
@@ -43,9 +43,9 @@ interface JsonLdOptions {
 
 const PERSON = {
   '@type': 'Person',
-  '@id': 'https://santifer.io/#person',
+  '@id': 'https://esupport.org.ua/#person',
   name: 'Santiago Fernández de Valderrama Aparicio',
-  url: 'https://santifer.io',
+  url: 'https://esupport.org.ua',
   jobTitle: 'Head of Applied AI',
   sameAs: [
     'https://www.linkedin.com/in/santifer',
@@ -53,7 +53,7 @@ const PERSON = {
     'https://x.com/santifer',
     'https://dev.to/santifer',
     'https://santifer.substack.com',
-    'https://contentdigest.santifer.io',
+    'https://contentdigest.esupport.org.ua',
     'https://www.youtube.com/@santifer_io',
     'https://stackoverflow.com/users/32541743',
     'https://orcid.org/0009-0006-2192-7210',
@@ -61,7 +61,7 @@ const PERSON = {
     'https://huggingface.co/santifer',
     'https://www.wikidata.org/wiki/Q138710224',
     'https://santiferirepair.es',
-    'https://www.facebook.com/santifer.io/',
+    'https://www.facebook.com/esupport.org.ua/',
     'https://www.producthunt.com/@santifer',
     'https://app.daily.dev/santifer',
   ],
@@ -69,9 +69,9 @@ const PERSON = {
 
 const WEBSITE = {
   '@type': 'WebSite',
-  '@id': 'https://santifer.io/#website',
-  name: 'santifer.io',
-  url: 'https://santifer.io',
+  '@id': 'https://esupport.org.ua/#website',
+  name: 'esupport.org.ua',
+  url: 'https://esupport.org.ua',
 }
 
 export function buildArticleJsonLd(opts: JsonLdOptions) {
@@ -84,7 +84,7 @@ export function buildArticleJsonLd(opts: JsonLdOptions) {
       headline: opts.headline,
       alternativeHeadline: opts.alternativeHeadline,
       description: opts.description,
-      author: { '@id': 'https://santifer.io/#person' },
+      author: { '@id': 'https://esupport.org.ua/#person' },
       ...(opts.publisher ? {
         publisher: {
           '@type': 'Organization',
@@ -99,7 +99,7 @@ export function buildArticleJsonLd(opts: JsonLdOptions) {
       mainEntityOfPage: opts.url,
       image: opts.images,
       inLanguage,
-      isPartOf: { '@id': 'https://santifer.io/#website' },
+      isPartOf: { '@id': 'https://esupport.org.ua/#website' },
       ...(opts.about ? { about: opts.about } : {}),
       ...(opts.extra || {}),
       ...(opts.citation ? { citation: opts.citation } : {}),
@@ -116,7 +116,7 @@ export function buildArticleJsonLd(opts: JsonLdOptions) {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: opts.breadcrumbHome, item: 'https://santifer.io' },
+        { '@type': 'ListItem', position: 1, name: opts.breadcrumbHome, item: 'https://esupport.org.ua' },
         { '@type': 'ListItem', position: 2, name: opts.breadcrumbCurrent, item: opts.url },
       ],
     },
@@ -165,8 +165,8 @@ export function buildJsonLdFromRegistry(
   const meta = config.seoMeta
   return buildArticleJsonLd({
     lang,
-    url: `https://santifer.io/${i18n.slug}`,
-    altUrl: `https://santifer.io/${i18n.altSlug}`,
+    url: `https://esupport.org.ua/${i18n.slug}`,
+    altUrl: `https://esupport.org.ua/${i18n.altSlug}`,
     headline: i18n.header.h1,
     alternativeHeadline: i18n.seo.title,
     description: i18n.seo.description,

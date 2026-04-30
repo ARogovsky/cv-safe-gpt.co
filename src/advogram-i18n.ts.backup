@@ -1,0 +1,372 @@
+export const advogramContent = {
+  en: {
+    slug: 'advogram-gtm-case-study',
+    readingTime: '8 min read',
+    seo: {
+      title: 'How I Validated the ATS Tools Niche and Found a $0.32 CPA Market in 6 Weeks | Advogram',
+      description: 'GTM case study: how I validated the HR tools market, identified paying geographies, and built the unit economics model for a freemium SaaS — in 6 weeks and $3,430.',
+    },
+    nav: {
+      breadcrumbHome: 'Home',
+      breadcrumbCurrent: 'GTM Case Study',
+    },
+    header: {
+      kicker: 'Case Study — Advogram',
+      h1: 'Finding a Paying Market for HR Tools in 6 Weeks',
+      subtitle: 'How I ran a $3,430 GTM experiment that validated the ATS niche, screened 10 geos for purchasing power, and built the unit economics for the next stage — a paid A/B test on Western markets.',
+      badge: 'Live experiment · Apr 2026',
+      date: 'Apr 27, 2026',
+    },
+    heroMetrics: [
+      { value: '6 weeks', label: 'Experiment duration' },
+      { value: '$3,430', label: 'Total ad spend' },
+      { value: '337', label: 'Sign-ups' },
+      { value: '$0.32', label: 'CPA in France' },
+      { value: '15–19%', label: 'CTR on ATS keywords' },
+    ],
+    tldr: 'I used $3,430 in Google Ads as a fast market signal — not to acquire paying users, but to answer three questions: Is there real demand for ATS resume tools? Who is actually searching? And which geos will pay? Six weeks later: demand confirmed, 9 out of 10 geos screened out, and a clear path to $0.32–3 CPA on Western traffic.',
+    intro: {
+      hook: '337 sign-ups. 10 geos. 1 paying market. All for $3,430 and 6 weeks.',
+      body: 'Advogram is an open-source browser extension for IT, Design, and Marketing job seekers. It filters fake postings, checks resume ATS compatibility, and tracks application status. The product was built. The question was: who actually needs it, where are they, and will they pay? Instead of surveys, I ran a paid traffic experiment across an unrestricted global geo — letting real search behavior answer the question.',
+    },
+    internalLinks: {
+      github: { text: 'Advogram on GitHub', href: 'https://github.com/advogram' },
+      website: { text: 'advogram.com', href: 'https://advogram.com' },
+    },
+    sections: {
+      dayInLife: {
+        heading: 'What the Experiment Was Designed to Answer',
+        body: 'Three research questions drove every decision in the campaign setup:',
+        steps: [
+          { emoji: '1️⃣', text: 'Is there real, measurable search demand for ATS resume tools — or is it a niche only discussed in forums?' },
+          { emoji: '2️⃣', text: 'Which geographies are organically searching for this? No geo restrictions at launch — let the data show where the audience lives.' },
+          { emoji: '3️⃣', text: 'Among those geos, which ones have the GDP and SaaS spending behavior to actually convert to paid users at $9–15/mo?' },
+          { emoji: '4️⃣', text: 'What does a realistic unit economics model look like — CPA, LTV, payback period — if we focus budget on the right markets?' },
+        ],
+        jacoboCta: {
+          heading: 'Why not run user interviews first?',
+          body: 'Surveys tell you what people say they want. Search behavior tells you what they actually look for. At $0.87 avg CPC, paid traffic was the cheapest way to get statistically meaningful signal fast.',
+          label: 'See the full keyword breakdown below',
+        },
+        pseoCta: {
+          heading: 'What happens after the GTM experiment?',
+          body: 'The next phase is a paid A/B test on UK, DE, FR, CA, AU — validating willingness to pay at $9 vs $15/mo on traffic that already converts at low CPA.',
+          label: 'Jump to the scaling model',
+        },
+      },
+      whyCustom: {
+        heading: 'Why Not Just Build and See What Happens?',
+        body: 'Three reasons to run a structured experiment before investing in growth:',
+        reasons: [
+          {
+            tool: 'Niche validation risk',
+            issue: 'ATS checker tools like Jobscan and Resume Worded already exist. The question wasn\'t "does the niche exist?" but "is there unsatisfied demand, and at what CPC?" A 15–19% CTR on ATS keywords — vs the 3–5% B2C SaaS average — answered that clearly.',
+          },
+          {
+            tool: 'Geo selection risk',
+            issue: 'Without data, the assumption would have been to target the US. The experiment revealed that India alone drove 59% of all conversions — a market with $2,400 GDP/capita. Targeting the US blindly would have meant ignoring France at $0.32 CPA.',
+          },
+          {
+            tool: 'Monetization risk',
+            issue: 'Freemium only works if a subset converts to paid. Knowing that 9 of 10 organic geos are low-purchasing-power markets fundamentally changes the monetization strategy: you cannot price globally, you must target selectively.',
+          },
+        ],
+        punchline: 'The experiment cost $3,430. Finding this out post-launch with an acquired user base that won\'t pay would have cost far more.',
+      },
+      overview: {
+        heading: 'Experiment Setup',
+        body: 'One Google Ads campaign. Unrestricted geo targeting. Conversion event: Advogram Screener sign-up. Six weeks of data collection.',
+        stats: [
+          { value: '$3,430', label: 'Total spend' },
+          { value: '25.7K', label: 'Impressions' },
+          { value: '3,930', label: 'Clicks' },
+          { value: '337', label: 'Conversions' },
+        ],
+        bases: [
+          { name: 'Campaign', desc: '"observer" — single campaign, all ad groups enabled, broad geo targeting.' },
+          { name: 'Keywords', desc: 'ATS resume checker cluster: ats scanner, ats resume checker, ats score checker, resume checker, jobscan alternatives.' },
+          { name: 'Conversion event', desc: 'Advogram Screener sign-up — tracked via Screener analytics (Interval: Weekly).' },
+          { name: 'Performance window', desc: 'Mar 16 – Apr 19, 2026. Peak sign-up week: March 16 (~110 sign-ups in week 1).' },
+          { name: 'Avg. CPC', desc: '$0.87 — well below the $2–4 typical range for B2C SaaS in this category.' },
+          { name: 'Optimization score', desc: '99.9% — campaign was structurally sound throughout the experiment.' },
+        ],
+      },
+      e2eFlows: {
+        heading: 'What the Data Showed',
+        body: 'Four findings, each actionable.',
+        items: [
+          {
+            icon: '🎯',
+            name: 'Finding 1 — The ATS Niche Is Real and Undersupplied',
+            trigger: 'CTR on ATS keywords: 15–19%',
+            summary: 'A 15–19% CTR is exceptional for B2C SaaS. B2C search averages 3–5%. This signal means users searching for ATS tools are not finding what they need — and clicking aggressively when they see something relevant.',
+            basesTouched: ['Google Ads', 'Screener Analytics'],
+            details: [
+              'ats scanner: $952 spend · 1,230 clicks · 13.2% CTR',
+              'ats resume checker: $795 spend · 995 clicks · 17.7% CTR',
+              'ats score checker: $400 spend · 476 clicks · 18.5% CTR',
+              'ats score: $238 spend · 268 clicks · 18.8% CTR',
+              'best resume: $398 spend · 236 clicks · 15.7% CTR',
+              'Competitors appear in the search landscape (Jobscan, Resume Worded, Skillsyncer) — but CTR this high indicates Advogram\'s positioning is differentiated enough to outperform them on relevance.',
+              'Conclusion: the market is actively searching, not just browsing. Demand is pull-based, not push-required.',
+            ],
+          },
+          {
+            icon: '🌍',
+            name: 'Finding 2 — 9 of 10 Organic Geos Are Non-Paying Markets',
+            trigger: '10 geos converted. 1 is viable for paid.',
+            summary: 'The experiment ran globally. 10 countries generated conversions. Cross-referencing CPA with GDP/capita and SaaS spending behavior produced a clear split: one viable market, one segmentation opportunity, eight geos to cut.',
+            basesTouched: ['Google Ads', 'GDP data'],
+            details: [
+              'France: 3 conv. · $0.32 CPA · ~$45K GDP/capita → Viable. Highest purchasing power in the set. CPA 10–30x cheaper than all other geos.',
+              'China: 2 conv. · $1.21 CPA · ~$13K GDP/capita → Uncertain. Middle class exists but VPN dependency and payment friction reduce conversion probability.',
+              'India: 199 conv. · $3.08 CPA · ~$2,400 GDP/capita → Segment only. 59% of all conversions, but mass market won\'t pay $9–15/mo. Senior IT profiles in Bangalore/Mumbai are the viable slice.',
+              'Egypt: 8 conv. · $2.89 CPA · ~$3,500 GDP/capita → Cut.',
+              'Pakistan: 6 conv. · $2.58 CPA · ~$1,600 GDP/capita → Cut.',
+              'Bangladesh: 7 conv. · $3.90 CPA · ~$2,700 GDP/capita → Cut.',
+              'Syria: 2 conv. · $3.25 CPA · <$1,000 GDP/capita → Cut.',
+              'Myanmar: 1 conv. · $1.82 CPA · ~$1,200 GDP/capita → Cut.',
+              'Algeria: 1 conv. · $1.27 CPA · ~$4,000 GDP/capita → Cut.',
+              'Indonesia: 1 conv. · $3.42 CPA · ~$4,900 GDP/capita → Cut.',
+              'Key insight: Western traffic was almost absent in the experiment — not because it doesn\'t exist, but because geo targeting was unrestricted and Eastern markets dominate volume. France at $0.32 CPA is a signal, not an outlier.',
+            ],
+          },
+          {
+            icon: '👤',
+            name: 'Finding 3 — Audience Profile',
+            trigger: 'Demographics + device + time-of-day data',
+            summary: 'The data paints a clear picture of who is searching. This profile directly informs the next campaign\'s audience targeting.',
+            basesTouched: ['Google Ads Demographics', 'Day & Hour data'],
+            details: [
+              'Primary audience: men, 18–34 years old',
+              'Primary device: desktop/laptop — 98% of clicks. This is a research-mode query, not mobile-impulse.',
+              'Peak activity: Mon–Fri, 10:00–18:00 — active job seekers during work hours, likely searching while employed and looking to switch',
+              'Top signal geos for bid strategy: India, Egypt, Dhaka Division — useful for exclusion in the next phase',
+              'Implication: the product experience must be desktop-first. A browser extension already fits this profile natively.',
+            ],
+          },
+          {
+            icon: '📉',
+            name: 'Finding 4 — Retention Is the Next Problem to Solve',
+            trigger: '8-week cohort retention: 0%',
+            summary: '337 users signed up. Zero returned after 8 weeks. This is not a product failure signal — it is an activation and habit-formation signal. The acquisition funnel works. The post-signup flow does not.',
+            basesTouched: ['Screener Analytics'],
+            details: [
+              'Weekly cohort retention chart shows a sharp drop to 0% by W1 and holds flat through W8.',
+              'Most likely cause: single-use behavior. Users check their resume ATS score once, get the result, and leave. No trigger brings them back.',
+              'This is structural: the product needs either a repeating use case (new job alert, weekly score update) or an email/push re-engagement sequence.',
+              'Resolution before scaling: fix retention before spending on Western paid traffic. Acquiring $2–3 CPA users who churn at W1 is still a losing unit economics.',
+              'Positive framing: the acquisition mechanism is validated. The retention problem is a product problem — solvable independently of market validation.',
+            ],
+          },
+        ],
+      },
+      crossCutting: {
+        heading: 'Unit Economics Model',
+        body: 'Built from experiment data. Three scenarios for the next phase — paid traffic focused on UK, DE, FR, CA, AU.',
+        items: [
+          {
+            icon: '📊',
+            name: 'CPA Benchmark — France as the Floor',
+            summary: 'France produced $0.32 CPA on 3 conversions — statistically thin but directionally strong. Extrapolating to similar Western geos gives a realistic CPA range for the paid A/B test.',
+            details: [
+              'France CPA (actual): $0.32 · 3 conversions · $0.96 total spend',
+              'Estimated CPA for UK/DE/CA/AU: $2–3 based on typical HR SaaS CPCs in those markets ($1.20–1.80 avg CPC, 15–25% landing-to-signup conversion)',
+              'Note: France\'s 150% conversion rate is a small-sample artifact — likely retargeting or direct navigation. At scale, model with 15–25% conversion from click to signup.',
+            ],
+          },
+          {
+            icon: '💰',
+            name: 'Scaling Scenarios',
+            summary: 'Three scenarios for the next phase, assuming a $5,000/mo budget on Western geos and a 3-month average subscription duration (natural job search cycle).',
+            details: [
+              'Conservative: CPA $2–3 · Subscription $9/mo · LTV $27 → ROI 9x · Payback: month 1',
+              'Base: CPA $2–3 · Subscription $15/mo · LTV $45 → ROI 15x · Payback: month 1',
+              'Optimistic (SEO + Ads): CPA $1–2 · Subscription $19/mo · LTV $57+ → ROI 28x+ · Payback: month 1',
+              'At $5K/mo budget on Western geos: ~1,500–2,500 new sign-ups. At 5–10% paid conversion: 75–250 paying users.',
+              '200 paying users at $15/mo = $3,000 MRR. Breakeven on ad spend.',
+              'Churn is natural and expected: users find a job, cancel. This is a feature of the niche, not a product problem. Model assumes 3-month cohort LTV, not retention-based compounding.',
+            ],
+          },
+          {
+            icon: '🔁',
+            name: 'What Needs to Be True for This to Work',
+            summary: 'Three conditions that must hold for the unit economics to land.',
+            details: [
+              '1. Retention fix ships before paid scaling: without at least W2 retention > 0%, even low CPA users don\'t compound into MRR.',
+              '2. Western CPA lands in the $2–3 range: France at $0.32 is the floor signal; the ceiling assumption is $3. If Western CPA exceeds $5, the base scenario breaks.',
+              '3. Paid conversion rate ≥ 5%: industry benchmark for freemium → paid in productivity tools. If lower, the subscription price needs to increase or the free tier needs to be narrowed.',
+            ],
+          },
+          {
+            icon: '🗺️',
+            name: 'Next Steps',
+            summary: 'The experiment is complete. The roadmap for the next phase.',
+            details: [
+              'Cut all non-viable geos from targeting: IN (mass), EG, PK, BD, SY, MM, DZ, ID',
+              'Launch geo-focused campaigns on UK, DE, FR, CA, AU with $5K/mo budget',
+              'Run pricing A/B test: $9 vs $15 vs $19/mo on Western traffic',
+              'Ship retention mechanism before paid scale: email onboarding sequence, job alert feature, or weekly ATS score digest',
+              'India segmentation: test Senior/Lead IT targeting in Bangalore and Mumbai — the paying slice within a high-volume market',
+              'SEO channel: target "ats resume checker" and "jobscan alternative" keywords organically — CAC = $0 at scale',
+            ],
+          },
+        ],
+      },
+      impact: {
+        heading: 'What $3,430 Bought',
+        body: 'A structured GTM experiment produces answers, not users. Here is what each dollar of the budget returned:',
+        savings: [
+          { module: 'Niche demand validation', before: 'Assumption', after: 'Confirmed (CTR 15–19%)', monthly: 'Priceless' },
+          { module: 'Keyword cluster identification', before: 'Unknown', after: '5 high-intent clusters mapped', monthly: 'Shapes SEO roadmap' },
+          { module: 'Geo screening (10 markets)', before: 'Unknown', after: '9 cut, 1 validated', monthly: 'Saves wasted ad spend' },
+          { module: 'Audience profile', before: 'Hypothesis', after: 'Men 18–34, desktop, M–F office hours', monthly: 'Targeting precision' },
+          { module: 'CPA floor (France)', before: 'Unknown', after: '$0.32 actual, $2–3 modeled for WE', monthly: 'Unit econ foundation' },
+          { module: 'Retention gap identification', before: 'Unknown', after: '0% W8 retention — product problem scoped', monthly: 'Prevents premature scaling' },
+          { module: 'Unit economics model', before: 'None', after: 'Conservative/base/optimistic built', monthly: 'Fundraising / partner-ready' },
+        ],
+        total: '$3,430 · 6 weeks',
+        punchline: 'A B2B market research agency would charge $30,000–50,000 for a competitor analysis and geo assessment of this depth — without the real conversion data. Paid traffic as research is the GTM engineer\'s unfair advantage.',
+      },
+      beforeAfter: {
+        heading: 'Before vs After the Experiment',
+        items: [
+          { area: 'Niche confidence', before: 'Hypothesis: people need ATS tools', after: 'Validated: 15–19% CTR, 3,930 clicks, 337 sign-ups in 6 weeks' },
+          { area: 'Geo targeting', before: 'Unknown — probably US-first assumption', after: 'Data-driven: 9 geos cut, Western markets identified as the paid opportunity' },
+          { area: 'CPA model', before: 'No benchmark', after: 'France at $0.32 CPA · modeled $2–3 for UK/DE/FR/CA' },
+          { area: 'Monetization strategy', before: 'Generic freemium', after: 'Geo-selective: free for emerging markets, paid A/B test for Western' },
+          { area: 'Product priorities', before: 'Feature roadmap based on assumptions', after: 'Retention mechanism is the #1 priority before any paid scaling' },
+        ],
+      },
+      decisions: {
+        heading: 'Decision Log',
+        body: 'Every methodological choice has a rationale.',
+        items: [
+          {
+            title: 'Why paid traffic instead of organic or cold outreach?',
+            detail: 'Speed and signal quality. Organic SEO takes 3–6 months to produce data. Cold outreach gives opinions, not behavior. At $0.87 avg CPC, Google Ads produced 3,930 behavioral data points in 6 weeks — people who searched, read the ad, and clicked. That\'s the strongest pre-purchase signal available.',
+          },
+          {
+            title: 'Why unrestricted geo targeting?',
+            detail: 'Restricting geo at launch would have confirmed the assumption, not tested it. Running globally first revealed that the natural audience is overwhelmingly South Asian and Middle Eastern — a finding that completely changes the monetization approach. You cannot discover what you exclude.',
+          },
+          {
+            title: 'Why one campaign instead of multiple A/B tests?',
+            detail: 'This was a discovery phase, not an optimization phase. One campaign with broad targeting produces a map of where demand lives. Optimization — multiple ad sets, geo bids, price testing — is the next phase, informed by this map.',
+          },
+          {
+            title: 'Why is 0% retention not a failure signal?',
+            detail: 'Retention requires a product that creates a habit. ATS checking is currently a one-shot task: check score, leave. The experiment was never designed to test retention — it was designed to test acquisition. The 0% is a product backlog item, not a market rejection signal.',
+          },
+          {
+            title: 'Why France at $0.32 CPA and not the other way around?',
+            detail: 'France produced an anomalously low CPA because the volume was low (3 conversions) — likely retargeting or branded search. The correct read is not "France will always be $0.32" but "Western markets show CPA potential orders of magnitude lower than the campaign average." The experiment confirms the direction; the scaled test will calibrate the number.',
+          },
+          {
+            title: 'Why fix retention before scaling paid?',
+            detail: 'Leaky bucket math: if W1 retention is 0%, every new user is a one-time cost with zero revenue compounding. At $2–3 CPA and $0 LTV beyond week 1, the unit economics break regardless of how cheap the CPA is. Retention is the gating condition for paid scale.',
+          },
+        ],
+      },
+      lessons: {
+        heading: 'Takeaways',
+        items: [
+          {
+            title: 'Use paid traffic as a research tool, not just an acquisition channel.',
+            detail: 'At <$1 CPC, Google Ads is one of the cheapest ways to run a behavioral market study. The $3,430 budget produced geo distribution, audience demographics, keyword demand curves, and CPA benchmarks — all from real user behavior.',
+          },
+          {
+            title: 'High CTR is a stronger validation signal than high conversion.',
+            detail: 'A 15–19% CTR means the search intent and the ad copy are aligned with an unmet need. Conversion rate can be improved through landing page optimization. A low CTR means the market doesn\'t recognize the product — much harder to fix.',
+          },
+          {
+            title: 'Volume geos and paying geos are almost never the same.',
+            detail: 'India produced 59% of conversions and almost zero paying potential. France produced <1% of conversions and the lowest CPA in the set. Scaling for volume optimizes for the wrong signal if the goal is revenue.',
+          },
+          {
+            title: 'Scope the retention problem before writing the growth roadmap.',
+            detail: 'A product that doesn\'t create a returning habit cannot compound CAC into LTV. Identifying the retention gap before scaling is the difference between a growth engine and a leaky bucket.',
+          },
+        ],
+      },
+      platformEvolution: {
+        heading: 'Experiment Timeline',
+        tagline: 'Six weeks from zero data to a validated GTM hypothesis.',
+        bridge: [
+          'The experiment ran for 6 weeks.',
+          'The data answered all three research questions.',
+          'The next phase is already scoped.',
+          'The only variable left is {execution}.',
+        ],
+        steps: [
+          { year: 'Mar 16', event: 'Campaign launch', detail: 'Single campaign, unrestricted geo, ATS keyword cluster. Screener analytics connected.' },
+          { year: 'Mar 16–23', event: 'Peak sign-up week', detail: '~110 sign-ups in the first 7 days. Demand signal confirmed immediately.' },
+          { year: 'Mar 23–Apr 6', event: 'Churn pattern emerges', detail: 'Active user count drops. First indication of single-use behavior and retention gap.' },
+          { year: 'Apr 6–19', event: 'Geo and keyword data matures', detail: 'France CPA anomaly identified. India volume dominance confirmed. Keyword CTR benchmarks stable.' },
+          { year: 'Apr 19', event: 'Campaign data cutoff', detail: 'Final numbers: 3,930 clicks · 337 sign-ups · $3,430 spend · 10 geos mapped.' },
+          { year: 'Apr 27', event: 'Analysis complete', detail: 'Unit economics modeled. Next-phase roadmap scoped. Retention fix identified as gate condition.', punchline: 'The experiment answered what it was {designed to answer}.' },
+        ],
+      },
+      replicability: {
+        heading: 'Transferable Methodology',
+        body: 'This GTM experiment structure — paid traffic as market signal, unrestricted geo discovery, CPA-to-GDP screening — works for any B2C or prosumer SaaS in a niche with measurable search demand.',
+        examples: [
+          { domain: 'Developer tools', detail: 'Same structure: run unrestricted on Stack Overflow Ads or Google, identify which geos produce the lowest CPA, cross-reference with company engineering budgets per region.' },
+          { domain: 'Productivity / career SaaS', detail: 'ATS tools, resume builders, interview prep — all have the same geo split risk: high search volume in emerging markets, paying users concentrated in Western markets. Run the experiment before assuming global pricing.' },
+          { domain: 'Vertical B2B SaaS', detail: 'Replace sign-up conversion with demo request or free trial. The geo screening logic is identical: CPA × GDP/capita × SaaS spending willingness produces a prioritized market map.' },
+        ],
+        closing: 'The experiment methodology is repeatable. What changes is the keyword cluster, the conversion event, and the geo set. The framework — use paid traffic to generate behavioral data before committing to a growth strategy — is domain-agnostic.',
+      },
+    },
+    cta: {
+      heading: 'Building something and not sure which market to go after first?',
+      body: 'I ran this experiment for Advogram and turned $3,430 of ad spend into a validated geo map, a CPA benchmark, and a unit economics model. The same methodology applies to any product with measurable search demand.',
+      label: 'Let\'s talk',
+    },
+    faq: {
+      heading: 'FAQ',
+      items: [
+        {
+          q: 'Why not just target the US from the start?',
+          a: 'Because that assumption would have been wrong. The experiment showed that the natural search audience for ATS tools is overwhelmingly South Asian and Middle Eastern. The US and Western Europe have lower volume but far higher purchasing power. You find that by looking, not by assuming.',
+        },
+        {
+          q: 'Is $3,430 a realistic budget for a validation experiment?',
+          a: 'Yes — and possibly more than needed. The key signal (CTR, geo distribution, keyword performance) was visible within the first two weeks and ~$1,000 of spend. The full 6-week run produced cleaner data on retention and geo CPA benchmarks.',
+        },
+        {
+          q: 'What does the 0% retention actually mean?',
+          a: 'It means no user returned to the Screener after their first week. It does not mean the product is broken — it means the current product is a one-shot tool, not a recurring habit. The fix is a repeating trigger: weekly score updates, job alerts, or an email sequence that brings users back when something changes.',
+        },
+        {
+          q: 'Why France and not Germany or the UK?',
+          a: 'France appeared in the data by chance — it was not targeted specifically. The insight is not "target France" — it is "Western Europe converts at dramatically lower CPA than the campaign average." The next phase will include UK, DE, FR, CA, and AU to calibrate which of these produces the best CPA at scale.',
+        },
+        {
+          q: 'What is the product actually charging now?',
+          a: 'Advogram is currently free and open-source. The paid A/B test ($9 vs $15 vs $19/mo) is the next phase, contingent on shipping the retention mechanism first. Charging before solving retention would validate willingness to pay but not the ability to compound it into MRR.',
+        },
+        {
+          q: 'How does this experiment feed into a fundraising narrative?',
+          a: 'It provides the three numbers investors ask for earliest: validated demand signal (CTR), CAC benchmark (France CPA), and LTV model (subscription × avg duration). Most pre-seed pitches have none of these from real data. This experiment produces all three for under $4,000.',
+        },
+      ],
+    },
+    resources: {
+      heading: 'Resources',
+      items: [
+        { label: 'Advogram — Open-source job search tools', url: 'https://advogram.com' },
+        { label: 'Google Ads — Campaign manager', url: 'https://ads.google.com' },
+        { label: 'Screener (Screener.so) — Product analytics', url: 'https://screener.so' },
+        { label: 'DataForSEO — Keyword research API', url: 'https://dataforseo.com' },
+      ],
+    },
+    footer: {
+      role: 'GTM Engineer · Builder',
+      bio: 'Built Advogram as a live GTM experiment — from keyword research to CPA benchmarks and unit economics. Applying the same product-led growth methodology to the next stage.',
+      fellowAt: 'Open source at',
+      fellowLink: 'github.com/advogram',
+      copyright: 'All rights reserved.',
+    },
+  },
+} as const

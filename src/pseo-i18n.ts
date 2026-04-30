@@ -4,7 +4,7 @@ export const pseoContent = {
     altSlug: 'programmatic-seo',
     readingTime: '37 min de lectura',
     seo: {
-      title: 'SEO Programático: 4.000+ Páginas desde un ERP | santifer.io',
+      title: 'SEO Programático: 4.000+ Páginas desde un ERP | esupport.org.ua',
       description: 'Case study: cómo generé 4.730 landing pages estáticas con Airtable, DataForSEO y crawl budget optimization. 2M+ impresiones, 19K+ clicks.',
     },
     nav: {
@@ -197,7 +197,7 @@ export const pseoContent = {
           { title: 'Social proof en cascada', detail: 'Las reseñas se vinculan a nivel de modelo, familia o marca. Una reseña de "iPhone 14 Pro" aparece en todas las reparaciones de ese modelo.' },
           { title: 'Bridge mode', detail: 'Reparaciones descatalogadas no se eliminan: se marcan como "bridge" y redirigen a la alternativa más cercana. Cero 404s, cero pérdida de autoridad.' },
         ],
-        businessOsCallout: 'Este CMS de 14 tablas es parte de un Business OS más amplio de 12 bases de Airtable que gestionaba todo el negocio: inventario, CRM, contabilidad, RRHH y más. <a href="/business-os-para-airtable" class="text-primary underline underline-offset-2 hover:text-primary/80">Lee el case study completo del Business OS →</a>',
+        businessOsCallout: 'Este CMS de 14 tablas es parte de un ERP más amplio de 12 bases de Airtable que gestionaba todo el negocio: inventario, CRM, contabilidad, RRHH y más. El sistema completo automatizaba 170 horas/mes de trabajo operativo.',
       },
       pageAnatomy: {
         heading: 'Anatomía de una Página',
@@ -415,7 +415,7 @@ ensureCachesLoaded().catch(console.error);`,
       },
       contentAutomation: {
         heading: 'Pipeline de Contenido Automatizado',
-        body: 'Generar miles de páginas es solo la mitad. Cada página necesita imágenes, metadata y copy únicos. Un conjunto de 8 scripts Node.js (1.411 líneas) automatiza toda la producción de contenido visual y textual sin intervención manual. Todo conectado a las 12 bases del Business OS en Airtable. Resultado: más de 26.000 imágenes generadas automáticamente.',
+        body: 'Generar miles de páginas es solo la mitad. Cada página necesita imágenes, metadata y copy únicos. Un conjunto de 8 scripts Node.js (1.411 líneas) automatiza toda la producción de contenido visual y textual sin intervención manual. Todo conectado a las 12 bases del ERP en Airtable. Resultado: más de 26.000 imágenes generadas automáticamente.',
         repoLink: '<a href="https://github.com/santifer/santifer-irepair/tree/main/scripts" target="_blank" rel="noopener noreferrer" class="text-primary underline underline-offset-2 hover:text-primary/80">Explora los scripts del pipeline en GitHub →</a>',
         pipelines: [
           {
@@ -479,7 +479,7 @@ exifObj['Exif'][piexif.ExifIFD.UserComment] = userComment.toString('binary');`,
           ],
           detail: 'La misma lógica aplica a las fotos antes/después: una foto de reparación de pantalla de iPhone 12 aparece en todas las páginas de esa rama de la taxonomía. Esto multiplica el contenido único sin duplicar ni generar nada artificialmente. Cada página acumula más social proof y contenido visual a medida que el negocio crece.',
         },
-        stats: '26.000+ imágenes generadas automáticamente. 867 modelos con 18 variantes cada uno. 10.000+ fotos de reparaciones reales. Cero intervención manual. Las 12 bases del Business OS alimentan el pipeline completo.',
+        stats: '26.000+ imágenes generadas automáticamente. 867 modelos con 18 variantes cada uno. 10.000+ fotos de reparaciones reales. Cero intervención manual. Las 12 bases del ERP alimentan el pipeline completo.',
       },
       imagePipeline: {
         heading: 'Dentro del Pipeline de Imágenes',
@@ -910,7 +910,7 @@ return records.map(r => ({
       },
       stack: {
         heading: 'Stack y Herramientas',
-        body: 'El stack se eligió para una necesidad concreta: generar miles de páginas estáticas con datos de un CMS relacional, con el mínimo JavaScript posible en el cliente. Astro era la opción obvia para SSG puro. Airtable funcionaba como CMS porque ya era el Business OS del negocio — no tenía sentido migrar a Supabase para una web estática. DataForSEO se eligió por precio y cobertura de keywords en español.',
+        body: 'El stack se eligió para una necesidad concreta: generar miles de páginas estáticas con datos de un CMS relacional, con el mínimo JavaScript posible en el cliente. Astro era la opción obvia para SSG puro. Airtable funcionaba como CMS porque ya era el ERP del negocio — no tenía sentido migrar a Supabase para una web estática. DataForSEO se eligió por precio y cobertura de keywords en español.',
         items: [
           { name: 'Astro', role: 'SSG, 21 templates, JS mínimo lazy' },
           { name: 'Airtable', role: 'CMS headless, 14 tablas, ~60 campos/tabla' },
@@ -950,7 +950,7 @@ return records.map(r => ({
           },
           {
             title: 'La taxonomía del negocio ES la arquitectura de información — no la inventes, mapéala.',
-            detail: 'No diseñé la estructura de URLs desde cero. Mapée la jerarquía que ya existía en el negocio: tipo → marca → modelo → reparación → ciudad. El Business OS ya tenía esa taxonomía en Airtable. La web programática simplemente la expuso al mundo. Si tu empresa ya tiene una ontología interna, úsala.',
+            detail: 'No diseñé la estructura de URLs desde cero. Mapée la jerarquía que ya existía en el negocio: tipo → marca → modelo → reparación → ciudad. El ERP ya tenía esa taxonomía en Airtable. La web programática simplemente la expuso al mundo. Si tu empresa ya tiene una ontología interna, úsala.',
           },
         ],
       },
@@ -1007,7 +1007,7 @@ return records.map(r => ({
       items: [
         { label: 'Código fuente en GitHub (scripts, layouts, rutas)', url: 'https://github.com/santifer/santifer-irepair' },
         { label: 'Santifer iRepair (la web programática)', url: 'https://santiferirepair.es' },
-        { label: 'Case Study: Business OS / ERP que alimenta estas páginas', url: '/business-os-para-airtable' },
+        { label: 'Case Study: Advogram GTM — Market validation experiment', url: '/advogram-gtm-case-study' },
         { label: 'Astro, el framework de sitio estático', url: 'https://astro.build' },
         { label: 'DataForSEO, API de datos SEO', url: 'https://dataforseo.com' },
         { label: 'Airtable, plataforma de datos y CMS', url: 'https://airtable.com' },
@@ -1026,7 +1026,7 @@ return records.map(r => ({
     altSlug: 'seo-programatico',
     readingTime: '37 min read',
     seo: {
-      title: 'Programmatic SEO: 4,000+ Pages from an ERP | santifer.io',
+      title: 'Programmatic SEO: 4,000+ Pages from an ERP | esupport.org.ua',
       description: 'Case study: 4,730 static landing pages from Airtable as headless CMS with DataForSEO crawl budget optimization and Astro SSG. 2M+ impressions, 19K+ clicks.',
     },
     nav: {
@@ -1219,7 +1219,7 @@ return records.map(r => ({
           { title: 'Cascading social proof', detail: 'Reviews link at the model, family, or brand level. A review for "iPhone 14 Pro" shows up on every repair page for that model.' },
           { title: 'Bridge mode', detail: 'Discontinued repairs don\'t get deleted — they\'re flagged as "bridge" and redirect to the closest alternative. Zero 404s, zero authority loss.' },
         ],
-        businessOsCallout: 'This 14-table CMS is part of a larger 12-base Airtable Business OS that ran the entire business: inventory, CRM, accounting, HR, and more. <a href="/business-os-for-airtable" class="text-primary underline underline-offset-2 hover:text-primary/80">Read the full Business OS case study →</a>',
+        businessOsCallout: 'This 14-table CMS is part of a larger 12-base Airtable ERP that ran the entire business: inventory, CRM, accounting, HR, and more. The complete system automated 170 hours/month of operational work.',
       },
       pageAnatomy: {
         heading: 'Anatomy of a Page',
@@ -1501,7 +1501,7 @@ exifObj['Exif'][piexif.ExifIFD.UserComment] = userComment.toString('binary');`,
           ],
           detail: 'The same logic applies to before/after photos: a photo from an iPhone 12 screen repair appears on every page in that taxonomy branch. This multiplies unique content without duplicating or generating anything artificially. Each page accumulates more social proof and visual content as the business grows.',
         },
-        stats: '26,000+ auto-generated images. 867 models with 18 variants each. 10,000+ real repair photos. Zero manual intervention. The 12 Business OS bases feed the entire pipeline.',
+        stats: '26,000+ auto-generated images. 867 models with 18 variants each. 10,000+ real repair photos. Zero manual intervention. The 12 ERP bases feed the entire pipeline.',
       },
       imagePipeline: {
         heading: 'Inside the Image Pipeline',
@@ -1972,7 +1972,7 @@ return records.map(r => ({
           },
           {
             title: 'Your business taxonomy IS your information architecture — don\'t invent it, map it.',
-            detail: 'I didn\'t design the URL structure from scratch. I mapped the hierarchy that already existed in the business: type → brand → model → repair → city. The Business OS already had that taxonomy in Airtable. The programmatic site simply exposed it to the world. If your company already has an internal ontology, use it.',
+            detail: 'I didn\'t design the URL structure from scratch. I mapped the hierarchy that already existed in the business: type → brand → model → repair → city. The ERP already had that taxonomy in Airtable. The programmatic site simply exposed it to the world. If your company already has an internal ontology, use it.',
           },
         ],
       },
@@ -2029,7 +2029,7 @@ return records.map(r => ({
       items: [
         { label: 'Source code on GitHub (scripts, layouts, routes)', url: 'https://github.com/santifer/santifer-irepair' },
         { label: 'Santifer iRepair (the programmatic site)', url: 'https://santiferirepair.es' },
-        { label: 'Case Study: The Business OS / ERP behind these pages', url: '/business-os-for-airtable' },
+        { label: 'Case Study: Advogram GTM — Market validation experiment', url: '/advogram-gtm-case-study-en' },
         { label: 'Astro, the static site framework', url: 'https://astro.build' },
         { label: 'DataForSEO, SEO data API', url: 'https://dataforseo.com' },
         { label: 'Airtable, data platform and CMS', url: 'https://airtable.com' },

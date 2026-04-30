@@ -52,8 +52,8 @@ export function useArticleSeo(opts: ArticleSeoOpts) {
       publishedTime, modifiedTime, articleTags, jsonLd, xDefaultSlug,
     } = opts
 
-    const url = `https://santifer.io/${slug}`
-    const altUrl = `https://santifer.io/${altSlug}`
+    const url = `https://esupport.org.ua/${slug}`
+    const altUrl = `https://esupport.org.ua/${altSlug}`
     const altLang = lang === 'es' ? 'en' : 'es'
     const defaultSlug = xDefaultSlug ?? (lang === 'es' ? slug : altSlug)
 
@@ -69,7 +69,7 @@ export function useArticleSeo(opts: ArticleSeoOpts) {
     upsertMeta('property', 'og:url', url)
     upsertMeta('property', 'og:title', title)
     upsertMeta('property', 'og:description', description)
-    upsertMeta('property', 'og:site_name', 'santifer.io')
+    upsertMeta('property', 'og:site_name', 'esupport.org.ua')
     upsertMeta('property', 'og:locale', lang === 'es' ? 'es_ES' : 'en_US')
     upsertMeta('property', 'og:locale:alternate', lang === 'es' ? 'en_US' : 'es_ES')
     upsertMeta('property', 'article:published_time', publishedTime)
@@ -92,7 +92,7 @@ export function useArticleSeo(opts: ArticleSeoOpts) {
     for (const { hreflang, href } of [
       { hreflang: lang, href: url },
       { hreflang: altLang, href: altUrl },
-      { hreflang: 'x-default', href: `https://santifer.io/${defaultSlug}` },
+      { hreflang: 'x-default', href: `https://esupport.org.ua/${defaultSlug}` },
     ]) {
       const link = document.createElement('link')
       link.rel = 'alternate'
@@ -133,7 +133,7 @@ export function useHomeSeo({ lang, title, description }: { lang: string; title: 
     document.querySelector('meta[property="og:description"]')?.setAttribute('content', description)
     document.querySelector('meta[property="og:locale"]')?.setAttribute('content', lang === 'en' ? 'en_US' : 'es_ES')
 
-    const canonical = lang === 'en' ? 'https://santifer.io/en' : 'https://santifer.io/'
+    const canonical = lang === 'en' ? 'https://esupport.org.ua/en' : 'https://esupport.org.ua/'
     document.querySelector('link[rel="canonical"]')?.setAttribute('href', canonical)
     document.querySelector('meta[property="og:url"]')?.setAttribute('content', canonical)
 

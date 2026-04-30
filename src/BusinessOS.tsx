@@ -78,7 +78,7 @@ export default function BusinessOS({ lang = 'en' }: { lang?: Lang }) {
     altSlug: t.altSlug,
     title: t.seo.title,
     description: t.seo.description,
-    image: 'https://santifer.io/business-os/og-business-os.webp',
+    image: 'https://esupport.org.ua/business-os/og-business-os.webp',
     publishedTime: '2026-02-25',
     modifiedTime: '2026-03-06',
     articleTags: 'Business OS,Airtable,n8n,ERP,CRM,automation,phone repair',
@@ -411,7 +411,7 @@ export default function BusinessOS({ lang = 'en' }: { lang?: Lang }) {
           heading={t.sections.dayInLife.pseoCta.heading}
           body={t.sections.dayInLife.pseoCta.body}
           ctaLabel={t.sections.dayInLife.pseoCta.label}
-          ctaHref={lang === 'es' ? 'mailto:hola@santifer.io?subject=Programmatic SEO' : 'mailto:hi@santifer.io?subject=Programmatic SEO'}
+          ctaHref={lang === 'es' ? 'mailto:esupport@esupport.org.ua?subject=Programmatic SEO' : 'mailto:esupport@esupport.org.ua?subject=Programmatic SEO'}
         />
 
         {/* Cross-Cutting Capabilities */}
@@ -641,15 +641,15 @@ export default function BusinessOS({ lang = 'en' }: { lang?: Lang }) {
         />
         <Prose editorId="replicability-closing" className="mb-8">{t.sections.replicability.closing}</Prose>
 
-        {/* Cross-link: Chatbot uses the same systems thinking */}
+        {/* Cross-link: offzmi uses the same systems thinking */}
         <CaseStudyCta
-          editorId="crosslink-chatbot"
-          heading={lang === 'es' ? 'El mismo enfoque de sistemas, aplicado a LLMOps' : 'The same systems thinking, applied to LLMOps'}
+          editorId="crosslink-offzmi"
+          heading={lang === 'es' ? 'El mismo enfoque de sistemas, aplicado a GTM' : 'The same systems thinking, applied to GTM'}
           body={lang === 'es'
-            ? 'El chatbot de este portfolio usa los mismos principios: observabilidad agéntica, closed-loop automático y 71 tests. De automatizar un negocio físico a automatizar un pipeline de IA.'
-            : 'The chatbot on this portfolio uses the same principles: agentic observability, automatic closed-loop, and 71 tests. From automating a physical business to automating an AI pipeline.'}
-          ctaLabel={lang === 'es' ? 'Ver El Chatbot Que Se Cura Solo →' : 'Read The Self-Healing Chatbot →'}
-          ctaHref={lang === 'es' ? '/chatbot-que-se-cura-solo' : '/self-healing-chatbot'}
+            ? 'El proyecto offzmi usa los mismos principios: investigación estructurada, validación con datos reales y decisiones basadas en evidencia. De automatizar un negocio físico a validar un mercado.'
+            : 'The offzmi project uses the same principles: structured research, validation with real data, and evidence-based decisions. From automating a physical business to validating a market.'}
+          ctaLabel={lang === 'es' ? 'Ver Investigación GTM offzmi →' : 'Read offzmi GTM Research →'}
+          ctaHref={lang === 'es' ? '/offzmi-gtm-doslidzhennia' : '/offzmi-gtm-case-study'}
         />
 
         {/* CTA */}
@@ -657,7 +657,7 @@ export default function BusinessOS({ lang = 'en' }: { lang?: Lang }) {
           heading={t.cta.heading}
           body={t.cta.body}
           ctaLabel={t.cta.label}
-          ctaHref="mailto:hola@santifer.io?subject=Business OS Architecture"
+          ctaHref="mailto:esupport@esupport.org.ua?subject=Business OS Architecture"
         />
 
         {/* FAQ */}

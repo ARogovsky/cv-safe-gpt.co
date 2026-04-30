@@ -45,7 +45,7 @@ export { H2 as AnchorHeading } from './content-types'
 // Layout shells
 // ---------------------------------------------------------------------------
 
-export function ArticleLayout({ lang, children }: { lang?: 'es' | 'en'; children: React.ReactNode }) {
+export function ArticleLayout({ lang, children }: { lang?: 'es' | 'en' | 'uk'; children: React.ReactNode }) {
   useEffect(() => {
     if (lang) document.documentElement.lang = lang
   }, [lang])
@@ -80,17 +80,18 @@ interface ArticleHeaderProps {
   authorUrl?: string
   authorBio?: string
   avatarSrc?: string
-  lang?: 'es' | 'en'
+  lang?: 'es' | 'en' | 'uk'
   editorId?: string
 }
 
 const MONTHS_ES = ['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic']
 const MONTHS_EN = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
-function formatDateHuman(iso: string, lang: 'es' | 'en'): string {
+const MONTHS_UK = ['січ','лют','бер','кві','тра','чер','лип','сер','вер','жов','лис','гру']
+function formatDateHuman(iso: string, lang: 'es' | 'en' | 'uk'): string {
   const [y, m, d] = iso.split('-').map(Number)
   if (!y || !m || !d) return iso
-  const month = (lang === 'es' ? MONTHS_ES : MONTHS_EN)[m - 1]
-  return lang === 'es' ? `${d} ${month} ${y}` : `${month} ${d}, ${y}`
+  const month = (lang === 'es' ? MONTHS_ES : lang === 'uk' ? MONTHS_UK : MONTHS_EN)[m - 1]
+  return lang === 'es' ? `${d} ${month} ${y}` : lang === 'uk' ? `${d} ${month} ${y}` : `${month} ${d}, ${y}`
 }
 
 export function ArticleHeader({
@@ -108,7 +109,7 @@ export function ArticleHeader({
   avatarSrc = '/foto-avatar-sm.webp',
   lang,
 }: ArticleHeaderProps) {
-  const resolvedAuthorUrl = authorUrl ?? (lang === 'es' ? '/sobre-mi' : '/about')
+  const resolvedAuthorUrl = authorUrl ?? (lang === 'uk' ? '/pro-mene' : '/about')
   return (
     <header className="mb-10">
       <p className="text-primary font-medium text-sm mb-3 tracking-wide uppercase">
@@ -167,7 +168,7 @@ export function ArticleHeader({
 // ---------------------------------------------------------------------------
 
 interface ArticleFooterProps {
-  lang: 'es' | 'en'
+  lang: 'es' | 'en' | 'uk'
   utmCampaign: string
   editorId?: string
 }
@@ -184,6 +185,12 @@ const FOOTER_I18N = {
     bio: 'Built and sold a 16-year business in 2025. Creator of Career-Ops. Now bringing that same systems thinking to enterprise AI.',
     fellowAt: 'Teaching Fellow at',
     copyright: 'All rights reserved.',
+  },
+  uk: {
+    role: 'Head of Applied AI · Builder of Career-Ops',
+    bio: 'Побудував і продав бізнес з 16-річною історією у 2025 році. Автор Career-Ops. Тепер застосовує системне мислення до enterprise AI.',
+    fellowAt: 'Teaching Fellow у',
+    copyright: 'Всі права захищені.',
   },
 } as const
 
@@ -218,7 +225,7 @@ export function ArticleFooter({ lang, utmCampaign }: ArticleFooterProps) {
       </div>
       <p className="text-sm text-muted-foreground leading-relaxed mb-1">{f.bio}</p>
       <Link
-        to={lang === 'es' ? '/sobre-mi' : '/about'}
+        to={lang === 'uk' ? '/pro-mene' : '/about'}
         className="inline-block text-sm text-primary hover:underline transition-colors mb-6"
       >
         {lang === 'es' ? 'Más sobre el autor →' : 'More about the author →'}
@@ -594,7 +601,7 @@ interface GitHubRepoBadgeProps {
   repo: string
   stars: string
   forks: string
-  lang: 'es' | 'en'
+  lang: 'es' | 'en' | 'uk'
 }
 
 export function GitHubRepoBadge({ repo, stars, forks, lang }: GitHubRepoBadgeProps) {

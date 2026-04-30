@@ -32,13 +32,13 @@
       ]
     },
     {
-      "id": "badge-chatbot-self",
-      "description": "Question about this chatbot should include self-healing-chatbot badge",
-      "input": "¿Cómo funciona este chatbot?",
-      "lang": "es",
+      "id": "badge-offzmi-gtm",
+      "description": "Question about offzmi GTM research should include offzmi badge",
+      "input": "Tell me about the offzmi GTM research project",
+      "lang": "en",
       "assertions": [
         { "type": "rag_used" },
-        { "type": "source_includes", "value": "self-healing-chatbot" }
+        { "type": "source_includes", "value": "offzmi" }
       ]
     },
     {

@@ -4,7 +4,7 @@ export const chatbotContent = {
       altSlug: 'self-healing-chatbot',
       readingTime: '22 min de lectura',
       seo: {
-        title: 'El Chatbot Que Se Cura Solo: De Widget a LLMOps en Producción | santifer.io',
+        title: 'El Chatbot Que Se Cura Solo: De Widget a LLMOps en Producción | esupport.org.ua',
         description: 'Case study: cómo evolucioné un chatbot de 50 líneas a un sistema LLMOps con RAG agéntico, defensa de jailbreak en 6 capas, 71 evals y closed-loop automático. Lo estás usando ahora mismo.',
       },
       nav: {
@@ -12,7 +12,7 @@ export const chatbotContent = {
         breadcrumbCurrent: 'El Chatbot Que Se Cura Solo',
       },
       header: {
-        kicker: 'Case Study — santifer.io (lo estás usando ahora mismo)',
+        kicker: 'Case Study — esupport.org.ua (lo estás usando ahora mismo)',
         h1: 'El Chatbot Que Se Cura Solo: De Widget a LLMOps en Producción',
         subtitle: 'Cómo un widget de chat de 50 líneas evolucionó a un sistema LLMOps de producción con RAG agéntico, observabilidad agéntica, defensa en 6 capas, 71 evals, modo voz y un closed-loop que genera tests desde fallos reales.',
         badge: 'En producción. Abre el chat para probarlo',
@@ -163,7 +163,7 @@ export default async function handler(req, res) {
           },
           callout: 'Cada modo de fallo fue descubierto en producción, trazado en Langfuse, y convertido en eval.',
           recursivityCallout: 'Meta: este artículo está indexado en el RAG del chatbot. Pregúntale "¿cómo funciona tu RAG?" — te responderá usando el RAG para explicar el RAG.',
-          indexedArticles: 'El chatbot puede responder sobre <a href="/agente-ia-jacobo" class="text-primary underline underline-offset-2 hover:text-primary/80">Jacobo</a>, <a href="/business-os-para-airtable" class="text-primary underline underline-offset-2 hover:text-primary/80">Business OS</a>, <a href="/seo-programatico" class="text-primary underline underline-offset-2 hover:text-primary/80">SEO Programático</a> y <a href="/n8n-para-pms" class="text-primary underline underline-offset-2 hover:text-primary/80">n8n para PMs</a> — pregúntale.',
+          indexedArticles: 'El chatbot puede responder sobre <a href="/agente-ia-jacobo" class="text-primary underline underline-offset-2 hover:text-primary/80">Jacobo</a>, <a href="/advogram-gtm-case-study" class="text-primary underline underline-offset-2 hover:text-primary/80">Advogram</a>, <a href="/seo-programatico" class="text-primary underline underline-offset-2 hover:text-primary/80">SEO Programático</a> y <a href="/n8n-para-pms" class="text-primary underline underline-offset-2 hover:text-primary/80">n8n para PMs</a> — pregúntale.',
         },
         defense: {
           heading: 'Defensa en 6 Capas',
@@ -371,7 +371,7 @@ Producción
       altSlug: 'chatbot-que-se-cura-solo',
       readingTime: '22 min read',
       seo: {
-        title: 'The Self-Healing Chatbot: From Widget to Production LLMOps | santifer.io',
+        title: 'The Self-Healing Chatbot: From Widget to Production LLMOps | esupport.org.ua',
         description: 'Case study: production LLMOps with agentic observability, 6-layer defense, 71 evals, voice mode, and a closed-loop that generates tests from real failures.',
       },
       nav: {
@@ -379,7 +379,7 @@ Producción
         breadcrumbCurrent: 'The Self-Healing Chatbot',
       },
       header: {
-        kicker: 'Case Study — santifer.io (you\'re using it right now)',
+        kicker: 'Case Study — esupport.org.ua (you\'re using it right now)',
         h1: 'The Self-Healing Chatbot: From Widget to Production LLMOps',
         subtitle: 'How a 50-line chat widget evolved into a production LLMOps system with agentic RAG, agentic observability, 6-layer defense, 71 evals, voice mode, and a closed-loop that generates tests from real failures.',
         badge: 'In production. Open the chat to try it',
@@ -530,7 +530,7 @@ export default async function handler(req, res) {
           },
           callout: 'Every failure mode was discovered in production, traced in Langfuse, and converted into an eval.',
           recursivityCallout: 'Meta: this very article is indexed in the chatbot\'s RAG. Ask it "how does your RAG work?" — it will answer using RAG to explain RAG.',
-          indexedArticles: 'The chatbot can answer about <a href="/ai-agent-jacobo" class="text-primary underline underline-offset-2 hover:text-primary/80">Jacobo</a>, <a href="/business-os-for-airtable" class="text-primary underline underline-offset-2 hover:text-primary/80">Business OS</a>, <a href="/programmatic-seo" class="text-primary underline underline-offset-2 hover:text-primary/80">Programmatic SEO</a>, and <a href="/n8n-for-pms" class="text-primary underline underline-offset-2 hover:text-primary/80">n8n for PMs</a> — just ask.',
+          indexedArticles: 'The chatbot can answer about <a href="/ai-agent-jacobo" class="text-primary underline underline-offset-2 hover:text-primary/80">Jacobo</a>, <a href="/advogram-gtm-case-study-en" class="text-primary underline underline-offset-2 hover:text-primary/80">Advogram</a>, <a href="/programmatic-seo" class="text-primary underline underline-offset-2 hover:text-primary/80">Programmatic SEO</a>, and <a href="/n8n-for-pms" class="text-primary underline underline-offset-2 hover:text-primary/80">n8n for PMs</a> — just ask.',
         },
         defense: {
           heading: '6-Layer Defense',

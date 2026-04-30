@@ -1,0 +1,792 @@
+export const offzmiContent = {
+  uk: {
+    slug: 'offzmi-gtm-doslidzhennia',
+    altSlug: 'offzmi-gtm-case-study',
+    readingTime: '7 хв читання',
+    seo: {
+      title: 'Як AI знайшов нішу презентацій для маркетологів: 222 статті, $452 і ринковий сигнал | offzmi.com',
+      description: 'GTM-кейс: як за допомогою AI + MCP-browser було знайдено нішу, піднято мікросервіс для 222 статей і виявлено, що українські маркетологи масово шукають презентації.',
+    },
+    nav: {
+      breadcrumbHome: 'Головна',
+      breadcrumbCurrent: 'GTM Кейс',
+    },
+    header: {
+      kicker: 'Кейс — offzmi.com',
+      h1: 'Як AI знайшов нішу для маркетологів за $452',
+      subtitle: 'Як я використав AI + MCP-browser для пошуку ніш, підняв мікросервіс для публікації 222 статей і виявив, що українські маркетологи масово шукають презентації.',
+      badge: 'Живий експеримент · Квітень 2026',
+      date: '27 квітня 2026',
+    },
+    heroMetrics: [
+      { value: '222', label: 'AI-статті' },
+      { value: '$452', label: 'Витрачено на рекламу' },
+      { value: '401', label: 'Кліки' },
+      { value: '+1000%', label: 'Зростання кліків "презентація"' },
+      { value: '11.9%', label: 'CTR топ-ключа' },
+    ],
+    tldr: 'Я використав AI + MCP-browser для серфінгу ніш у сфері маркетингу, згенерував 222 статті та підняв мікросервіс для їхньої автоматичної публікації. Реклама показала: 64.7% трафіку пішло на тему презентацій. Ніша знайдена поведінкою аудиторії, а не опитуваннями.',
+    intro: {
+      hook: '222 статті. $452. 1 ніша. Знайдена за кліками, а не гіпотезами.',
+      body: 'offzmi.com — проєкт для маркетологів. Питання перед запуском: які інструменти реально потрібні аудиторії? Замість опитувань я запустив AI-пошук ніш через MCP-browser, згенерував статейний контент і пустив платний трафік — щоб реальна поведінка пошуку дала відповідь.',
+    },
+    internalLinks: {
+      github: { text: 'offzmi на GitHub', href: 'https://github.com/offzmi' },
+      website: { text: 'offzmi.com', href: 'https://offzmi.com' },
+    },
+    sections: {
+      genesis: {
+        heading: 'Що було зроблено',
+        hook: 'Три завдання визначили весь експеримент: знайти ніші через AI, опублікувати контент через мікросервіс, перевірити попит через рекламу.',
+        firstCommit: 'Ринок маркетингових інструментів великий і шумний. Без даних легко витратити місяці на хибний напрямок. Тому замість класичного customer discovery — AI-серфінг ніш через MCP-browser, автоматична генерація 222 статей і платний трафік як швидкий ринковий сигнал.',
+        codeCaption: 'Мікросервіс публікації статей — автоматизований пайплайн від генерації до деплою',
+        code: `// pipeline.js — AI Content Microservice
+async function publishArticle(niche, keyword) {
+  const content = await generateWithAI({
+    topic: keyword,
+    audience: \'ua-marketers\',
+    length: 800,
+  })
+  await deployToSite(content)
+  await trackInAnalytics({ niche, keyword })
+}
+
+// MCP-browser ніш-серфінг
+const niches = await mcpBrowser.searchTrends({
+  market: \'ukraine\',
+  category: \'marketing-tools\',
+  intent: \'informational\',
+})`,
+        punchline: 'Мікросервіс підняв 222 статті. Реклама показала, яка тема перемагає.',
+      },
+      evolution: {
+        heading: 'Хронологія експерименту',
+        timeline: [
+          { date: 'Берез. 2026', title: 'AI-серфінг ніш', detail: 'MCP-browser аналізує маркетинговий ринок України. Виявлено кластери: презентації, дизайн, маркетинг, макети.' },
+          { date: 'Берез. 2026', title: '222 статті згенеровано', detail: 'AI генерує статейний контент по кожній ніші. Мікросервіс автоматично публікує на сайті.' },
+          { date: '16 берез.', title: 'Кампанія Articles_Offzmi_test', detail: 'Google Ads запущено. Unrestricted таргетинг по темах. Конверсія: трафік на статті.' },
+          { date: 'Берез.–Квіт.', title: 'Дані дозрівають', detail: '\"Презентація\" виходить у лідери: 209 кліків із 323, CTR 11.9%, +1000% зростання кліків.' },
+          { date: '19 квіт.', title: 'Кампанія закрита', detail: '$452 витрачено. 401 клік. Ніша визначена поведінкою аудиторії.' },
+          { date: '27 квіт.', title: 'Аналіз завершено', detail: 'Презентації — головний запит. Наступний етап: поглиблений продукт для маркетологів.', punchline: 'Аудиторія {проголосувала кліками}.' },
+        ],
+        callout: 'Один розробник. Один мікросервіс. 222 статті. Ніша знайдена.',
+        beforeAfter: {
+          heading: 'До vs Після експерименту',
+          headers: ['', 'До', 'Після'],
+          rows: [
+            ['Знання ніші', 'Гіпотеза', 'Підтверджено даними'],
+            ['Контент', '0 статей', '222 AI-статті'],
+            ['Публікація', 'Вручну', 'Автоматичний мікросервіс'],
+            ['Топ-запит', 'Невідомо', '\"Презентація\" — 64.7% трафіку'],
+            ['Рекламний сигнал', 'Відсутній', 'CTR 11.9%, +1000% кліків'],
+            ['Наступний крок', 'Невизначений', 'Продукт для презентацій'],
+          ],
+        },
+      },
+      architecture: {
+        heading: 'Як це влаштовано',
+        body: 'Три компоненти. Кожен вирішує одне завдання.',
+        layers: [
+          { title: 'AI + MCP-browser', detail: 'Серфінг ніш маркетингового ринку України. Збір трендів, пошукових кластерів і поведінки аудиторії.' },
+          { title: 'Мікросервіс генерації', detail: 'AI генерує статті по кожній ніші → автоматична публікація на сайті → трекінг в аналітиці.' },
+          { title: 'Google Ads як сигнал', detail: 'Платний трафік як дешевший і швидший аналог customer discovery. Клік = підтверджений інтерес.' },
+        ],
+        lifecycleHeading: 'Цикл від ніші до сигналу',
+        lifecycle: {
+          headers: ['Крок', 'Що відбувається', 'Інструмент', 'Результат'],
+          rows: [
+            ['1', 'Серфінг ніш маркетингового ринку', 'AI + MCP-browser', 'Кластери тем'],
+            ['2', 'Генерація 222 статей', 'AI (GPT)', '222 публікації'],
+            ['3', 'Автодеплой на сайт', 'Мікросервіс', 'Сайт наповнений'],
+            ['4', 'Запуск Google Ads', 'Articles_Offzmi_test', '$452 витрачено'],
+            ['5', 'Збір поведінкових даних', 'Google Ads Analytics', '401 клік, CTR 11.9%'],
+            ['6', 'Визначення ніші-переможця', 'Аналіз кліків', '\"Презентація\" — топ'],
+          ],
+        },
+      },
+      howItWasBuilt: {
+        heading: 'Чому AI + MCP-browser, а не опитування',
+        intro: 'Опитування показують, що люди кажуть, що хочуть. Пошукова поведінка показує, що вони реально шукають. При $0.82 avg CPC Google Ads дав 401 поведінковий сигнал за 6 тижнів.',
+        narrative: 'Логіка проста: спочатку AI знаходить потенційні ніші через серфінг ринку, потім контент покриває ці ніші, потім реклама показує, яка з них резонує з аудиторією. Це дешевше і швидше, ніж будь-яка фокус-група.',
+        phases: [
+          {
+            title: 'Пошук ніш',
+            subtitle: 'AI серфить ринок',
+            items: [
+              { label: 'MCP-browser аналіз', detail: 'Автоматичний серфінг маркетингових ніш України. Збір трендів, пошукових запитів і конкурентного ландшафту.' },
+              { label: 'Кластеризація тем', detail: 'AI групує знайдені теми: презентації, дизайн, маркетинг-інструменти, макети. Кожен кластер — потенційна ніша.' },
+            ],
+          },
+          {
+            title: 'Генерація контенту',
+            subtitle: 'Мікросервіс публікує',
+            items: [
+              { label: '222 статті за нішами', detail: 'AI генерує статейний контент по кожному кластеру. Мікросервіс автоматично публікує без ручного втручання.' },
+              { label: 'Автоматичний деплой', detail: 'Від генерації до публікації — без ручної роботи. Весь пайплайн автоматизований.' },
+            ],
+          },
+          {
+            title: 'Валідація рекламою',
+            subtitle: 'Клік — найчесніший голос',
+            items: [
+              { label: 'Articles_Offzmi_test кампанія', detail: '$265.83 витрачено на трафік по статтях. 323 кліки з 401 загальних — 80.5% трафіку пройшли через статейну кампанію.' },
+              { label: 'Ніша знайдена органічно', detail: '\"Презентація\" — 209 кліків із 323, CTR 11.9%, зростання кліків +1000%. Аудиторія проголосувала сама.' },
+            ],
+          },
+        ],
+      },
+      e2eFlows: {
+        heading: 'Що показали дані',
+        body: 'Чотири знахідки, кожна з яких дає дію.',
+        items: [
+          {
+            icon: '🎯',
+            name: 'Знахідка 1 — Презентації: ніша підтверджена',
+            trigger: 'CTR на запит \"презентація\": 11.9%',
+            summary: '209 кліків із 323 в кампанії Articles_Offzmi_test прийшли на теми презентацій. Пошуковий об\'єм +14% місяць до місяця, кліки +1000%. Це не гіпотеза — це поведінковий сигнал.',
+            basesTouched: ['Google Ads', 'Articles_Offzmi_test'],
+            details: [
+              '\"презентація\" — $157.29 витрачено · 209 кліків · CTR 11.90%',
+              '\"маркетинг\" — $30.09 · 22 кліки',
+              '\"макет\" — $22.94 · 9 кліків · CTR 19.15% (найкращий CTR)',
+              '\"дизайн\" — $18.18 · 19 кліків',
+              'Топ пошукові запроси: \"штучний інтелект\", \"ідеї для презентацій\", \"зробити презентацію\", \"сучасні шаблони презентацій безкоштовно\"',
+              'Висновок: маркетологи активно шукають інструменти для презентацій. Попит pull-based, не push-required.',
+            ],
+          },
+          {
+            icon: '📊',
+            name: 'Знахідка 2 — Статейна кампанія дешевша за прямий трафік',
+            trigger: 'CPC $0.82 vs $1.13 avg по акаунту',
+            summary: 'Кампанія Articles_Offzmi_test дала CPC на 27% дешевше середнього по акаунту. Інформаційний контент конкурує менше, ніж транзакційні запити.',
+            basesTouched: ['Google Ads'],
+            details: [
+              'Articles_Offzmi_test: $265.83 · 323 кліки · CTR 6.79% · CPC ~$0.82',
+              'Traffic OFZMI Homepage: $119.33 · 90 кліків · CTR 5.69%',
+              'Traffic OFZMI MAX: $66.52 · 46 кліків · CTR 7.30%',
+              '80.5% всіх кліків — через статейну кампанію. Аудиторія читає, а не тільки шукає продукт.',
+              'Висновок: AI-контент як канал залучення — дешевший і масштабованіший за прямі транзакційні кампанії.',
+            ],
+          },
+          {
+            icon: '👤',
+            name: 'Знахідка 3 — Профіль аудиторії',
+            trigger: 'Демографія + пристрій + час доби',
+            summary: 'Дані малюють чіткий портрет того, хто шукає. Цей профіль напряму визначає таргетинг наступної кампанії.',
+            basesTouched: ['Google Ads Demographics', 'Day & Hour data'],
+            details: [
+              'Основна аудиторія: чоловіки та жінки, 25–34 роки',
+              'Пік активності: Пн–Пт, 13:00–18:00 — маркетологи шукають інструменти в робочий час',
+              'Пристрій: переважно комп\'ютери (desktop-first поведінка)',
+              'Гео: Україна — цільовий ринок підтверджено',
+              'Висновок: продукт має бути desktop-first, з фокусом на робочі сценарії маркетологів.',
+            ],
+          },
+          {
+            icon: '🚀',
+            name: 'Знахідка 4 — Наступний крок визначений',
+            trigger: 'Ніша знайдена — продукт для презентацій',
+            summary: '222 статті, $452 і 6 тижнів дали чітку відповідь: українські маркетологи масово шукають інструменти для створення презентацій. Це база для наступного продуктового рішення.',
+            basesTouched: ['Google Ads', 'AI Research'],
+            details: [
+              'Підтверджений запит: презентації — #1 тема за кліками і CTR.',
+              'Trending: пошуковий об\'єм +14%, кліки +1000% — зростаючий ринок.',
+              'Конкуренти в пошуку: шаблони безкоштовно, AI-генерація презентацій, Canva-альтернативи.',
+              'Наступний етап: розробка інструменту для презентацій під потреби українських маркетологів.',
+              'SEO-канал: органічно закрити запити \"зробити презентацію\", \"шаблони презентацій\" — CAC = $0 в масштабі.',
+            ],
+          },
+        ],
+      },
+      crossCutting: {
+        heading: 'Модель юніт-економіки',
+        body: 'Побудована з даних експерименту. Два сценарії для наступної фази.',
+        items: [
+          {
+            icon: '📊',
+            name: 'Поточна вартість кліку',
+            summary: 'Articles_Offzmi_test показав CPC $0.82 на інформаційному трафіку. Для транзакційного трафіку по «презентаціях» очікуємо $1.5–2.5 на українському ринку.',
+            details: [
+              'CPC статейна кампанія (факт): $0.82 · 323 кліки · $265.83 витрат',
+              'Avg CPC по акаунту: $1.13',
+              'Очікуваний CPA при 15–20% конверсії landing → sign-up: $5–8 на UA ринку',
+            ],
+          },
+          {
+            icon: '💰',
+            name: 'Сценарії масштабування',
+            summary: 'Два сценарії при бюджеті $1,000/міс і фокусі на нішу презентацій.',
+            details: [
+              'Консервативний: CPA $5–8 · Підписка $5/міс · LTV $15 → ROI 2–3x · Окупність: 2–3 місяці',
+              'Базовий: CPA $5–8 · Підписка $9/міс · LTV $27 → ROI 3–5x · Окупність: 1–2 місяці',
+              'При $1K/міс бюджеті: ~125–200 нових реєстрацій. При 10% конверсії в платних: 12–20 платних користувачів.',
+              'SEO-канал: органічний трафік по ключах \"зробити презентацію\" знижує CAC до $0.',
+            ],
+          },
+          {
+            icon: '🔁',
+            name: 'Що має бути правдою для успіху',
+            summary: 'Три умови для робочої юніт-економіки.',
+            details: [
+              '1. Продукт вирішує реальну задачу: маркетологи хочуть не просто статті про презентації — їм потрібен інструмент для їх створення.',
+              '2. Конверсія landing → sign-up ≥ 10%: при CPC $1–2 на UA ринку це дає CPA $10–20, що окупається при підписці $5–9/міс.',
+              '3. Retention ≥ W2 > 0%: без повторного використання навіть дешевий CPA не конвертується в MRR.',
+            ],
+          },
+          {
+            icon: '🗺️',
+            name: 'Наступні кроки',
+            summary: 'Експеримент завершено. Роадмап наступної фази.',
+            details: [
+              'Розробити MVP інструменту для створення презентацій під потреби маркетологів',
+              'SEO-кластер: покрити запити \"зробити презентацію\", \"шаблони презентацій AI\", \"Canva альтернатива\"',
+              'Запустити платний A/B тест: $5 vs $9/міс на UA трафіку',
+              'Побудувати retention-механізм: шаблони, рекомендації, колаборація',
+              'Масштабувати статейний пайплайн на суміжні ніші: дизайн, маркетинг-інструменти',
+            ],
+          },
+        ],
+      },
+      impact: {
+        heading: 'Що купили за $452',
+        body: 'Структурований GTM-експеримент дає відповіді, а не просто користувачів. Ось що дав кожен долар бюджету:',
+        savings: [
+          { module: 'Пошук ніш через AI', before: 'Гіпотеза', after: 'Підтверджено: презентації — #1 запит', monthly: 'Визначає продуктову стратегію' },
+          { module: 'Автоматична публікація 222 статей', before: 'Ручна робота', after: 'Мікросервіс, 0 ручних дій', monthly: 'Економія 40+ год роботи' },
+          { module: 'Виявлення CTR-переможця', before: 'Невідомо', after: '\"Презентація\" — CTR 11.9%', monthly: 'Фокус бюджету' },
+          { module: 'Профіль аудиторії', before: 'Гіпотеза', after: 'Маркетологи 25–34, desktop, Пн–Пт', monthly: 'Точний таргетинг' },
+          { module: 'Трендовий сигнал', before: 'Невідомо', after: '+1000% кліків на тему презентацій', monthly: 'Зростаючий ринок' },
+          { module: 'CPC бенчмарк', before: 'Невідомо', after: '$0.82 статейний, $1.13 загальний', monthly: 'Основа юніт-економіки' },
+          { module: 'Наступний продукт', before: 'Невизначений напрямок', after: 'Інструмент для презентацій', monthly: 'Зекономлено місяці на невірному шляху' },
+        ],
+        total: '$452 · 6 тижнів',
+        punchline: 'Маркетингове агентство взяло б $10,000–20,000 за дослідження ринку такої глибини — без реальних поведінкових даних. AI + платний трафік як дослідження — це нечесна перевага AI-інженера.',
+      },
+      beforeAfter: {
+        heading: 'До vs Після',
+        items: [
+          { area: 'Знання ніші', before: 'Гіпотеза: маркетологам потрібні інструменти', after: 'Підтверджено: презентації — CTR 11.9%, +1000% кліків' },
+          { area: 'Публікація контенту', before: 'Ручна робота, нема контенту', after: '222 статті через мікросервіс, автоматично' },
+          { area: 'Розуміння аудиторії', before: 'Невідомо', after: 'Маркетологи 25–34, Пн–Пт 13–18, desktop' },
+          { area: 'Продуктовий напрямок', before: 'Широкий ринок маркетингу', after: 'Інструмент для презентацій — чіткий фокус' },
+          { area: 'Наступний крок', before: 'Незрозуміло', after: 'MVP, SEO-кластер, A/B тест ціни' },
+        ],
+      },
+      decisions: {
+        heading: 'Лог рішень',
+        body: 'Кожне методологічне рішення має обґрунтування.',
+        items: [
+          {
+            title: 'Чому AI + MCP-browser, а не класичний research?',
+            detail: 'Швидкість і масштаб. Ручний серфінг ніш займає тижні. MCP-browser автоматично аналізує маркетинговий ландшафт і видає структуровані кластери за годину. AI забирає рутину, залишаючи стратегічні рішення людині.',
+          },
+          {
+            title: 'Чому 222 статті, а не 10–20?',
+            detail: 'Більше охоплення ніш — більше поведінкових сигналів. При автоматизованому пайплайні вартість генерації 222 статей не набагато вища за 20. Але статистична значущість результатів — набагато вища.',
+          },
+          {
+            title: 'Чому платна реклама, а не SEO?',
+            detail: 'SEO дає результати через 3–6 місяців. Реклама дала 401 поведінковий сигнал за 6 тижнів. При $0.82 avg CPC — це найдешевший спосіб швидко перевірити, яка ніша реально резонує.',
+          },
+          {
+            title: 'Чому мікросервіс, а не CMS?',
+            detail: 'Масштабованість і автоматизація. CMS вимагає ручних дій на кожну публікацію. Мікросервіс публікує 222 статті без жодного ручного кроку — від генерації до деплою.',
+          },
+          {
+            title: 'Чому «презентація» — реальна ніша, а не шум?',
+            detail: 'Три сигнали підтверджують: CTR 11.9% (найвищий у кампанії), +1000% зростання кліків, пошуковий об\'єм +14% місяць до місяця. Жоден з них окремо — недостатній сигнал. Разом — підтверджена ніша.',
+          },
+        ],
+      },
+      lessons: {
+        heading: 'Висновки',
+        items: [
+          {
+            title: 'AI-серфінг ніш швидший і дешевший за будь-яке дослідження.',
+            detail: 'MCP-browser проаналізував маркетинговий ринок України за годину. Класичне дослідження зайняло б тижні й тисячі доларів.',
+          },
+          {
+            title: 'Клік — найчесніший голос аудиторії.',
+            detail: 'CTR 11.9% на «презентацію» сказав більше, ніж будь-яке опитування. Люди голосують гаманцем і кліком, а не словами.',
+          },
+          {
+            title: 'Автоматизований контентний пайплайн — не розкіш, а необхідність.',
+            detail: '222 статті вручну — це місяці роботи. Мікросервіс зробив це автоматично. Без автоматизації масштаб GTM-експерименту був би неможливий.',
+          },
+          {
+            title: 'Одна ніша важливіша за широке охоплення.',
+            detail: 'Краще бути #1 у «презентаціях для маркетологів», ніж середнім у всьому маркетингу. Дані самі показали правильний фокус.',
+          },
+        ],
+      },
+      platformEvolution: {
+        heading: 'Хронологія',
+        tagline: 'Від нуля до підтвердженої ніші за 6 тижнів.',
+        bridge: [
+          'Експеримент тривав 6 тижнів.',
+          'Дані відповіли на всі три дослідницькі питання.',
+          'Наступна фаза вже визначена.',
+          'Єдина змінна, що залишилась — {виконання}.',
+        ],
+        steps: [
+          { year: 'Берез. 2026', event: 'AI-серфінг ніш', detail: 'MCP-browser аналізує маркетинговий ринок України. Виявлено кластери: презентації, дизайн, маркетинг.' },
+          { year: 'Берез. 2026', event: '222 статті опубліковано', detail: 'Мікросервіс автоматично генерує і публікує статейний контент по всіх нішах.' },
+          { year: '16 берез.', event: 'Запуск реклами', detail: 'Articles_Offzmi_test + Traffic кампанії. Unrestricted таргетинг по темах.' },
+          { year: 'Берез.–Квіт.', event: 'Дані дозрівають', detail: '«Презентація» виходить у лідери. CTR 11.9%, +1000% кліків, тренд +14%.' },
+          { year: '19 квіт.', event: 'Кампанія закрита', detail: '401 клік · $452 · ніша визначена: презентації для маркетологів.' },
+          { year: '27 квіт.', event: 'Аналіз завершено', detail: 'Юніт-економіка побудована. Роадмап наступної фази визначено.', punchline: 'Експеримент відповів на те, для чого він був {спроєктований}.' },
+        ],
+      },
+      replicability: {
+        heading: 'Методологія, що переноситься',
+        body: 'Ця структура GTM-експерименту — AI-серфінг ніш, автоматизований контентний пайплайн, реклама як ринковий сигнал — працює для будь-якого B2C або просьюмер SaaS з вимірюваним пошуковим попитом.',
+        examples: [
+          { domain: 'EdTech', detail: 'Та сама структура: AI знаходить теми, мікросервіс генерує навчальний контент, реклама показує, яка тема конвертує. Замінити «маркетологи» на «студенти» або «HR».' },
+          { domain: 'B2B SaaS для малого бізнесу', detail: 'Замість статей — лендінги по нішах. Замість CTR — запити на демо. Логіка скринінгу ніш однакова.' },
+          { domain: 'Creator Economy', detail: 'MCP-browser знаходить трендові теми, AI генерує контент, реклама валідує, що реально цікавить аудиторію. Без місяців ручного дослідження.' },
+        ],
+        closing: 'Методологія відтворювана. Що змінюється — кластер ключових слів, цільова аудиторія і конверсійна подія. Фреймворк — використовувати AI і платний трафік для отримання поведінкових даних до того, як інвестувати в зростання — не залежить від домену.',
+      },
+    },
+    cta: {
+      heading: 'Будуєш продукт і не знаєш, яку нішу обрати?',
+      body: 'Я запустив цей експеримент для offzmi.com і перетворив $452 рекламного бюджету на підтверджену нішу, поведінковий портрет аудиторії та роадмап наступного продукту. Та сама методологія — для будь-якого продукту з вимірюваним пошуковим попитом.',
+      label: 'Поговоримо',
+    },
+    faq: {
+      heading: 'FAQ',
+      items: [
+        {
+          q: 'Чому AI + MCP-browser, а не просто Google Trends?',
+          a: 'Google Trends показує, що вже популярне. MCP-browser аналізує весь маркетинговий ландшафт — конкурентів, незакриті запити, суміжні ніші — і видає структуровані кластери. Це не replacement для Google Trends, а глибший шар аналізу.',
+        },
+        {
+          q: 'Чи $452 — реалістичний бюджет для такого експерименту?',
+          a: 'Так, і можливо навіть більше, ніж потрібно. Ключовий сигнал (CTR, домінування «презентації») був видний вже за перші 2 тижні і ~$150 витрат. Повний 6-тижневий запуск дав чистіші дані по тренду та часовій динаміці.',
+        },
+        {
+          q: 'Як мікросервіс публікує 222 статті?',
+          a: 'Пайплайн: AI генерує контент по ключовому слову і ніші → автоматична перевірка якості → деплой на сайт → трекінг в аналітиці. Без жодного ручного кроку між генерацією і публікацією.',
+        },
+        {
+          q: 'Чому «презентація», а не інша ніша?',
+          a: 'Аудиторія сама обрала. Ні я, ні AI не «вибирали» презентації як переможця — 64.7% трафіку органічно пішло саме туди. CTR 11.9% і +1000% зростання кліків підтвердили сигнал.',
+        },
+        {
+          q: 'Який наступний крок після цього експерименту?',
+          a: 'MVP інструменту для створення презентацій під потреби українських маркетологів. Потім SEO-кластер по органічних запитах і платний A/B тест ціни $5 vs $9/міс на підтвердженому трафіку.',
+        },
+      ],
+    },
+    resources: {
+      heading: 'Ресурси',
+      items: [
+        { label: 'offzmi.com — Маркетингові інструменти', url: 'https://offzmi.com' },
+        { label: 'Google Ads — Менеджер кампаній', url: 'https://ads.google.com' },
+        { label: 'DataForSEO — API для keyword research', url: 'https://dataforseo.com' },
+      ],
+    },
+    footer: {
+      role: 'AI Engineer · GTM Engineer',
+      bio: 'Побудував offzmi.com як живий GTM-експеримент — від AI-серфінгу ніш до підтвердженого ринкового сигналу. Застосовую ту саму методологію до наступного продукту.',
+      fellowAt: 'Open source at',
+      fellowLink: 'github.com/offzmi',
+      copyright: 'Всі права захищені.',
+    },
+  },
+  en: {
+    slug: 'offzmi-gtm-case-study',
+    altSlug: 'offzmi-gtm-doslidzhennia',
+    readingTime: '7 min read',
+    seo: {
+      title: 'How AI Found the Presentation Niche for Marketers: 222 Articles, $452 and a Market Signal | offzmi.com',
+      description: 'GTM case study: how AI + MCP-browser niche surfing, a 222-article microservice pipeline, and paid traffic revealed that Ukrainian marketers are massively searching for presentation tools.',
+    },
+    nav: {
+      breadcrumbHome: 'Home',
+      breadcrumbCurrent: 'GTM Case Study',
+    },
+    header: {
+      kicker: 'Case Study — offzmi.com',
+      h1: 'How AI Found a Marketer Niche for $452',
+      subtitle: 'How I used AI + MCP-browser to surf niches, deployed a microservice to publish 222 articles, and discovered that Ukrainian marketers are massively searching for presentation tools.',
+      badge: 'Live experiment · April 2026',
+      date: 'Apr 27, 2026',
+    },
+    heroMetrics: [
+      { value: '222', label: 'AI articles' },
+      { value: '$452', label: 'Total ad spend' },
+      { value: '401', label: 'Clicks' },
+      { value: '+1000%', label: 'Click growth on "presentation"' },
+      { value: '11.9%', label: 'Top keyword CTR' },
+    ],
+    tldr: 'I used AI + MCP-browser to surf marketing niches, generated 222 articles and deployed a microservice for automatic publishing. The ads revealed: 64.7% of traffic went to presentation-related content. The niche was found by audience behavior, not surveys.',
+    intro: {
+      hook: '222 articles. $452. 1 niche. Found by clicks, not hypotheses.',
+      body: 'offzmi.com is a project for marketers. The question before launch: what tools does the audience actually need? Instead of surveys, I ran AI niche surfing via MCP-browser, generated article content, and ran paid traffic — letting real search behavior give the answer.',
+    },
+    internalLinks: {
+      github: { text: 'offzmi on GitHub', href: 'https://github.com/offzmi' },
+      website: { text: 'offzmi.com', href: 'https://offzmi.com' },
+    },
+    sections: {
+      genesis: {
+        heading: 'What Was Done',
+        hook: 'Three tasks defined the entire experiment: find niches via AI, publish content via microservice, validate demand via ads.',
+        firstCommit: 'The marketing tools market is large and noisy. Without data, it\'s easy to spend months in the wrong direction. So instead of classic customer discovery — AI niche surfing via MCP-browser, automated generation of 222 articles, and paid traffic as a fast market signal.',
+        codeCaption: 'Article publishing microservice — automated pipeline from generation to deploy',
+        code: `// pipeline.js — AI Content Microservice
+async function publishArticle(niche, keyword) {
+  const content = await generateWithAI({
+    topic: keyword,
+    audience: 'ua-marketers',
+    length: 800,
+  })
+  await deployToSite(content)
+  await trackInAnalytics({ niche, keyword })
+}
+
+// MCP-browser niche surfing
+const niches = await mcpBrowser.searchTrends({
+  market: 'ukraine',
+  category: 'marketing-tools',
+  intent: 'informational',
+})`,
+        punchline: 'The microservice deployed 222 articles. The ads showed which topic wins.',
+      },
+      evolution: {
+        heading: 'Experiment Timeline',
+        timeline: [
+          { date: 'Mar 2026', title: 'AI niche surfing', detail: 'MCP-browser analyzes the Ukrainian marketing market. Clusters identified: presentations, design, marketing, layouts.' },
+          { date: 'Mar 2026', title: '222 articles generated', detail: 'AI generates article content per niche. Microservice automatically publishes to the site.' },
+          { date: 'Mar 16', title: 'Articles_Offzmi_test campaign', detail: 'Google Ads launched. Unrestricted topic targeting. Conversion: traffic to articles.' },
+          { date: 'Mar–Apr', title: 'Data matures', detail: '"Presentation" emerges as leader: 209 clicks of 323, CTR 11.9%, +1000% click growth.' },
+          { date: 'Apr 19', title: 'Campaign closed', detail: '$452 spent. 401 clicks. Niche identified by audience behavior.' },
+          { date: 'Apr 27', title: 'Analysis complete', detail: 'Presentations are the top query. Next stage: deeper product for marketers.', punchline: 'The audience {voted with clicks}.' },
+        ],
+        callout: 'One engineer. One microservice. 222 articles. Niche found.',
+        beforeAfter: {
+          heading: 'Before vs After the Experiment',
+          headers: ['', 'Before', 'After'],
+          rows: [
+            ['Niche knowledge', 'Hypothesis', 'Confirmed by data'],
+            ['Content', '0 articles', '222 AI articles'],
+            ['Publishing', 'Manual', 'Automated microservice'],
+            ['Top query', 'Unknown', '"Presentation" — 64.7% of traffic'],
+            ['Ad signal', 'None', 'CTR 11.9%, +1000% clicks'],
+            ['Next step', 'Undefined', 'Presentation tool product'],
+          ],
+        },
+      },
+      architecture: {
+        heading: 'How It Works',
+        body: 'Three components. Each solves one problem.',
+        layers: [
+          { title: 'AI + MCP-browser', detail: 'Niche surfing of the Ukrainian marketing market. Collecting trends, search clusters, and audience behavior.' },
+          { title: 'Generation microservice', detail: 'AI generates articles per niche → automatic publishing to the site → tracking in analytics.' },
+          { title: 'Google Ads as signal', detail: 'Paid traffic as a cheaper and faster alternative to customer discovery. A click = confirmed interest.' },
+        ],
+        lifecycleHeading: 'Cycle from niche to signal',
+        lifecycle: {
+          headers: ['Step', 'What happens', 'Tool', 'Result'],
+          rows: [
+            ['1', 'Surf marketing market niches', 'AI + MCP-browser', 'Topic clusters'],
+            ['2', 'Generate 222 articles', 'AI (GPT)', '222 publications'],
+            ['3', 'Auto-deploy to site', 'Microservice', 'Site populated'],
+            ['4', 'Launch Google Ads', 'Articles_Offzmi_test', '$452 spent'],
+            ['5', 'Collect behavioral data', 'Google Ads Analytics', '401 clicks, CTR 11.9%'],
+            ['6', 'Identify winning niche', 'Click analysis', '"Presentation" — top'],
+          ],
+        },
+      },
+      howItWasBuilt: {
+        heading: 'Why AI + MCP-browser, not surveys',
+        intro: 'Surveys show what people say they want. Search behavior shows what they actually look for. At $0.82 avg CPC, Google Ads produced 401 behavioral signals in 6 weeks.',
+        narrative: 'The logic is simple: first AI finds potential niches by surfing the market, then content covers those niches, then ads show which one resonates with the audience. This is cheaper and faster than any focus group.',
+        phases: [
+          {
+            title: 'Niche discovery',
+            subtitle: 'AI surfs the market',
+            items: [
+              { label: 'MCP-browser analysis', detail: 'Automated surfing of Ukrainian marketing niches. Collecting trends, search queries, and competitive landscape.' },
+              { label: 'Topic clustering', detail: 'AI groups found topics: presentations, design, marketing tools, layouts. Each cluster is a potential niche.' },
+            ],
+          },
+          {
+            title: 'Content generation',
+            subtitle: 'Microservice publishes',
+            items: [
+              { label: '222 articles by niche', detail: 'AI generates article content for each cluster. Microservice automatically publishes without manual intervention.' },
+              { label: 'Automated deploy', detail: 'From generation to publication — zero manual work. The entire pipeline is automated.' },
+            ],
+          },
+          {
+            title: 'Validation via ads',
+            subtitle: 'A click is the most honest vote',
+            items: [
+              { label: 'Articles_Offzmi_test campaign', detail: '$265.83 spent on article traffic. 323 clicks of 401 total — 80.5% of traffic came through the article campaign.' },
+              { label: 'Niche found organically', detail: '"Presentation" — 209 clicks of 323, CTR 11.9%, +1000% click growth. The audience voted itself.' },
+            ],
+          },
+        ],
+      },
+      e2eFlows: {
+        heading: 'What the Data Showed',
+        body: 'Four findings, each actionable.',
+        items: [
+          {
+            icon: '🎯',
+            name: 'Finding 1 — Presentations: niche confirmed',
+            trigger: 'CTR on "presentation" query: 11.9%',
+            summary: '209 clicks of 323 in the Articles_Offzmi_test campaign went to presentation topics. Search volume +14% month-over-month, clicks +1000%. This is not a hypothesis — it\'s a behavioral signal.',
+            basesTouched: ['Google Ads', 'Articles_Offzmi_test'],
+            details: [
+              '"presentation" — $157.29 spent · 209 clicks · CTR 11.90%',
+              '"marketing" — $30.09 · 22 clicks',
+              '"layout" — $22.94 · 9 clicks · CTR 19.15% (best CTR)',
+              '"design" — $18.18 · 19 clicks',
+              'Top search queries: "artificial intelligence", "presentation ideas", "create presentation", "modern presentation templates free"',
+              'Conclusion: marketers are actively searching for presentation tools. Demand is pull-based, not push-required.',
+            ],
+          },
+          {
+            icon: '📊',
+            name: 'Finding 2 — Article campaign is cheaper than direct traffic',
+            trigger: 'CPC $0.82 vs $1.13 account avg',
+            summary: 'Articles_Offzmi_test delivered CPC 27% cheaper than the account average. Informational content competes less than transactional queries.',
+            basesTouched: ['Google Ads'],
+            details: [
+              'Articles_Offzmi_test: $265.83 · 323 clicks · CTR 6.79% · CPC ~$0.82',
+              'Traffic OFZMI Homepage: $119.33 · 90 clicks · CTR 5.69%',
+              'Traffic OFZMI MAX: $66.52 · 46 clicks · CTR 7.30%',
+              '80.5% of all clicks — through the article campaign. The audience reads, not just searches for a product.',
+              'Conclusion: AI content as an acquisition channel is cheaper and more scalable than direct transactional campaigns.',
+            ],
+          },
+          {
+            icon: '👤',
+            name: 'Finding 3 — Audience profile',
+            trigger: 'Demographics + device + time-of-day data',
+            summary: 'The data paints a clear portrait of who is searching. This profile directly informs the next campaign\'s targeting.',
+            basesTouched: ['Google Ads Demographics', 'Day & Hour data'],
+            details: [
+              'Core audience: men and women, 25–34 years old',
+              'Peak activity: Mon–Fri, 1PM–6PM — marketers search for tools during work hours',
+              'Device: primarily desktop (desktop-first behavior)',
+              'Geo: Ukraine — target market confirmed',
+              'Implication: the product must be desktop-first, focused on working scenarios for marketers.',
+            ],
+          },
+          {
+            icon: '🚀',
+            name: 'Finding 4 — Next step defined',
+            trigger: 'Niche found — presentation tool for marketers',
+            summary: '222 articles, $452 and 6 weeks gave a clear answer: Ukrainian marketers are massively searching for presentation creation tools. This is the foundation for the next product decision.',
+            basesTouched: ['Google Ads', 'AI Research'],
+            details: [
+              'Confirmed demand: presentations — #1 topic by clicks and CTR.',
+              'Trending: search volume +14%, clicks +1000% — growing market.',
+              'Competitors in search: free templates, AI presentation generation, Canva alternatives.',
+              'Next stage: develop a presentation tool for the needs of Ukrainian marketers.',
+              'SEO channel: organically cover queries "create presentation", "presentation templates" — CAC = $0 at scale.',
+            ],
+          },
+        ],
+      },
+      crossCutting: {
+        heading: 'Unit Economics Model',
+        body: 'Built from experiment data. Two scenarios for the next phase.',
+        items: [
+          {
+            icon: '📊',
+            name: 'Current click cost',
+            summary: 'Articles_Offzmi_test showed CPC $0.82 on informational traffic. For transactional traffic on "presentations" we expect $1.5–2.5 in the Ukrainian market.',
+            details: [
+              'CPC article campaign (actual): $0.82 · 323 clicks · $265.83 spend',
+              'Avg CPC account-wide: $1.13',
+              'Expected CPA at 15–20% landing → sign-up conversion: $5–8 for UA market',
+            ],
+          },
+          {
+            icon: '💰',
+            name: 'Scaling scenarios',
+            summary: 'Two scenarios at $1,000/mo budget focused on the presentation niche.',
+            details: [
+              'Conservative: CPA $5–8 · Subscription $5/mo · LTV $15 → ROI 2–3x · Payback: 2–3 months',
+              'Base: CPA $5–8 · Subscription $9/mo · LTV $27 → ROI 3–5x · Payback: 1–2 months',
+              'At $1K/mo budget: ~125–200 new sign-ups. At 10% paid conversion: 12–20 paying users.',
+              'SEO channel: organic traffic on "create presentation" keywords reduces CAC to $0.',
+            ],
+          },
+          {
+            icon: '🔁',
+            name: 'What needs to be true for this to work',
+            summary: 'Three conditions for working unit economics.',
+            details: [
+              '1. Product solves a real problem: marketers want not just articles about presentations — they need a tool to create them.',
+              '2. Landing → sign-up conversion ≥ 10%: at CPC $1–2 in UA market this gives CPA $10–20, which pays back at $5–9/mo subscription.',
+              '3. Retention ≥ W2 > 0%: without repeat usage even cheap CPA does not compound into MRR.',
+            ],
+          },
+          {
+            icon: '🗺️',
+            name: 'Next Steps',
+            summary: 'The experiment is complete. The roadmap for the next phase.',
+            details: [
+              'Build MVP presentation creation tool for marketer needs',
+              'SEO cluster: cover "create presentation", "AI presentation templates", "Canva alternative" queries',
+              'Run pricing A/B test: $5 vs $9/mo on UA traffic',
+              'Build retention mechanism: templates, recommendations, collaboration',
+              'Scale article pipeline to adjacent niches: design, marketing tools',
+            ],
+          },
+        ],
+      },
+      impact: {
+        heading: 'What $452 Bought',
+        body: 'A structured GTM experiment produces answers, not just users. Here is what each dollar returned:',
+        savings: [
+          { module: 'AI niche discovery', before: 'Hypothesis', after: 'Confirmed: presentations — #1 query', monthly: 'Defines product strategy' },
+          { module: 'Auto-publish 222 articles', before: 'Manual work', after: 'Microservice, 0 manual actions', monthly: 'Saves 40+ hours of work' },
+          { module: 'CTR winner identification', before: 'Unknown', after: '"Presentation" — CTR 11.9%', monthly: 'Budget focus' },
+          { module: 'Audience profile', before: 'Hypothesis', after: 'Marketers 25–34, desktop, Mon–Fri', monthly: 'Precise targeting' },
+          { module: 'Trend signal', before: 'Unknown', after: '+1000% clicks on presentation topic', monthly: 'Growing market' },
+          { module: 'CPC benchmark', before: 'Unknown', after: '$0.82 article, $1.13 overall', monthly: 'Unit economics foundation' },
+          { module: 'Next product', before: 'Undefined direction', after: 'Presentation tool', monthly: 'Saved months on wrong path' },
+        ],
+        total: '$452 · 6 weeks',
+        punchline: 'A marketing agency would charge $10,000–20,000 for market research of this depth — without real behavioral data. AI + paid traffic as research is the AI engineer\'s unfair advantage.',
+      },
+      beforeAfter: {
+        heading: 'Before vs After',
+        items: [
+          { area: 'Niche knowledge', before: 'Hypothesis: marketers need tools', after: 'Confirmed: presentations — CTR 11.9%, +1000% clicks' },
+          { area: 'Content publishing', before: 'Manual, no content', after: '222 articles via microservice, automatically' },
+          { area: 'Audience understanding', before: 'Unknown', after: 'Marketers 25–34, Mon–Fri 1–6PM, desktop' },
+          { area: 'Product direction', before: 'Broad marketing market', after: 'Presentation tool — clear focus' },
+          { area: 'Next step', before: 'Unclear', after: 'MVP, SEO cluster, price A/B test' },
+        ],
+      },
+      decisions: {
+        heading: 'Decision Log',
+        body: 'Every methodological choice has a rationale.',
+        items: [
+          {
+            title: 'Why AI + MCP-browser and not classic research?',
+            detail: 'Speed and scale. Manual niche surfing takes weeks. MCP-browser automatically analyzes the marketing landscape and produces structured clusters in an hour. AI removes the routine, leaving strategic decisions to humans.',
+          },
+          {
+            title: 'Why 222 articles and not 10–20?',
+            detail: 'More niche coverage = more behavioral signals. With an automated pipeline, the cost of generating 222 articles is not much higher than 20. But the statistical significance of results is much higher.',
+          },
+          {
+            title: 'Why paid ads and not SEO?',
+            detail: 'SEO takes 3–6 months. Ads gave 401 behavioral signals in 6 weeks. At $0.82 avg CPC — the cheapest way to quickly validate which niche actually resonates.',
+          },
+          {
+            title: 'Why a microservice and not a CMS?',
+            detail: 'Scalability and automation. A CMS requires manual action for every publish. The microservice published 222 articles with zero manual steps — from generation to deploy.',
+          },
+          {
+            title: 'Why is "presentation" a real niche and not noise?',
+            detail: 'Three signals confirm it: CTR 11.9% (highest in the campaign), +1000% click growth, search volume +14% month-over-month. None of them alone is sufficient signal. Together — a confirmed niche.',
+          },
+        ],
+      },
+      lessons: {
+        heading: 'Takeaways',
+        items: [
+          {
+            title: 'AI niche surfing is faster and cheaper than any research.',
+            detail: 'MCP-browser analyzed the Ukrainian marketing market in an hour. Classic research would have taken weeks and thousands of dollars.',
+          },
+          {
+            title: 'A click is the most honest audience vote.',
+            detail: 'CTR 11.9% on "presentation" said more than any survey. People vote with their wallets and clicks, not words.',
+          },
+          {
+            title: 'Automated content pipeline is not a luxury — it\'s a necessity.',
+            detail: '222 articles manually is months of work. The microservice did it automatically. Without automation, the GTM experiment scale would be impossible.',
+          },
+          {
+            title: 'One niche matters more than broad coverage.',
+            detail: 'Better to be #1 in "presentations for marketers" than average across all marketing. The data showed the right focus itself.',
+          },
+        ],
+      },
+      platformEvolution: {
+        heading: 'Timeline',
+        tagline: 'From zero data to a confirmed niche in 6 weeks.',
+        bridge: [
+          'The experiment ran for 6 weeks.',
+          'The data answered all three research questions.',
+          'The next phase is already scoped.',
+          'The only variable left is {execution}.',
+        ],
+        steps: [
+          { year: 'Mar 2026', event: 'AI niche surfing', detail: 'MCP-browser analyzes the Ukrainian marketing market. Clusters found: presentations, design, marketing.' },
+          { year: 'Mar 2026', event: '222 articles published', detail: 'Microservice automatically generates and publishes article content across all niches.' },
+          { year: 'Mar 16', event: 'Ads launched', detail: 'Articles_Offzmi_test + Traffic campaigns. Unrestricted topic targeting.' },
+          { year: 'Mar–Apr', event: 'Data matures', detail: '"Presentation" takes the lead. CTR 11.9%, +1000% clicks, trend +14%.' },
+          { year: 'Apr 19', event: 'Campaign closed', detail: '401 clicks · $452 · niche identified: presentations for marketers.' },
+          { year: 'Apr 27', event: 'Analysis complete', detail: 'Unit economics built. Next phase roadmap scoped.', punchline: 'The experiment answered what it was {designed to answer}.' },
+        ],
+      },
+      replicability: {
+        heading: 'Transferable Methodology',
+        body: 'This GTM experiment structure — AI niche surfing, automated content pipeline, ads as market signal — works for any B2C or prosumer SaaS with measurable search demand.',
+        examples: [
+          { domain: 'EdTech', detail: 'Same structure: AI finds topics, microservice generates educational content, ads show which topic converts. Replace "marketers" with "students" or "HR".' },
+          { domain: 'B2B SaaS for small business', detail: 'Replace articles with niche landing pages. Replace CTR with demo requests. Niche screening logic is identical.' },
+          { domain: 'Creator Economy', detail: 'MCP-browser finds trending topics, AI generates content, ads validate what the audience actually cares about. Without months of manual research.' },
+        ],
+        closing: 'The methodology is replicable. What changes is the keyword cluster, target audience, and conversion event. The framework — using AI and paid traffic to gather behavioral data before investing in growth — is domain-agnostic.',
+      },
+    },
+    cta: {
+      heading: 'Building something and not sure which niche to go after first?',
+      body: 'I ran this experiment for offzmi.com and turned $452 of ad spend into a confirmed niche, a behavioral audience portrait, and a next product roadmap. The same methodology applies to any product with measurable search demand.',
+      label: 'Let\'s talk',
+    },
+    faq: {
+      heading: 'FAQ',
+      items: [
+        {
+          q: 'Why AI + MCP-browser and not just Google Trends?',
+          a: 'Google Trends shows what is already popular. MCP-browser analyzes the entire marketing landscape — competitors, uncovered queries, adjacent niches — and produces structured clusters. It\'s not a replacement for Google Trends, it\'s a deeper layer of analysis.',
+        },
+        {
+          q: 'Is $452 a realistic budget for this kind of experiment?',
+          a: 'Yes, and possibly more than needed. The key signal (CTR, "presentation" dominance) was visible within the first 2 weeks and ~$150 of spend. The full 6-week run produced cleaner trend and time-dynamic data.',
+        },
+        {
+          q: 'How does the microservice publish 222 articles?',
+          a: 'Pipeline: AI generates content by keyword and niche → automatic quality check → deploy to site → tracking in analytics. Zero manual steps between generation and publication.',
+        },
+        {
+          q: 'Why "presentation" and not another niche?',
+          a: 'The audience chose it. Neither I nor the AI "picked" presentations as the winner — 64.7% of traffic organically went there. CTR 11.9% and +1000% click growth confirmed the signal.',
+        },
+        {
+          q: 'What is the next step after this experiment?',
+          a: 'MVP of a presentation creation tool for Ukrainian marketers. Then an SEO cluster on organic queries and a paid price A/B test at $5 vs $9/mo on confirmed traffic.',
+        },
+      ],
+    },
+    resources: {
+      heading: 'Resources',
+      items: [
+        { label: 'offzmi.com — Marketing Tools', url: 'https://offzmi.com' },
+        { label: 'Google Ads — Campaign manager', url: 'https://ads.google.com' },
+        { label: 'DataForSEO — Keyword research API', url: 'https://dataforseo.com' },
+      ],
+    },
+    footer: {
+      role: 'AI Engineer · GTM Engineer',
+      bio: 'Built offzmi.com as a live GTM experiment — from AI niche surfing to a confirmed market signal. Applying the same methodology to the next product.',
+      fellowAt: 'Open source at',
+      fellowLink: 'github.com/offzmi',
+      copyright: 'All rights reserved.',
+    },
+  },
+} as const

@@ -249,7 +249,7 @@ export default function ProgrammaticSeo({ lang = 'en' }: { lang?: Lang }) {
     altSlug: t.altSlug,
     title: t.seo.title,
     description: t.seo.description,
-    image: 'https://santifer.io/pseo/og-programmatic-seo.png',
+    image: 'https://esupport.org.ua/pseo/og-programmatic-seo.png',
     publishedTime: '2026-02-25',
     modifiedTime: '2026-03-10',
     articleTags: 'programmatic SEO,Airtable,Astro,DataForSEO,crawl budget,phone repair,ERP,local SEO',
@@ -404,7 +404,7 @@ export default function ProgrammaticSeo({ lang = 'en' }: { lang?: Lang }) {
           hdSrc="/pseo/ss-airtable-taxonomy-hd.webp"
           alt={lang === 'es' ? 'Jerarquía de tablas en Airtable — CMS del SEO programático' : 'Airtable table hierarchy — programmatic SEO CMS'}
           width={800} height={418} hdWidth={2512} hdHeight={1312}
-          caption={lang === 'es' ? 'Las 14 tablas del CMS conectadas al Business OS de 12 bases. Jerarquía de 6 niveles desde tipo de dispositivo hasta variante local.' : 'The 14 CMS tables connected to the 12-base Business OS. 6-level hierarchy from device type to local variant.'}
+          caption={lang === 'es' ? 'Las 14 tablas del CMS conectadas al ERP de 12 bases. Jerarquía de 6 niveles desde tipo de dispositivo hasta variante local.' : 'The 14 CMS tables connected to the 12-base ERP. 6-level hierarchy from device type to local variant.'}
         />
 
         {/* Business OS interlink */}
@@ -604,7 +604,7 @@ export default function ProgrammaticSeo({ lang = 'en' }: { lang?: Lang }) {
           hdSrc="/pseo/ss-airtable-image-pipeline-hd.webp"
           alt={lang === 'es' ? 'Pipeline de imágenes en Airtable' : 'Image pipeline in Airtable'}
           width={800} height={418} hdWidth={2512} hdHeight={1312}
-          caption={lang === 'es' ? 'Pipeline de imágenes: 1 foto de GSM Arena → 18 composiciones automáticas con overlays de reparación. Todo sincronizado con el Business OS.' : 'Image pipeline: 1 GSM Arena photo → 18 auto-composited repair overlays. All synced with the Business OS.'}
+          caption={lang === 'es' ? 'Pipeline de imágenes: 1 foto de GSM Arena → 18 composiciones automáticas con overlays de reparación. Todo sincronizado con el ERP.' : 'Image pipeline: 1 GSM Arena photo → 18 auto-composited repair overlays. All synced with the ERP.'}
         />
 
         {/* Content Cascade */}
@@ -1036,7 +1036,7 @@ export default function ProgrammaticSeo({ lang = 'en' }: { lang?: Lang }) {
           heading={t.cta.heading}
           body={t.cta.body}
           ctaLabel={t.cta.label}
-          ctaHref="mailto:hola@santifer.io?subject=Programmatic SEO"
+          ctaHref="mailto:esupport@esupport.org.ua?subject=Programmatic SEO"
         />
 
         {/* FAQ */}

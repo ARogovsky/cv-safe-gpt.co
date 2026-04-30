@@ -4,7 +4,7 @@ export const jacoboContent = {
       altSlug: 'ai-agent-jacobo',
       readingTime: '35 min de lectura',
       seo: {
-        title: 'Jacobo: Agente IA Multi-Agente con Tool Calling y Voice AI · Case Study de Producción | santifer.io',
+        title: 'Jacobo: Agente IA Multi-Agente con Tool Calling y Voice AI · Case Study de Producción | esupport.org.ua',
         description: 'Case study: cómo un FDE construyó un agente IA omnicanal con sub-agentes, tool calling, HITL y Voice AI (n8n + ElevenLabs) que logra 90% de autoservicio. Workflows descargables.',
       },
       nav: {
@@ -47,8 +47,8 @@ export const jacoboContent = {
       },
       internalLinks: {
         businessOs: {
-          text: 'Business OS | Case Study',
-          href: '/business-os-para-airtable',
+          text: 'Advogram GTM | Case Study',
+          href: '/advogram-gtm-case-study',
         },
         pseo: {
           text: 'SEO Programático | Case Study',
@@ -681,8 +681,8 @@ export const jacoboContent = {
           ],
           bridge: ['Jacobo no fue un experimento.', '16 años construyendo un negocio con mis manos.', 'Sistematizarlo hasta que funcionara {sin mí}.', 'Jacobo fue la pieza que {cerró el ciclo}.', 'Vendí el negocio como empresa en marcha.', 'Los sistemas siguen operando hoy — bajo {nuevo dueño}.'],
           crossLink: {
-            text: 'Jacobo se construyó sobre el Business OS que diseñé durante 5 años. Lee el case study completo →',
-            href: '/business-os-para-airtable',
+            text: 'Antes de construir Jacobo, validé el mercado con datos reales. Así es como lo hice →',
+            href: '/advogram-gtm-case-study',
           },
         },
         lessons: {
@@ -1536,7 +1536,7 @@ Presupuesto reparándolo todo junto: \${totalConDescuento.toFixed(2)} €\`;`,
       altSlug: 'agente-ia-jacobo',
       readingTime: '35 min read',
       seo: {
-        title: 'Jacobo: Multi-Agent AI with Tool Calling & Voice AI — Production Case Study | santifer.io',
+        title: 'Jacobo: Multi-Agent AI with Tool Calling & Voice AI — Production Case Study | esupport.org.ua',
         description: 'Case study: how an FDE built an omnichannel AI agent with sub-agents, tool calling, HITL, and Voice AI (n8n + ElevenLabs) achieving 90% self-service. Downloadable workflows.',
       },
       nav: {
@@ -1579,8 +1579,8 @@ Presupuesto reparándolo todo junto: \${totalConDescuento.toFixed(2)} €\`;`,
       },
       internalLinks: {
         businessOs: {
-          text: 'Business OS — Case Study',
-          href: '/business-os-for-airtable',
+          text: 'Advogram GTM — Case Study',
+          href: '/advogram-gtm-case-study-en',
         },
         pseo: {
           text: 'Programmatic SEO — Case Study',
@@ -2215,8 +2215,8 @@ Presupuesto reparándolo todo junto: \${totalConDescuento.toFixed(2)} €\`;`,
           ],
           bridge: ['Jacobo wasn\'t an experiment.', '16 years building a business with my own hands.', 'Systematize it until it runs {without me}.', 'Jacobo was the piece that {closed the loop}.', 'I sold the business as a going concern.', 'The systems I built still run today — under {new ownership}.'],
           crossLink: {
-            text: 'Jacobo was built on top of the Business OS I designed over 5 years — read the full case study →',
-            href: '/business-os-for-airtable',
+            text: 'Before building Jacobo, I validated the market with real data. Here\'s how I did it →',
+            href: '/advogram-gtm-case-study-en',
           },
         },
         lessons: {

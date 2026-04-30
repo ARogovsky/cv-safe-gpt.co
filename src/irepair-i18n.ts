@@ -1,4 +1,4 @@
-export type IRepairLang = 'es' | 'en'
+export type IRepairLang = 'es' | 'en' | 'uk'
 
 interface IRepairMetric {
   value: string
@@ -87,9 +87,9 @@ export const irepairContent: Record<IRepairLang, IRepairContent> = {
       },
     },
     businessOsCta: {
-      heading: 'El sistema detrás de 30.000 reparaciones',
-      body: 'Un ERP completo en Airtable que gestionó el negocio durante años. Automatizaciones, IA y 170 horas al mes ahorradas.',
-      ctaLabel: 'Ver el Business OS',
+      heading: 'Validación de mercado con datos reales',
+      body: 'Cómo validé una idea de producto con Google Ads, encontré geografías rentables y construí la economía unitaria en 6 semanas.',
+      ctaLabel: 'Ver Advogram GTM →',
     },
     jacoboCta: {
       heading: 'El agente que atendía el teléfono',
@@ -137,9 +137,9 @@ export const irepairContent: Record<IRepairLang, IRepairContent> = {
       },
     },
     businessOsCta: {
-      heading: 'The system behind 30,000 repairs',
-      body: 'A full ERP built in Airtable that ran the business for years. Automations, AI, and 170 hours/month saved.',
-      ctaLabel: 'See the Business OS',
+      heading: 'Market validation with real data',
+      body: 'How I validated a product idea with Google Ads, found profitable geographies, and built unit economics in 6 weeks.',
+      ctaLabel: 'See Advogram GTM →',
     },
     jacoboCta: {
       heading: 'The agent that answered the phone',

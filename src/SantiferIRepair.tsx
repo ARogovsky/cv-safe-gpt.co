@@ -11,29 +11,29 @@ export default function SantiferIRepair({ lang }: { lang: IRepairLang }) {
   const jsonLd = useMemo(() => ({
     '@context': 'https://schema.org',
     '@graph': [
-      { '@id': 'https://santifer.io/#person' },
+      { '@id': 'https://esupport.org.ua/#person' },
       {
         '@type': 'WebSite',
-        '@id': 'https://santifer.io/#website',
-        url: 'https://santifer.io',
-        name: 'santifer.io',
-        publisher: { '@id': 'https://santifer.io/#person' },
+        '@id': 'https://esupport.org.ua/#website',
+        url: 'https://esupport.org.ua',
+        name: 'esupport.org.ua',
+        publisher: { '@id': 'https://esupport.org.ua/#person' },
       },
       {
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: t.nav.breadcrumbHome, item: `https://santifer.io${lang === 'en' ? '/en' : '/'}` },
-          { '@type': 'ListItem', position: 2, name: t.nav.breadcrumbCurrent, item: `https://santifer.io/${t.slug}` },
+          { '@type': 'ListItem', position: 1, name: t.nav.breadcrumbHome, item: `https://esupport.org.ua${lang === 'en' ? '/en' : '/'}` },
+          { '@type': 'ListItem', position: 2, name: t.nav.breadcrumbCurrent, item: `https://esupport.org.ua/${t.slug}` },
         ],
       },
       {
         '@type': 'WebPage',
-        '@id': `https://santifer.io/${t.slug}#webpage`,
-        url: `https://santifer.io/${t.slug}`,
+        '@id': `https://esupport.org.ua/${t.slug}#webpage`,
+        url: `https://esupport.org.ua/${t.slug}`,
         name: t.seo.title,
         description: t.seo.description,
-        about: { '@id': 'https://santifer.io/#person' },
-        isPartOf: { '@id': 'https://santifer.io/#website' },
+        about: { '@id': 'https://esupport.org.ua/#person' },
+        isPartOf: { '@id': 'https://esupport.org.ua/#website' },
         inLanguage: ['es', 'en'],
       },
     ],
@@ -45,7 +45,7 @@ export default function SantiferIRepair({ lang }: { lang: IRepairLang }) {
     altSlug: t.altSlug,
     title: t.seo.title,
     description: t.seo.description,
-    image: 'https://santifer.io/business-os/og-business-os.webp',
+    image: 'https://esupport.org.ua/advogram/og-advogram-gtm.webp',
     publishedTime: '2026-03-08',
     articleTags: 'Santifer iRepair, phone repair, Seville, exit, founder',
     jsonLd,
@@ -57,7 +57,7 @@ export default function SantiferIRepair({ lang }: { lang: IRepairLang }) {
   }, [lang])
 
   const homePath = lang === 'en' ? '/en' : '/'
-  const businessOsPath = lang === 'en' ? '/business-os-for-airtable' : '/business-os-para-airtable'
+  const advogramPath = lang === 'en' ? '/advogram-gtm-case-study-en' : '/advogram-gtm-case-study'
   const jacoboPath = lang === 'en' ? '/ai-agent-jacobo' : '/agente-ia-jacobo'
   const pseoPath = lang === 'en' ? '/programmatic-seo' : '/seo-programatico'
 
@@ -157,7 +157,7 @@ export default function SantiferIRepair({ lang }: { lang: IRepairLang }) {
         heading={t.businessOsCta.heading}
         body={t.businessOsCta.body}
         ctaLabel={t.businessOsCta.ctaLabel}
-        ctaHref={businessOsPath}
+        ctaHref={advogramPath}
       />
       <CaseStudyCta
         heading={t.jacoboCta.heading}

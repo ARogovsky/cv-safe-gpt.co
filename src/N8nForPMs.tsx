@@ -40,7 +40,7 @@ export default function N8nForPMs({ lang = 'en' }: { lang?: N8nLang }) {
     altSlug: t.altSlug,
     title: t.seo.title,
     description: t.seo.description,
-    image: 'https://santifer.io/workflows/n8n-ai-feedback-classification-workflow.webp',
+    image: 'https://esupport.org.ua/workflows/n8n-ai-feedback-classification-workflow.webp',
     publishedTime: '2026-02-24',
     modifiedTime: '2026-03-06',
     articleTags: 'n8n,product manager,automation,AI,workflow,no-code',
@@ -300,12 +300,12 @@ export default function N8nForPMs({ lang = 'en' }: { lang?: N8nLang }) {
 
           {/* Cross-link: Business OS */}
           <CaseStudyCta
-            heading={lang === 'es' ? '¿Qué automaticé con esas 170 horas?' : 'What did I automate with those 170 hours?'}
+            heading={lang === 'es' ? '¿Cómo validar una idea antes de construirla?' : 'How to validate an idea before building it?'}
             body={lang === 'es'
-              ? 'Estos workflows son una fracción de un sistema más amplio: 12 bases de Airtable, 50+ automatizaciones y un agente IA que gestiona clientes 24/7. Todo documentado en el case study del Business OS.'
-              : 'These workflows are a fraction of a larger system: 12 Airtable bases, 50+ automations, and an AI agent handling customers 24/7. All documented in the Business OS case study.'}
-            ctaLabel={lang === 'es' ? 'Ver Business OS →' : 'Read Business OS →'}
-            ctaHref={lang === 'es' ? '/business-os-para-airtable' : '/business-os-for-airtable'}
+              ? 'Antes de automatizar, hay que validar. Así es como validé el mercado de herramientas ATS con Google Ads, encontré geografías rentables y construí la economía unitaria en 6 semanas.'
+              : 'Before automating, you need to validate. Here\'s how I validated the ATS tools market with Google Ads, found profitable geographies, and built unit economics in 6 weeks.'}
+            ctaLabel={lang === 'es' ? 'Ver Advogram GTM →' : 'Read Advogram GTM →'}
+            ctaHref={lang === 'es' ? '/advogram-gtm-case-study' : '/advogram-gtm-case-study-en'}
           />
 
           {/* FAQ */}

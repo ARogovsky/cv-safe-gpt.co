@@ -6,7 +6,7 @@ const content = {
   es: {
     title: 'Politica de Privacidad',
     lastUpdated: 'Ultima actualizacion: 15 de marzo de 2026',
-    intro: 'Esta politica describe como se recopilan y utilizan los datos cuando visitas santifer.io.',
+    intro: 'Esta politica describe como se recopilan y utilizan los datos cuando visitas esupport.org.ua.',
     sections: [
       {
         heading: 'Que datos se recopilan',
@@ -44,7 +44,7 @@ const content = {
       {
         heading: 'Contacto',
         body: 'Para cualquier consulta sobre privacidad, puedes escribir a:',
-        email: 'hola@santifer.io',
+        email: 'esupport@esupport.org.ua',
       },
     ],
     backHome: 'Volver al inicio',
@@ -52,7 +52,7 @@ const content = {
   en: {
     title: 'Privacy Policy',
     lastUpdated: 'Last updated: March 15, 2026',
-    intro: 'This policy describes how data is collected and used when you visit santifer.io.',
+    intro: 'This policy describes how data is collected and used when you visit esupport.org.ua.',
     sections: [
       {
         heading: 'What data is collected',
@@ -90,7 +90,7 @@ const content = {
       {
         heading: 'Contact',
         body: 'For any privacy-related inquiries, you can write to:',
-        email: 'hola@santifer.io',
+        email: 'esupport@esupport.org.ua',
       },
     ],
     backHome: 'Back to home',
@@ -108,7 +108,7 @@ export default function PrivacyPolicy({ lang = 'es' }: { lang?: 'es' | 'en' }) {
   const t = content[lang]
 
   useEffect(() => {
-    document.title = `${t.title} | santifer.io`
+    document.title = `${t.title} | esupport.org.ua`
 
     // noindex
     let robots = document.querySelector('meta[name="robots"]') as HTMLMetaElement
@@ -121,13 +121,13 @@ export default function PrivacyPolicy({ lang = 'es' }: { lang?: 'es' | 'en' }) {
 
     // Fix canonical (SPA fallback serves homepage canonical — override it)
     let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement
-    if (canonical) canonical.href = `https://santifer.io/${lang === 'es' ? 'privacidad' : 'privacy'}`
+    if (canonical) canonical.href = `https://esupport.org.ua/${lang === 'es' ? 'privacidad' : 'privacy'}`
 
     // Fix meta description
     let desc = document.querySelector('meta[name="description"]') as HTMLMetaElement
     if (desc) desc.content = lang === 'es'
-      ? 'Politica de privacidad de santifer.io. Como se recopilan y utilizan los datos del chatbot y la web.'
-      : 'Privacy policy for santifer.io. How chatbot and website data is collected and used.'
+      ? 'Politica de privacidad de esupport.org.ua. Como se recopilan y utilizan los datos del chatbot y la web.'
+      : 'Privacy policy for esupport.org.ua. How chatbot and website data is collected and used.'
 
     return () => {
       robots.content = 'index, follow'

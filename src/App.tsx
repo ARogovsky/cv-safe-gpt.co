@@ -2274,7 +2274,7 @@ function App() {
                     </div>
                   </div>
                   <p className="text-sm text-muted-foreground mb-4">
-                    {parseBold(project.desc)}
+                    {project.desc}
                   </p>
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tech.map((tech) => (

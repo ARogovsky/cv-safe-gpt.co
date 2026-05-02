@@ -201,12 +201,12 @@ function N7Badge() {
 }
 
 /** Tooltip styled as a comm transmission */
-function CommTooltip({ playing, lang, dismissed }: { playing: boolean; lang: 'es' | 'en'; dismissed?: boolean }) {
+function CommTooltip({ playing, lang, dismissed }: { playing: boolean; lang: 'uk' | 'en'; dismissed?: boolean }) {
   const text = playing
     ? 'Uncharted Worlds'
     : dismissed
-      ? (lang === 'es' ? 'Sin respuesta. Normandy fuera.' : 'Logging off. Normandy out.')
-      : (lang === 'es' ? 'Comandante, tenemos una señal' : 'Commander, we have a signal');
+      ? (lang === 'uk' ? 'Sin respuesta. Normandy fuera.' : 'Logging off. Normandy out.')
+      : (lang === 'uk' ? 'Comandante, tenemos una señal' : 'Commander, we have a signal');
 
   return (
     <motion.div

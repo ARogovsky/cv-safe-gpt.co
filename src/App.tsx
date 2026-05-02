@@ -2819,7 +2819,7 @@ function App() {
                 </div>
                 <div className="flex justify-between items-center">
                   <span>{t.skills.english}</span>
-                  <span className="text-sm text-muted-foreground">{t.skills.professional}</span>
+                  <span className="text-sm text-primary font-medium">{t.skills.professional}</span>
                 </div>
               </div>
 

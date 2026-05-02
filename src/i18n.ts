@@ -1545,7 +1545,7 @@ export const translations = {
     },
     cta: {
       title: "Let's talk",
-      desc: 'Looking for a remote role (EU / USA) where I can own product delivery, unblock teams through automation, and ship results you can measure.',
+      desc: 'Looking for a remote role (EU / USA) as Senior AI Engineer & GTM Engineer. Building production GenAI systems with agentic workflows, RAG pipelines, and go-to-market validation.',
       contact: 'Contact',
     },
     ui: {
@@ -1568,22 +1568,22 @@ export const translations = {
         {
           icon: 'briefcase',
           label: 'AI Experience',
-          query: "What is Santiago's experience with AI and automation?",
+          query: "What is Andrey's experience with AI and automation?",
         },
         {
           icon: 'rocket',
           label: 'Top Projects',
-          query: "What are Santiago's most notable projects?",
+          query: "What are Andrey's most notable projects?",
         },
         {
           icon: 'help',
           label: 'Why hire him?',
-          query: 'Why should I hire Santiago?',
+          query: 'Why should I hire Andrey?',
         },
         {
           icon: 'mail',
           label: 'Contact',
-          query: 'How can I contact Santiago?',
+          query: 'How can I contact Andrey?',
         },
       ],
       contactCtaTitle: 'Want to talk directly?',

@@ -157,6 +157,12 @@ export const smartCoursesContent = {
           { name: 'eij.com.ua', role: 'Платформа' },
         ],
       },
+      resources: {
+        heading: 'Ресурси',
+        items: [
+          { label: 'EIJ.com.ua — Платформа онлайн-курсів', url: 'https://eij.com.ua' },
+        ],
+      },
     },
     faq: {
       heading: 'FAQ',
@@ -338,6 +344,12 @@ export const smartCoursesContent = {
           { name: 'Screener', role: 'Data analysis' },
           { name: 'University Partnership', role: 'Accreditation' },
           { name: 'eij.com.ua', role: 'Platform' },
+        ],
+      },
+      resources: {
+        heading: 'Resources',
+        items: [
+          { label: 'EIJ.com.ua — Online Courses Platform', url: 'https://eij.com.ua' },
         ],
       },
     },

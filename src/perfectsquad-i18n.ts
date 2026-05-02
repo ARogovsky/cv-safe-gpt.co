@@ -172,6 +172,12 @@ export const perfectSquadContent = {
           { name: 'talentedchild.club', role: 'Лендінг' },
         ],
       },
+      resources: {
+        heading: 'Ресурси',
+        items: [
+          { label: 'TalentedChild.club — Платформа для гравців', url: 'https://talentedchild.club' },
+        ],
+      },
     },
     faq: {
       heading: 'FAQ',
@@ -368,6 +374,12 @@ export const perfectSquadContent = {
           { name: 'Prompt engineering', role: 'Prompt optimization' },
           { name: 'Screener', role: 'Data analysis' },
           { name: 'talentedchild.club', role: 'Landing page' },
+        ],
+      },
+      resources: {
+        heading: 'Resources',
+        items: [
+          { label: 'TalentedChild.club — Gaming Platform', url: 'https://talentedchild.club' },
         ],
       },
     },

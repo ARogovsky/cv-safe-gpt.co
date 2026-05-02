@@ -113,12 +113,12 @@ export default function Offzmi({ lang = 'uk' }: { lang?: Lang }) {
       {/* E2E Flows / Findings */}
       <H2 id="findings">{s.e2eFlows.heading}</H2>
       <Prose>{s.e2eFlows.body}</Prose>
-      <CardStack items={s.e2eFlows.items} />
+      <CardStack items={s.e2eFlows.items.map(item => ({ title: item.name, detail: item.summary }))} />
 
       {/* Unit Economics */}
       <H2 id="unit-economics">{s.crossCutting.heading}</H2>
       <Prose>{s.crossCutting.body}</Prose>
-      <CardStack items={s.crossCutting.items} />
+      <CardStack items={s.crossCutting.items.map(item => ({ title: item.name, detail: item.summary }))} />
 
       {/* Impact */}
       <H2 id="impact">{s.impact.heading}</H2>
@@ -140,7 +140,7 @@ export default function Offzmi({ lang = 'uk' }: { lang?: Lang }) {
       {/* Decisions */}
       <H2 id="decisions">{s.decisions.heading}</H2>
       <Prose>{s.decisions.body}</Prose>
-      <CardStack items={s.decisions.items.map(item => ({ name: item.title, summary: item.detail }))} />
+      <CardStack items={s.decisions.items.map(item => ({ title: item.title, detail: item.detail }))} />
 
       {/* Lessons */}
       <LessonsSection heading={s.lessons.heading} items={s.lessons.items} />
@@ -156,7 +156,7 @@ export default function Offzmi({ lang = 'uk' }: { lang?: Lang }) {
       {/* Replicability */}
       <H2 id="replicability">{s.replicability.heading}</H2>
       <Prose>{s.replicability.body}</Prose>
-      <CardStack items={s.replicability.examples.map(ex => ({ name: ex.domain, summary: ex.detail }))} />
+      <CardStack items={s.replicability.examples.map(ex => ({ title: ex.domain, detail: ex.detail }))} />
       <Prose>{s.replicability.closing}</Prose>
 
       {/* CTA */}

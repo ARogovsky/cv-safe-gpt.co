@@ -195,6 +195,12 @@ export const aiToolsContent = {
           { name: 'mystery-customer-insight.com', role: 'Платформа' },
         ],
       },
+      resources: {
+        heading: 'Ресурси',
+        items: [
+          { label: 'Mystery Customer Insight — Каталог AI-інструментів', url: 'https://mystery-customer-insight.com' },
+        ],
+      },
     },
     faq: {
       heading: 'FAQ',
@@ -414,6 +420,12 @@ export const aiToolsContent = {
           { name: 'Clerk', role: 'Authentication' },
           { name: 'Performance Max', role: 'Campaign type' },
           { name: 'mystery-customer-insight.com', role: 'Platform' },
+        ],
+      },
+      resources: {
+        heading: 'Resources',
+        items: [
+          { label: 'Mystery Customer Insight — AI Tools Catalog', url: 'https://mystery-customer-insight.com' },
         ],
       },
     },

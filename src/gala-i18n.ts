@@ -123,6 +123,12 @@ export const galaContent = {
           { name: 'Google Ads', role: 'Платний трафік' },
         ],
       },
+      resources: {
+        heading: 'Ресурси',
+        items: [
+          { label: 'GALA — Автономний агент B2B лідогенерації', url: 'https://gala.esupport.org.ua' },
+        ],
+      },
     },
     faq: {
       heading: 'FAQ',
@@ -270,6 +276,12 @@ export const galaContent = {
           { name: 'Zadarma', role: 'Call tracking' },
           { name: 'Astro', role: 'Frontend framework' },
           { name: 'Google Ads', role: 'Paid traffic' },
+        ],
+      },
+      resources: {
+        heading: 'Resources',
+        items: [
+          { label: 'GALA — Autonomous B2B lead generation agent', url: 'https://gala.esupport.org.ua' },
         ],
       },
     },

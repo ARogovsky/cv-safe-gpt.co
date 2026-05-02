@@ -1,0 +1,48 @@
+AI (full development)
+AI (prompt engineering)
+AI (повна розробка)
+AI ads generator
+Airtable
+Astro
+Claude Code
+Claude Haiku
+Claude Sonnet
+Clerk
+Cloudflare
+Custom ERP
+DataForSEO
+Docker
+eij.com.ua
+ERP propio
+FastAPI
+GitHub Actions
+Google Ads
+Google Ads SDK
+JSON-LD
+Knowledge Distillation
+Langfuse
+MLOps
+mystery-customer-insight.com
+Node.js
+OpenAI
+OpenAI API
+OpenAI Realtime
+Performance Max
+Playwright
+Prompt engineering
+Puppeteer
+Python
+PyTorch
+React 19
+Resend
+RoBERTa
+Screener
+Supabase
+talentedchild.club
+tmux
+TypeScript
+University Partnership
+Vercel
+Vite
+Zadarma
+Партнерство з університетом

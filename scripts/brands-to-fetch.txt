@@ -1,0 +1,55 @@
+# Brandfetch Icon Fetcher - Brand List
+# Один бренд на строку (domain или название)
+# Строки начинающиеся с # игнорируются
+
+# AI Companies
+openai.com
+anthropic.com
+elevenlabs.io
+
+# Development Tools
+github.com
+gitlab.com
+vercel.com
+netlify.com
+
+# Databases & Backend
+supabase.com
+mongodb.com
+postgresql.org
+redis.io
+
+# Frontend Frameworks
+react.dev
+vuejs.org
+angular.io
+svelte.dev
+
+# Cloud Providers
+aws.amazon.com
+azure.microsoft.com
+cloud.google.com
+
+# Communication
+slack.com
+discord.com
+telegram.org
+whatsapp.com
+
+# Automation
+zapier.com
+make.com
+n8n.io
+
+# Analytics
+google.com
+mixpanel.com
+amplitude.com
+
+# Payment
+stripe.com
+paypal.com
+
+# Design
+figma.com
+sketch.com

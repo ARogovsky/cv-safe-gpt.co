@@ -2,11 +2,13 @@ import { type AiToolsLang as Lang } from './aitools-i18n'
 import { buildJsonLdFromRegistry } from './articles/json-ld'
 import { useArticleSeo } from './articles/use-article-seo'
 import { getTechIcon } from './tech-icons'
+import { getBrandLogo } from './brand-logos'
 import {
   ArticleLayout,
   ArticleHeader,
   ArticleFooter,
   FaqSection,
+  ResourcesList,
   MetricsGrid,
 } from './articles/components'
 import {
@@ -230,22 +232,32 @@ export default function AiTools({ lang = 'uk' }: { lang?: Lang }) {
         {/*  STACK                                                           */}
         {/* ================================================================ */}
         <H2 id="stack">{s.stack.heading}</H2>
-        <StackGrid items={s.stack.items.map(item => ({
-          icon: getTechIcon(item.name) ? (
-            <svg viewBox="0 0 24 24" className="w-8 h-8" fill="currentColor" style={{ color: getTechIcon(item.name)!.color }}>
-              <path d={getTechIcon(item.name)!.path} />
-            </svg>
-          ) : (
-            <span className="w-8 h-8 flex items-center justify-center text-lg font-bold text-primary">{item.name[0]}</span>
-          ),
-          name: item.name,
-          desc: item.role,
-        }))} />
+        <StackGrid items={s.stack.items.map(item => {
+          const logoPath = getBrandLogo(item.name)
+          return {
+            icon: logoPath ? (
+              <img src={logoPath} alt={item.name} className="w-12 h-12 object-contain" />
+            ) : getTechIcon(item.name) ? (
+              <svg viewBox="0 0 24 24" className="w-8 h-8" fill="currentColor" style={{ color: getTechIcon(item.name)!.color }}>
+                <path d={getTechIcon(item.name)!.path} />
+              </svg>
+            ) : (
+              <span className="w-8 h-8 flex items-center justify-center text-lg font-bold text-primary">{item.name[0]}</span>
+            ),
+            name: item.name,
+            desc: item.role,
+          }
+        })} />
 
         {/* ================================================================ */}
         {/*  FAQ                                                             */}
         {/* ================================================================ */}
         <FaqSection heading={t.faq.heading} items={t.faq.items} />
+
+        {/* ================================================================ */}
+        {/*  RESOURCES                                                       */}
+        {/* ================================================================ */}
+        <ResourcesList heading={t.sections.resources.heading} items={t.sections.resources.items} />
       </article>
 
       <ArticleFooter lang={lang} utmCampaign="aitools" />

@@ -149,7 +149,13 @@ export const smartCoursesContent = {
       },
       stack: {
         heading: 'Стек',
-        items: ['Google Ads SDK', 'AI (prompt engineering)', 'Screener', 'Партнерство з університетом', 'eij.com.ua'],
+        items: [
+          { name: 'Google Ads SDK', role: 'Платформа реклами' },
+          { name: 'AI (prompt engineering)', role: 'Генерація контенту' },
+          { name: 'Screener', role: 'Аналіз даних' },
+          { name: 'Партнерство з університетом', role: 'Акредитація' },
+          { name: 'eij.com.ua', role: 'Платформа' },
+        ],
       },
     },
     faq: {
@@ -326,7 +332,13 @@ export const smartCoursesContent = {
       },
       stack: {
         heading: 'Stack',
-        items: ['Google Ads SDK', 'AI (prompt engineering)', 'Screener', 'University Partnership', 'eij.com.ua'],
+        items: [
+          { name: 'Google Ads SDK', role: 'Advertising platform' },
+          { name: 'AI (prompt engineering)', role: 'Content generation' },
+          { name: 'Screener', role: 'Data analysis' },
+          { name: 'University Partnership', role: 'Accreditation' },
+          { name: 'eij.com.ua', role: 'Platform' },
+        ],
       },
     },
     faq: {

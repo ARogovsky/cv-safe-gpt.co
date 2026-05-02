@@ -164,7 +164,13 @@ export const perfectSquadContent = {
       },
       stack: {
         heading: 'Стек',
-        items: ['Google Ads SDK', 'AI ads generator', 'Prompt engineering', 'Screener', 'talentedchild.club'],
+        items: [
+          { name: 'Google Ads SDK', role: 'Платформа реклами' },
+          { name: 'AI ads generator', role: 'Генерація оголошень' },
+          { name: 'Prompt engineering', role: 'Оптимізація промптів' },
+          { name: 'Screener', role: 'Аналіз даних' },
+          { name: 'talentedchild.club', role: 'Лендінг' },
+        ],
       },
     },
     faq: {
@@ -356,7 +362,13 @@ export const perfectSquadContent = {
       },
       stack: {
         heading: 'Stack',
-        items: ['Google Ads SDK', 'AI ads generator', 'Prompt engineering', 'Screener', 'talentedchild.club'],
+        items: [
+          { name: 'Google Ads SDK', role: 'Advertising platform' },
+          { name: 'AI ads generator', role: 'Ad generation' },
+          { name: 'Prompt engineering', role: 'Prompt optimization' },
+          { name: 'Screener', role: 'Data analysis' },
+          { name: 'talentedchild.club', role: 'Landing page' },
+        ],
       },
     },
     faq: {

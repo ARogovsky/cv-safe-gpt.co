@@ -1,6 +1,7 @@
 import { type PerfectSquadLang as Lang } from './perfectsquad-i18n'
 import { buildJsonLdFromRegistry } from './articles/json-ld'
 import { useArticleSeo } from './articles/use-article-seo'
+import { getTechIcon } from './tech-icons'
 import {
   ArticleLayout,
   ArticleHeader,
@@ -220,7 +221,17 @@ export default function PerfectSquad({ lang = 'uk' }: { lang?: Lang }) {
         {/*  STACK                                                           */}
         {/* ================================================================ */}
         <H2 id="stack">{s.stack.heading}</H2>
-        <StackGrid items={s.stack.items} />
+        <StackGrid items={s.stack.items.map(item => ({
+          icon: getTechIcon(item.name) ? (
+            <svg viewBox="0 0 24 24" className="w-8 h-8" fill="currentColor" style={{ color: getTechIcon(item.name)!.color }}>
+              <path d={getTechIcon(item.name)!.path} />
+            </svg>
+          ) : (
+            <span className="w-8 h-8 flex items-center justify-center text-lg font-bold text-primary">{item.name[0]}</span>
+          ),
+          name: item.name,
+          desc: item.role,
+        }))} />
 
         {/* ================================================================ */}
         {/*  FAQ                                                             */}

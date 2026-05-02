@@ -186,7 +186,14 @@ export const aiToolsContent = {
       },
       stack: {
         heading: 'Стек',
-        items: ['AI (повна розробка)', 'Google Ads SDK', 'AI ads generator', 'Clerk', 'Performance Max', 'mystery-customer-insight.com'],
+        items: [
+          { name: 'AI (повна розробка)', role: 'Розробка через AI' },
+          { name: 'Google Ads SDK', role: 'Платформа реклами' },
+          { name: 'AI ads generator', role: 'Генерація оголошень' },
+          { name: 'Clerk', role: 'Аутентифікація' },
+          { name: 'Performance Max', role: 'Тип кампанії' },
+          { name: 'mystery-customer-insight.com', role: 'Платформа' },
+        ],
       },
     },
     faq: {
@@ -400,7 +407,14 @@ export const aiToolsContent = {
       },
       stack: {
         heading: 'Stack',
-        items: ['AI (full development)', 'Google Ads SDK', 'AI ads generator', 'Clerk', 'Performance Max', 'mystery-customer-insight.com'],
+        items: [
+          { name: 'AI (full development)', role: 'AI-powered development' },
+          { name: 'Google Ads SDK', role: 'Advertising platform' },
+          { name: 'AI ads generator', role: 'Ad generation' },
+          { name: 'Clerk', role: 'Authentication' },
+          { name: 'Performance Max', role: 'Campaign type' },
+          { name: 'mystery-customer-insight.com', role: 'Platform' },
+        ],
       },
     },
     faq: {

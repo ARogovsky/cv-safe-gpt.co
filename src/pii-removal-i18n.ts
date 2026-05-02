@@ -135,7 +135,16 @@ export const piiRemovalContent = {
       },
       stack: {
         heading: 'Стек',
-        items: ['Python', 'PyTorch', 'RoBERTa', 'Knowledge Distillation', 'OpenAI API', 'FastAPI', 'Docker', 'MLOps'],
+        items: [
+          { name: 'Python', role: 'Основна мова' },
+          { name: 'PyTorch', role: 'ML framework' },
+          { name: 'RoBERTa', role: 'Transformer model' },
+          { name: 'Knowledge Distillation', role: 'Оптимізація моделі' },
+          { name: 'OpenAI API', role: 'Генерація даних' },
+          { name: 'FastAPI', role: 'API framework' },
+          { name: 'Docker', role: 'Контейнеризація' },
+          { name: 'MLOps', role: 'Deployment' },
+        ],
       },
     },
     faq: {
@@ -298,7 +307,16 @@ export const piiRemovalContent = {
       },
       stack: {
         heading: 'Stack',
-        items: ['Python', 'PyTorch', 'RoBERTa', 'Knowledge Distillation', 'OpenAI API', 'FastAPI', 'Docker', 'MLOps'],
+        items: [
+          { name: 'Python', role: 'Primary language' },
+          { name: 'PyTorch', role: 'ML framework' },
+          { name: 'RoBERTa', role: 'Transformer model' },
+          { name: 'Knowledge Distillation', role: 'Model optimization' },
+          { name: 'OpenAI API', role: 'Data generation' },
+          { name: 'FastAPI', role: 'API framework' },
+          { name: 'Docker', role: 'Containerization' },
+          { name: 'MLOps', role: 'Deployment' },
+        ],
       },
     },
     faq: {

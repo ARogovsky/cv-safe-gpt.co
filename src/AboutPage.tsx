@@ -4,8 +4,7 @@ import { MapPin, Mail, ExternalLink, Award, GraduationCap, Briefcase, ChevronRig
 import { aboutContent, type AboutLang } from './about-i18n'
 
 const SOCIAL_LINKS = [
-  { name: 'LinkedIn', url: 'https://www.linkedin.com/in/andrey-rogovsky' },
-  { name: 'GitHub', url: 'https://github.com/andrey-rogovsky' },
+  { name: 'Telegram', url: 'https://t.me/andreyrogovsky' },
 ]
 
 export default function AboutPage({ lang = 'uk' }: { lang?: AboutLang }) {

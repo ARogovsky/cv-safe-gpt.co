@@ -1,0 +1,38 @@
+name: Keep Supabase Awake
+
+on:
+  schedule:
+    # Runs every day at 6:00 AM UTC (9:00 AM Kyiv time)
+    - cron: '0 6 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  ping-database:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Ping Supabase to keep it awake
+        run: |
+          echo "🔄 Pinging Supabase database..."
+          
+          # Ping documents table
+          response=$(curl -s -w "\n%{http_code}" \
+            "${{ secrets.SUPABASE_URL }}/rest/v1/documents?select=count" \
+            -H "apikey: ${{ secrets.SUPABASE_ANON_KEY }}" \
+            -H "Authorization: Bearer ${{ secrets.SUPABASE_ANON_KEY }}")
+          
+          http_code=$(echo "$response" | tail -n1)
+          body=$(echo "$response" | head -n-1)
+          
+          if [ "$http_code" = "200" ]; then
+            echo "✅ Database is awake! Response: $body"
+          else
+            echo "❌ Failed to ping database. HTTP $http_code"
+            exit 1
+          fi
+          
+      - name: Summary
+        run: |
+          echo "### ✅ Supabase Keep-Alive Ping Successful" >> $GITHUB_STEP_SUMMARY
+          echo "Database pinged at $(date -u)" >> $GITHUB_STEP_SUMMARY
+          echo "Next ping: Tomorrow at 6:00 AM UTC" >> $GITHUB_STEP_SUMMARY

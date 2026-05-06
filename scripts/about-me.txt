@@ -1,0 +1,77 @@
+Andrey Rogovsky, Senior AI Engineer
+Email: a.rogovsky@gmail.com | Germany | English Level C1
+
+Education
+Master of Science in Engineering, Specialization: Automation of Technological Processes, Odessa National Academy of Food Technologies, Ukraine, Department of Automation of Technological, Electromechanical and Robotic Systems (current successor), Graduated: 2002
+Postgraduate Studies (PhD Program, unfinished), Field: Automation and Control Systems,Odessa National Academy of Food Technologies, Ukraine, 2002–2004
+
+Professional Summary
+Senior AI Engineer with 25 years in cloud infrastructure and security, now fully focused on production GenAI systems. Builds agentic workflows and RAG pipelines using LangGraph, LangChain, and Agno - deployed across 5+ commercial products. Deep expertise in AWS/GCP/Azure, Kubernetes, and MLOps means AI solutions that scale, stay secure, and survive production. Delivers full-stack products - frontend, backend, and DevOps - using AI-assisted development: Claude Code, Cursor, Kiro.
+Technical Skills
+MLOps: Kubeflow, LakeFS, AWS SageMaker, Azure AI Foundry, vLLM, ML Lifecycle Management, HuggingFace Transformers, PyTorch
+DevOps: Kubernetes, KEDA, Docker, Terraform, Pulumi, Jenkins, GitLab CI, GitHub Actions, Atlantis deployment
+Cloud Platforms: AWS, GCP, Azure, IBM Bluemix, VMware
+Monitoring: Zabbix, ELK, Graylog, DataDog, New Relic
+Provisioning: Atlantis, OneConf, Hashicorp Vault, Ansible, ArgoCd, Flux, Helm
+Data Store: MySQL, Postgresql, Redis, Kafka
+Source Control: GitHub, GitLab, Bitbucket
+Programming: Python, GoLang, Shell Scripting (Bash), Typescript, PHP
+Compliance & Security: PCI DSS, HIPAA, GDPR, SOC2, ISO
+FinOps & Cost Optimization: Cloud cost analysis and management
+Prompt Engineering: LangGraph, LangChain, Agno
+
+
+Work Experience
+E-lli.com - Self-reflection assistant, AI Engineer, CTO, Co-founder (2025 – 2026)
+Transformation of meetings with psychologists into Vector DB
+Integrate LLM + Fine Tune + RAG
+AI Behavior configured as synthetic psychologist
+Bablo Digital Agency — Founder & Lead AI Engineer (2024 – 2025)
+AI-powered agency delivering full-stack commercial products for SMB clients using AI coding agents:
+GALA - autonomous B2B lead generation agent; RoBERTa classifier (PyTorch, 20k sites) routes form-filling strategy simple/CSRF/complex, reducing browser load by 15–25% with 50–100ms CPU inference
+Advogram - HR platform: full-stack product (frontend + backend) built end-to-end via AI coding agents
+PII Removal - fine-tuned RoBERTa (PyTorch) for Ukrainian PII detection via knowledge distillation from OpenAI; trained on real-world leaked dataset with transliteration rules by year
+Offzmi - Marketing: AI agent generated 222 SEO articles + automated Google Ads campaigns via code; NLP/content pipeline
+SmartCourses - EdTech: AI-driven outreach and sales pipeline built entirely on prompt engineering workflows
+PerfectSquad - Gaming: empathetic AI chat agents simulating real players; prompt-tuned for human-like in-game communication
+AI Tools - Market research: AI agent-built parser with auto-generated product cards; in active development
+
+AVID, Cloud Solutions, Japan (Remote) Hitachi Contractor, Lead DevOps Engineer (2019 – 2023)
+Built scalable cloud infrastructures on GCP, AWS, and Azure for AI/ML and Big Data projects.
+Led and mentored 6 DevOps teams, fostering best practices in infrastructure as code, Kubernetes orchestration, and CI/CD.
+Created and optimized pipelines for embedded, mobile, and hardware customization projects.
+Implemented FinOps pipelines to forecast and optimize AWS feature costs.
+Organized and led 3 internal hackathons and developed Linux Fast Learning Courses to accelerate team onboarding.
+Improved cloud security posture by 40% using open-source solutions without additional costs.
+
+LLC Fortex Finance, Bahrain (Remote), Senior Security Engineer (2017 – 2019)
+Designed secure cloud banking infrastructure on AWS, processing over 50,000 monthly transactions.
+Achieved PCI DSS Level 1 compliance, passing QSA audits.
+Integrated cryptographic code signing into CI/CD pipelines to enhance deployment security.
+Promoted office secure development environments aligning with banking security standards.
+
+InetPartners Group, France (Remote), Senior DevOps Engineer (2011 – 2016)
+Designed and deployed a geo-distributed payment processing cloud infrastructure across Asia, Europe, and the USA.
+Reduced disaster recovery time from 6 hours to 15 minutes through advanced automation and monitoring.
+Led the migration to a CI/CD-driven development environment, significantly improving deployment speed and reliability.
+
+
+IntWay World Corporation, USA (Remote),  Head of Compute Department (2006 – 2009)
+Successfully deployed Bare Metal Cloud for enterprise clients, handling 60,000+ websites.
+Reduced customer support ticket response time from 24 hours to 2 hours by reorganizing the support structure.
+Migrated hosting services from dedicated servers to owned racks, cutting annual costs from $67,000 to $12,000.
+Designed and implemented a scalable web hosting service using Plesk and OpenVZ.
+
+
+Envisionext Inc, USA (Remote), Senior Linux System Administrator (2004 – 2006)
+Managed 34 Linux/FreeBSD servers, ensuring high availability and security.
+Implemented DDoS protection using a proxy cluster, improving resilience against cyber threats.
+Utilized cryptographic file signatures to enhance server file system integrity.
+
+
+Lawyer Agency Meta-Info, Ukraine (Onsite), Middle System Administrator (2002 – 2004)
+Provided workstation and server maintenance for legal software environments.
+Automated the update distribution of Liga: Zakon software to company clients via custom Bash scripts.
+Earned a Brainbench certification in Bash scripting with a score of 4.8/5.0.
+Gained foundational experience in Linux systems administration (RedHat, Debian).
+

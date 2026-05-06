@@ -282,6 +282,8 @@ export default async function handler(req) {
     })
   } catch (error) {
     console.error('Chat API error:', error)
+    console.error('Error stack:', error.stack)
+    console.error('Error details:', JSON.stringify(error, null, 2))
     trace?.update({ metadata: { error: error.message } })
     if (langfuse) waitUntil(langfuse.flushAsync())
     return new Response(JSON.stringify({ error: 'Error processing request' }), {

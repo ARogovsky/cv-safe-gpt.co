@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo, lazy, Suspense } from 'react'
+import React, { useState, useEffect, useMemo, lazy, Suspense } from 'react'
 import OpsAuth from './OpsAuth'
 import TabNav from './components/TabNav'
 import KpiCard from './components/KpiCard'
@@ -167,8 +167,103 @@ export default function OpsDashboard() {
 // ─── Overview Tab (inline) ───
 
 function OverviewTab({ stats, loading }: TabProps) {
+  const [testResults, setTestResults] = React.useState<any>(null)
+  const [testing, setTesting] = React.useState(false)
+
+  const runRouterTest = async () => {
+    setTesting(true)
+    try {
+      const token = sessionStorage.getItem('ops_token')
+      const response = await fetch('/api/ops/router-test', {
+        method: 'POST',
+        headers: { Authorization: `Bearer ${token}` },
+      })
+      
+      if (!response.ok) {
+        const text = await response.text()
+        setTestResults({ error: `HTTP ${response.status}: ${text}` })
+        return
+      }
+      
+      const data = await response.json()
+      setTestResults(data)
+    } catch (error) {
+      setTestResults({ error: error instanceof Error ? error.message : String(error) })
+    } finally {
+      setTesting(false)
+    }
+  }
+
+  // Show router test section even when loading
+  const routerTestSection = (
+    <div className="bg-card border border-white/[0.06] rounded-lg p-3 sm:p-4">
+      <div className="flex items-center justify-between mb-3">
+        <h3 className="text-[11px] sm:text-xs font-medium text-muted-foreground uppercase tracking-wider">Model Router Test</h3>
+        <button
+          onClick={runRouterTest}
+          disabled={testing}
+          className="px-3 py-1.5 text-xs sm:text-sm bg-primary/20 hover:bg-primary/30 text-primary rounded-md transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+        >
+          {testing ? 'Testing...' : 'Run Test'}
+        </button>
+      </div>
+      
+      {testResults && (
+        <div className="space-y-2">
+          {testResults.error ? (
+            <div className="p-3 bg-red-500/10 border border-red-500/20 rounded text-xs text-red-400">
+              Error: {testResults.error}
+            </div>
+          ) : (
+            <>
+              <div className="flex items-center gap-2 text-xs">
+                <span className="text-muted-foreground">Status:</span>
+                <span className={testResults.overallStatus === 'success' ? 'text-green-400' : 'text-yellow-400'}>
+                  {testResults.overallStatus === 'success' ? '✓ All tests passed' : '⚠ Some tests failed'}
+                </span>
+                <span className="text-muted-foreground ml-auto">{new Date(testResults.timestamp).toLocaleTimeString()}</span>
+              </div>
+              
+              <div className="space-y-2">
+                {testResults.tests.map((test: any, idx: number) => (
+                  <div key={idx} className="p-3 bg-white/[0.02] border border-white/[0.06] rounded">
+                    <div className="flex items-center gap-2 mb-2">
+                      <span className={`text-xs font-medium ${test.status === 'success' ? 'text-green-400' : test.status === 'error' ? 'text-red-400' : 'text-yellow-400'}`}>
+                        {test.status === 'success' ? '✓' : test.status === 'error' ? '✗' : '○'} {test.name}
+                      </span>
+                    </div>
+                    
+                    {test.error && (
+                      <div className="text-xs text-red-400 font-mono">{test.error}</div>
+                    )}
+                    
+                    {test.details && (
+                      <div className="text-xs text-muted-foreground space-y-1 font-mono">
+                        {Object.entries(test.details).map(([key, value]) => (
+                          <div key={key} className="flex gap-2">
+                            <span className="text-white/40">{key}:</span>
+                            <span className="text-white/60">{typeof value === 'object' ? JSON.stringify(value) : String(value)}</span>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </>
+          )}
+        </div>
+      )}
+    </div>
+  )
+
   if (loading || !stats) {
-    return <TabSkeleton />
+    return (
+      <div className="space-y-4 sm:space-y-6">
+        {routerTestSection}
+        <TabSkeleton />
+      </div>
+    )
   }
 
   const { totals, daily, distributions } = stats
@@ -208,6 +303,9 @@ function OverviewTab({ stats, loading }: TabProps) {
 
   return (
     <div className="space-y-4 sm:space-y-6">
+      {/* Router Test Section */}
+      {routerTestSection}
+
       {/* KPI row */}
       <div className="grid grid-cols-2 md:grid-cols-5 gap-2 sm:gap-4">
         <KpiCard label="Conversations" value={totals.conversations} format="number" />

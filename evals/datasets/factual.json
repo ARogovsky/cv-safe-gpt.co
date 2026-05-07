@@ -23,11 +23,11 @@
     },
     {
       "id": "location",
-      "description": "Має згадати Україну",
+      "description": "Має згадати Німеччину",
       "input": "Де ти знаходишся?",
       "lang": "uk",
       "assertions": [
-        { "type": "contains_any", "values": ["Україн", "Ukraine"] }
+        { "type": "contains_any", "values": ["Німеч", "Germany"] }
       ]
     },
     {

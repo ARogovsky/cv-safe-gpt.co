@@ -173,6 +173,10 @@ function parseI18n(source: I18nSource): Chunk[] {
     extractText(en.header),
     extractText(en.intro),
     typeof en.tldr === 'string' ? stripHtml(en.tldr) : extractText(en.tldr),
+    extractText(en.bio),
+    en.location ? `Location: ${en.location}` : '',
+    en.email ? `Email: ${en.email}` : '',
+    en.telegram ? `Telegram: ${en.telegram}` : '',
   ].filter(Boolean).join('\n')
 
   if (introText.trim()) {

@@ -74,7 +74,7 @@ export default function AboutPage({ lang = 'uk' }: { lang?: AboutLang }) {
       '@type': 'FAQPage',
       '@id': `https://esupport.org.ua/${t.slug}/#faq`,
       inLanguage: lang,
-      mainEntity: t.faq.map(item => ({
+      mainEntity: t.sections.faq.map(item => ({
         '@type': 'Question',
         name: item.q,
         acceptedAnswer: { '@type': 'Answer', text: item.a },
@@ -139,10 +139,10 @@ export default function AboutPage({ lang = 'uk' }: { lang?: AboutLang }) {
         <section className="mb-10">
           <h2 className="font-display text-lg font-semibold text-foreground mb-4 flex items-center gap-2">
             <Code2 className="w-4 h-4 text-primary" />
-            {t.skillsHeading}
+            {t.sections.skillsHeading}
           </h2>
           <div className="space-y-3">
-            {t.skills.map((skill) => (
+            {t.sections.skills.map((skill) => (
               <div key={skill.category} className="p-3 rounded-lg bg-card border border-border">
                 <p className="font-medium text-foreground text-sm mb-1.5">{skill.category}</p>
                 <div className="flex flex-wrap gap-1.5">
@@ -173,10 +173,10 @@ export default function AboutPage({ lang = 'uk' }: { lang?: AboutLang }) {
         <section className="mb-10">
           <h2 className="font-display text-lg font-semibold text-foreground mb-4 flex items-center gap-2">
             <Clock className="w-4 h-4 text-primary" />
-            {t.timelineHeading}
+            {t.sections.timelineHeading}
           </h2>
           <div className="space-y-3">
-            {t.timeline.map((item) => (
+            {t.sections.timeline.map((item) => (
               <div key={item.period} className="flex gap-4 p-3 rounded-lg bg-card border border-border">
                 <span className="text-xs font-mono text-primary whitespace-nowrap pt-0.5">{item.period}</span>
                 <div>
@@ -192,10 +192,10 @@ export default function AboutPage({ lang = 'uk' }: { lang?: AboutLang }) {
         <section className="mb-10">
           <h2 className="font-display text-lg font-semibold text-foreground mb-4 flex items-center gap-2">
             <Briefcase className="w-4 h-4 text-primary" />
-            {t.projectsHeading}
+            {t.sections.projectsHeading}
           </h2>
           <div className="space-y-2">
-            {t.projects.map((project) => (
+            {t.sections.projects.map((project) => (
               <Link
                 key={project.name}
                 to={project.href}
@@ -215,10 +215,10 @@ export default function AboutPage({ lang = 'uk' }: { lang?: AboutLang }) {
         <section className="mb-10">
           <h2 className="font-display text-lg font-semibold text-foreground mb-4 flex items-center gap-2">
             <Award className="w-4 h-4 text-primary" />
-            {t.certificationsHeading}
+            {t.sections.certificationsHeading}
           </h2>
           <div className="space-y-3">
-            {t.certifications.map((cert) => (
+            {t.sections.certifications.map((cert) => (
               <div key={cert.org} className="p-3 rounded-lg bg-card border border-border">
                 <p className="font-medium text-foreground text-sm mb-1">{cert.org}</p>
                 <div className="flex flex-wrap gap-1.5">
@@ -235,10 +235,10 @@ export default function AboutPage({ lang = 'uk' }: { lang?: AboutLang }) {
         <section className="mb-10">
           <h2 className="font-display text-lg font-semibold text-foreground mb-4 flex items-center gap-2">
             <GraduationCap className="w-4 h-4 text-primary" />
-            {t.educationHeading}
+            {t.sections.educationHeading}
           </h2>
           <ul className="space-y-1.5">
-            {t.education.map((item) => (
+            {t.sections.education.map((item) => (
               <li key={item} className="text-sm text-muted-foreground">{item}</li>
             ))}
           </ul>
@@ -248,9 +248,9 @@ export default function AboutPage({ lang = 'uk' }: { lang?: AboutLang }) {
         <section className="mb-10">
           <h2 className="font-display text-lg font-semibold text-foreground mb-4 flex items-center gap-2">
             <Newspaper className="w-4 h-4 text-primary" />
-            {t.pressHeading}
+            {t.sections.pressHeading}
           </h2>
-          {t.press.map((item) => (
+          {t.sections.press.map((item) => (
             <a
               key={item.href}
               href={item.href}
@@ -271,10 +271,10 @@ export default function AboutPage({ lang = 'uk' }: { lang?: AboutLang }) {
         <section className="mb-10">
           <h2 className="font-display text-lg font-semibold text-foreground mb-4 flex items-center gap-2">
             <Users className="w-4 h-4 text-primary" />
-            {t.communityHeading}
+            {t.sections.communityHeading}
           </h2>
           <div className="space-y-2">
-            {t.community.map((item) => (
+            {t.sections.community.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
@@ -296,10 +296,10 @@ export default function AboutPage({ lang = 'uk' }: { lang?: AboutLang }) {
         <section className="mb-10">
           <h2 className="font-display text-lg font-semibold text-foreground mb-4 flex items-center gap-2">
             <HelpCircle className="w-4 h-4 text-primary" />
-            {t.faqHeading}
+            {t.sections.faqHeading}
           </h2>
           <div className="space-y-4">
-            {t.faq.map((item) => (
+            {t.sections.faq.map((item) => (
               <div key={item.q} className="p-4 rounded-lg bg-card border border-border">
                 <p className="font-medium text-foreground text-sm mb-2">{item.q}</p>
                 <p className="text-sm text-muted-foreground leading-relaxed">{item.a}</p>

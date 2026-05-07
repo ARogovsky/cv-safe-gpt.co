@@ -319,8 +319,23 @@ async function createChatCompletionBedrock(params) {
     }
   }
   
+  // Convert system blocks to string (Vercel AI SDK expects string, not array)
+  let systemPrompt = ''
+  if (params.system) {
+    if (typeof params.system === 'string') {
+      systemPrompt = params.system
+    } else if (Array.isArray(params.system)) {
+      // Extract text from content blocks
+      systemPrompt = params.system
+        .filter(block => block.type === 'text')
+        .map(block => block.text)
+        .join('\n\n')
+    }
+  }
+  
   const result = await generateText({
     model,
+    system: systemPrompt,
     messages: params.messages,
     maxTokens: params.max_tokens,
     ...(vercelTools && { 
@@ -488,8 +503,23 @@ async function createChatCompletionStreamBedrock(params) {
     }
   }
   
+  // Convert system blocks to string (Vercel AI SDK expects string, not array)
+  let systemPrompt = ''
+  if (params.system) {
+    if (typeof params.system === 'string') {
+      systemPrompt = params.system
+    } else if (Array.isArray(params.system)) {
+      // Extract text from content blocks
+      systemPrompt = params.system
+        .filter(block => block.type === 'text')
+        .map(block => block.text)
+        .join('\n\n')
+    }
+  }
+  
   const result = streamText({
     model,
+    system: systemPrompt,
     messages: params.messages,
     maxTokens: params.max_tokens,
     ...(vercelTools && { 

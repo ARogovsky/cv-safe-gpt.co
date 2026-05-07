@@ -48,6 +48,50 @@ export interface ArticleConfig {
 
 export const articleRegistry: ArticleConfig[] = [
   {
+    id: 'about',
+    slugs: { uk: 'about', en: 'about-en' },
+    titles: { uk: 'Про мене', en: 'About' },
+    seo: {
+      uk: {
+        title: 'Андрій Роговський | Senior AI Engineer · GenAI · DevOps · Cloud',
+        description: 'Senior AI Engineer з 25 роками досвіду в хмарній інфраструктурі та безпеці. Будує агентні воркфлоу та RAG-пайплайни на LangGraph, LangChain, Agno. Розгорнуто в 5+ комерційних продуктах.',
+      },
+      en: {
+        title: 'Andrey Rogovsky | Senior AI Engineer · GenAI · DevOps · Cloud',
+        description: 'Senior AI Engineer with 25 years in cloud infrastructure and security. Builds agentic workflows and RAG pipelines using LangGraph, LangChain, and Agno — deployed across 5+ commercial products.',
+      },
+    },
+    sectionLabels: {
+      uk: {
+        'skills': 'Технічні навички',
+        'timeline': 'Досвід',
+        'projects': 'Проєкти',
+        'certifications': 'Сертифікації',
+        'education': 'Освіта',
+        'press': 'Публікації',
+        'community': 'Спільнота',
+        'faq': 'Часті запитання',
+      },
+      en: {
+        'skills': 'Technical Skills',
+        'timeline': 'Experience',
+        'projects': 'Projects',
+        'certifications': 'Certifications',
+        'education': 'Education',
+        'press': 'Press',
+        'community': 'Community',
+        'faq': 'Frequently Asked Questions',
+      },
+    },
+    type: 'case-study',
+    ragReady: true,
+    i18nFile: 'src/about-i18n.ts',
+    ogImage: 'https://esupport.org.ua/foto-avatar.png',
+    heroImage: 'https://esupport.org.ua/foto-avatar.png',
+    component: () => import('../AboutPage.tsx'),
+    xDefaultSlug: 'about',
+  },
+  {
     id: 'perfectsquad',
     slugs: { uk: 'perfectsquad-gaming-traffic', en: 'perfectsquad-gaming-traffic-en' },
     titles: { uk: 'PerfectSquad', en: 'PerfectSquad' },

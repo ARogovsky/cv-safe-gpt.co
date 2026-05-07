@@ -1,0 +1,8 @@
+npm error Missing script: "eval"
+npm error
+npm error Did you mean this?
+npm error   npm run evals # run the "evals" package script
+npm error
+npm error To see a list of scripts, run:
+npm error   npm run
+npm error A complete log of this run can be found in: /Users/andrey/.npm/_logs/2026-05-07T17_08_27_472Z-debug-0.log

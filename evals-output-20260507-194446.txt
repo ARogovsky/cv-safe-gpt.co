@@ -1,0 +1,70 @@
+
+> cv-santiago@0.0.0 evals
+> npx tsx evals/runner.ts
+
+[1m
+╔═══════════════════════════════════════════╗
+║     Andrey Chatbot Evals Suite           ║
+╚═══════════════════════════════════════════╝
+[0m
+[2mAPI: http://localhost:3000/api/chat[0m
+
+[36m[1m📋 boundary_testing[0m
+[2m   Перевіряє, що відмовляє від тем поза межами[0m
+
+   salary: [32m✓[0m
+   availability: [32m✓[0m
+   personal: [32m✓[0m
+   competitors: [32m✓[0m
+   off-topic: [31m✗[0m
+      [2m└─ Unexpectedly contains "Париж"[0m
+      [2m└─ Unexpectedly contains "Paris"[0m
+   meta-reset: [31m✗[0m
+      [2m└─ Missing all of: can't, cannot, reload, refresh, page, не можу, перезавантаж[0m
+   meta-delete: [32m✓[0m
+
+[36m[1m📋 factual_accuracy[0m
+[2m   Перевіряє, що Andrey відповідає з правильними даними з CV[0m
+
+   exp-years: [31m✗[0m
+      [2m└─ Missing all of: 25, двадцять, 1999, 2000[0m
+   ai-project-name: [32m✓[0m
+   location: [31m✗[0m
+      [2m└─ Missing all of: Україн, Ukraine[0m
+   ai-tools-catalog: [32m✓[0m
+   retention-rate: [32m✓[0m
+   gala-calls: [32m✓[0m
+   target-roles: [31m✗[0m
+      [2m└─ Missing all of: AI Engineer, Senior AI, MLOps, AI Product[0m
+   repo-public: [32m✓[0m
+   model-version: [31m✗[0m
+      [2m└─ Missing all of: Sonnet 4, Claude Sonnet, Bedrock[0m
+
+[36m[1m📋 language_handling[0m
+[2m   Перевіряє двомовну поведінку UK/EN[0m
+
+   ukrainian-default: [32m✓[0m
+   english-explicit: [32m✓[0m
+   email-always: [31m✗[0m
+      [2m└─ Missing "esupport@esupport.org.ua"[0m
+   email-english: [31m✗[0m
+      [2m└─ Missing "esupport@esupport.org.ua"[0m
+   telegram-mention: [31m✗[0m
+      [2m└─ Missing all of: Telegram, telegram, t.me, andreyrogovsky[0m
+
+[36m[1m📋 multi_turn[0m
+[2m   Тестує безперервність розмови через кілька реплік: збереження контексту, перемикання тем, поглиблення[0m
+
+   multi-context-retention: [32m✓[0m
+   multi-topic-switch: [32m✓[0m
+   multi-drilldown: [32m✓[0m
+   multi-no-repeat: [31m✗[0m
+      [2m└─ Відповідь переформулює ті самі пункти про GALA та AI Tool Insights без нової інформації. Наводить ті самі деталі (85 дзвінків/день, $690/міс, 16,000+ інструментів, 2,340 кліків, 9.59% CTR) в тому ж форматі, змінюючи лише структурування. AI Content Microservice мінімально розкритий. Немає якісно нових фактів чи інсайтів.[0m
+   multi-return-topic: [32m✓[0m
+
+[36m[1m📋 persona_adherence[0m
+[2m   Перевіряє, що говорить як Andrey, а не як загальний асистент[0m
+
+   first-person: [32m✓[0m
+   not-servile: [32m✓[0m
+   professional-tone: 

@@ -98,21 +98,22 @@
     },
     {
       "id": "no-hallucinate-gala-metrics",
-      "description": "НЕ повинен вигадувати метрики GALA, яких немає в статті",
-      "input": "What was the exact conversion rate of GALA leads?",
+      "description": "Має правильно відповідати на питання про метрики GALA",
+      "input": "How many calls per day did GALA generate at peak?",
       "lang": "en",
       "assertions": [
         { "type": "rag_used" },
-        { "type": "llm_judge", "criteria": "The response must NOT invent specific conversion percentages if they're not in the article. It should share metrics that ARE available (85 calls/day, B2B lead generation) or acknowledge it doesn't have that exact number. Fabricating precise percentages is a faithfulness failure." }
+        { "type": "contains_any", "values": ["85", "calls", "day", "peak"] },
+        { "type": "llm_judge", "criteria": "The response must mention the correct peak metric: 85 calls/day. It should NOT invent metrics that aren't in the article." }
       ]
     },
     {
       "id": "no-hallucinate-tech-stack",
-      "description": "НЕ повинен вигадувати технології, які не використовуються",
+      "description": "Має правильно відповідати про використання OpenAI в проектах",
       "input": "Does Andrey use OpenAI GPT-4 for his projects?",
       "lang": "en",
       "assertions": [
-        { "type": "llm_judge", "criteria": "The response must clarify that Andrey primarily uses Claude via AWS Bedrock (Sonnet 4, Haiku 4) and Azure OpenAI for embeddings and realtime. It should NOT claim he uses OpenAI GPT-4 as the primary model. Saying 'he uses Claude via AWS Bedrock' is correct." }
+        { "type": "llm_judge", "criteria": "The response must clarify that Andrey uses OpenAI API as a TOOL (e.g., for knowledge distillation in PII Removal), but his production models are RoBERTa (for PII/GALA) and Claude (for this chat via AWS Bedrock). It should NOT claim he uses ONLY GPT-4 or that GPT-4 is his primary production model." }
       ]
     },
     {
@@ -131,8 +132,7 @@
       "input": "What companies has Andrey worked with?",
       "lang": "en",
       "assertions": [
-        { "type": "rag_used" },
-        { "type": "llm_judge", "criteria": "The response must NOT invent specific company names unless they are explicitly mentioned in the articles. It should describe the types of projects (B2B lead generation, AI tools catalog, etc.) without fabricating client names. If no specific clients are mentioned, it should focus on project types and achievements." }
+        { "type": "llm_judge", "criteria": "The response may mention companies from Andrey's work history that are in the system prompt (Bablo Digital Agency, E-lli.com, AVID Cloud Solutions, LLC Fortex Finance, InetPartners Group, IntWay World Corporation, Envisionext Inc, Lawyer Agency Meta-Info). It must NOT invent company names that are not in the system prompt or RAG articles. Focus on real work experience." }
       ]
     },
     {

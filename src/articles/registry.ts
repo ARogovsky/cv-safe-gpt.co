@@ -84,7 +84,7 @@ export const articleRegistry: ArticleConfig[] = [
       },
     },
     type: 'case-study',
-    ragReady: true,
+    ragReady: false,
     i18nFile: 'src/about-i18n.ts',
     ogImage: 'https://esupport.org.ua/foto-avatar.png',
     heroImage: 'https://esupport.org.ua/foto-avatar.png',

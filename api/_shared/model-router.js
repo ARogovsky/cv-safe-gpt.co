@@ -325,9 +325,9 @@ async function createChatCompletionBedrock(params) {
     if (typeof params.system === 'string') {
       systemPrompt = params.system
     } else if (Array.isArray(params.system)) {
-      // Extract text from content blocks
+      // Extract text from content blocks, filter empty ones
       systemPrompt = params.system
-        .filter(block => block.type === 'text')
+        .filter(block => block.type === 'text' && block.text && block.text.trim().length > 0)
         .map(block => block.text)
         .join('\n\n')
     }
@@ -335,7 +335,7 @@ async function createChatCompletionBedrock(params) {
   
   const result = await generateText({
     model,
-    system: systemPrompt,
+    ...(systemPrompt && { system: systemPrompt }), // Only include system if not empty
     messages: params.messages,
     maxTokens: params.max_tokens,
     ...(vercelTools && { 
@@ -509,9 +509,9 @@ async function createChatCompletionStreamBedrock(params) {
     if (typeof params.system === 'string') {
       systemPrompt = params.system
     } else if (Array.isArray(params.system)) {
-      // Extract text from content blocks
+      // Extract text from content blocks, filter empty ones
       systemPrompt = params.system
-        .filter(block => block.type === 'text')
+        .filter(block => block.type === 'text' && block.text && block.text.trim().length > 0)
         .map(block => block.text)
         .join('\n\n')
     }
@@ -519,7 +519,7 @@ async function createChatCompletionStreamBedrock(params) {
   
   const result = streamText({
     model,
-    system: systemPrompt,
+    ...(systemPrompt && { system: systemPrompt }), // Only include system if not empty
     messages: params.messages,
     maxTokens: params.max_tokens,
     ...(vercelTools && { 

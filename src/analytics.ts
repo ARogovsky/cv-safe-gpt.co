@@ -3,8 +3,46 @@
 
 const GA_MEASUREMENT_ID = 'G-ST1GPHCQRG'
 const AW_CONVERSION_ID = 'AW-10998062484'
+const GTM_ID = 'GTM-K3C49NDJ'
 
 let isInitialized = false
+let isGTMInitialized = false
+
+/**
+ * Initialize Google Tag Manager
+ * Safe to call multiple times - only initializes once
+ */
+export function initGTM(): void {
+  if (isGTMInitialized) return
+  if (typeof window === 'undefined') return // SSR safety
+
+  // Initialize dataLayer
+  window.dataLayer = window.dataLayer || []
+  window.dataLayer.push({
+    'gtm.start': new Date().getTime(),
+    event: 'gtm.js'
+  })
+
+  // Inject GTM script
+  const script = document.createElement('script')
+  script.async = true
+  script.src = `https://www.googletagmanager.com/gtm.js?id=${GTM_ID}`
+  const firstScript = document.getElementsByTagName('script')[0]
+  firstScript.parentNode?.insertBefore(script, firstScript)
+
+  // Add noscript iframe to body
+  const noscript = document.createElement('noscript')
+  const iframe = document.createElement('iframe')
+  iframe.src = `https://www.googletagmanager.com/ns.html?id=${GTM_ID}`
+  iframe.height = '0'
+  iframe.width = '0'
+  iframe.style.display = 'none'
+  iframe.style.visibility = 'hidden'
+  noscript.appendChild(iframe)
+  document.body.insertBefore(noscript, document.body.firstChild)
+
+  isGTMInitialized = true
+}
 
 /**
  * Initialize Google Analytics by injecting gtag.js script

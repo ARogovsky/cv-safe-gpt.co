@@ -6,7 +6,7 @@ import './index.css'
 import App from './App.tsx'
 import GlobalNav from './GlobalNav.tsx'
 import { articleRegistry } from './articles/registry'
-import { initGA } from './analytics'
+import { initGA, initGTM } from './analytics'
 import { usePageTracking } from './usePageTracking'
 
 const FloatingChat = lazy(() => import('./FloatingChat'))
@@ -122,6 +122,9 @@ console.log('%c Most people scroll. You inspect. I like that. ', 'background: #f
 console.log('%cThe %cbest %cwork %cis %cinvisible.', 'color: #94a3b8; font-size: 13px;', 'color: #7e8d9d; font-size: 13px;', 'color: #687882; font-size: 13px;', 'color: #526268; font-size: 13px;', 'color: #3d4d52; font-size: 13px;')
 console.log('%cYou just found some of it.', 'color: #94a3b8; font-size: 13px;')
 console.log('%c I build the details. Let\'s solve something hard → esupport@esupport.org.ua ', 'background: #f97316; color: #1a1a1a; font-size: 13px; font-weight: bold; padding: 4px 8px; border-radius: 3px;')
+
+// Initialize Google Tag Manager
+initGTM()
 
 // Initialize Google Analytics
 initGA()

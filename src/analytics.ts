@@ -75,6 +75,7 @@ export function trackEvent(eventName: string, eventParams?: Record<string, unkno
 /**
  * Track Google Ads conversion for email contact
  * Fires when user clicks on email link
+ * Uses event_callback to ensure conversion is sent before mailto opens
  */
 export function trackEmailConversion(): void {
   if (!window.gtag) {
@@ -83,6 +84,6 @@ export function trackEmailConversion(): void {
   }
 
   window.gtag('event', 'conversion', {
-    send_to: 'AW-10998062484/7gX2CJf2rqkcEJS7pPwo'
+    send_to: 'AW-10998062484/7gX2CJf2rqkcEJS7pPwo',
   })
 }

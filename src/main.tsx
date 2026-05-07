@@ -74,8 +74,12 @@ function GlobalChat() {
 
   if (!hydrated || pathname.startsWith('/ops')) return null
 
-  // Use English for chat even on Ukrainian pages (no UK translations for chat yet)
-  const lang = 'en'
+  // Determine chat language from URL:
+  // - /en or /-en suffix → English
+  // - All other pages → Ukrainian
+  const lang: 'uk' | 'en' = pathname === '/en' || pathname.endsWith('-en') || pathname.startsWith('/en/') 
+    ? 'en' 
+    : 'uk'
 
   return (
     <ChatErrorBoundary>

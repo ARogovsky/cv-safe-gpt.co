@@ -318,10 +318,6 @@ export default function AboutPage({ lang = 'uk' }: { lang?: AboutLang }) {
 
           <a
             href={`mailto:${t.email}`}
-            onClick={(e) => {
-              e.preventDefault()
-              trackEmailConversion(e.currentTarget.href)
-            }}
             className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-primary-foreground text-sm font-medium hover:bg-primary/90 transition-colors mb-4"
           >
             <Mail className="w-4 h-4" />

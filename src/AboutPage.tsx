@@ -2,7 +2,6 @@ import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { MapPin, Mail, ExternalLink, Award, GraduationCap, Briefcase, ChevronRight, Clock, Newspaper, HelpCircle, Users, Code2 } from 'lucide-react'
 import { aboutContent, type AboutLang } from './about-i18n'
-import { trackEmailConversion } from './analytics'
 
 const SOCIAL_LINKS = [
   { name: 'Telegram', url: 'https://t.me/andreyrogovsky' },

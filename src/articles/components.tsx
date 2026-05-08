@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { Download, Copy, Check, ExternalLink, Clock } from 'lucide-react'
 import { EditorModeProvider, EditorLabel, H2, StepList, Accordion } from './content-types'
-import { trackEmailConversion } from '../analytics'
 
 // ---------------------------------------------------------------------------
 // Inline utilities

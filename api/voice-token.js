@@ -1,5 +1,9 @@
 import { createRealtimeSession, isRealtimeAvailable } from './_shared/model-router.js'
 
+export const config = {
+  runtime: 'edge',
+}
+
 // ---------------------------------------------------------------------------
 // Rate limiting via Supabase
 // ---------------------------------------------------------------------------
